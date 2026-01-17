@@ -1,8 +1,7 @@
 #!/bin/bash
-export WANDB_API_KEY=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
 set -x
 
-MODEL_PATH=/root/.cache/huggingface/hub/models--Qwen--Qwen3-VL-8B-Instruct
+MODEL_PATH=/root/.cache/huggingface/hub/models--Qwen--Qwen3-VL-8B-Instruct/snapshots/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b
 ROLLOUT_BS=512
 GEN_BS=128
 GLOBAL_BS=128
