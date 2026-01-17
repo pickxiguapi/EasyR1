@@ -1,8 +1,8 @@
 #!/bin/bash
-
+export WANDB_API_KEY=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
 set -x
 
-MODEL_PATH=Qwen/Qwen3-VL-8B-Instruct
+MODEL_PATH=/root/.cache/huggingface/hub/models--Qwen--Qwen3-VL-8B-Instruct
 ROLLOUT_BS=512
 GEN_BS=128
 GLOBAL_BS=128
@@ -25,6 +25,7 @@ python3 -m verl.trainer.main \
     trainer.experiment_name=qwen3_vl_8b_geo_mbpo \
     trainer.n_gpus_per_node=8 \
     trainer.nnodes=1 \
+    trainer.find_last_checkpoint=False \
     data.rollout_batch_size="${ROLLOUT_BS}" \
     data.mini_rollout_batch_size="${GEN_BS}" \
     worker.actor.global_batch_size="${GLOBAL_BS}" \
