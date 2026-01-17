@@ -24,7 +24,7 @@ python3 -m verl.trainer.main \
     algorithm.adv_estimator=mbpo \
     trainer.experiment_name=qwen3_vl_8b_geo_mbpo \
     trainer.n_gpus_per_node=8 \
-    trainer.nnodes=8 \
+    trainer.nnodes=1 \
     data.rollout_batch_size="${ROLLOUT_BS}" \
     data.mini_rollout_batch_size="${GEN_BS}" \
     worker.actor.global_batch_size="${GLOBAL_BS}" \
