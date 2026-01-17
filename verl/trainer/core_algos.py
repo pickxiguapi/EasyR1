@@ -84,6 +84,7 @@ class AdvantageEstimator(str, Enum):
     REINFORCE_PLUS_PLUS = "reinforce_plus_plus"
     REMAX = "remax"
     RLOO = "rloo"
+    MBPO = "mbpo"
 
 
 ADV_ESTIMATOR_MAP: dict[str, Any] = {}
@@ -211,6 +212,51 @@ def compute_grpo_outcome_advantage(
 
     for i in range(bsz):
         scores[i] = (scores[i] - id2mean[index[i]]) / (id2std[index[i]] + eps)
+
+    returns = scores.unsqueeze(-1) * response_mask
+    return returns, returns
+
+
+@register_adv_estimator(AdvantageEstimator.MBPO)
+def compute_mbpo_outcome_advantage(
+    token_level_rewards: torch.Tensor, response_mask: torch.Tensor, index: torch.Tensor, eps: float = 1e-6, **kwargs
+) -> tuple[torch.Tensor, torch.Tensor]:
+    """
+    Compute advantage for MBPO, operating only on Outcome reward (with only one scalar reward for each response).
+
+    Args:
+        token_level_rewards: `(torch.Tensor)`
+            shape: (bs, response_length)
+        response_mask: `(torch.Tensor)`
+            shape: (bs, response_length)
+        index: `(torch.Tensor)`
+            shape: (bs,)
+        eps: `(float)`
+            epsilon value to avoid division by zero
+
+    Returns:
+        advantages: `(torch.Tensor)`
+            shape: (bs, response_length)
+        returns: `(torch.Tensor)`
+            shape: (bs, response_length)
+
+    """
+    scores = token_level_rewards.sum(dim=-1)
+    id2score = defaultdict(list)
+    id2mean = {}
+
+    bsz = scores.shape[0]
+    for i in range(bsz):
+        id2score[index[i]].append(scores[i])
+
+    for idx in id2score:
+        assert len(id2score[idx]) > 1, "MBPO needs rollout.n > 1."
+        id2mean[idx] = torch.mean(torch.stack(id2score[idx]))
+
+    batch_std = scores.std()
+
+    for i in range(bsz):
+        scores[i] = (scores[i] - id2mean[index[i]]) / (batch_std + eps)
 
     returns = scores.unsqueeze(-1) * response_mask
     return returns, returns

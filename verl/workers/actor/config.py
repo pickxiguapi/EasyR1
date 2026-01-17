@@ -86,7 +86,7 @@ class ActorConfig:
     """number to clip grad norm"""
     clip_ratio_low: float = 0.2
     """clip ratio in PPO & DAPO"""
-    clip_ratio_high: float = 0.3
+    clip_ratio_high: float = 0.28
     """clip ratio in PPO & DAPO"""
     clip_ratio_dual: float = 3.0
     """constant C in dual-clip PPO, clips when advantage < -C"""
