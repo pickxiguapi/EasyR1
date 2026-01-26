@@ -1,7 +1,7 @@
 #!/bin/bash
 set -x
-
-MODEL_PATH=/root/.cache/huggingface/hub/models--Qwen--Qwen3-VL-8B-Instruct/snapshots/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b
+export SWANLAB_API_KEY=eoC5nUbBxwMg5QIUMsBIz
+MODEL_PATH=/apdcephfs_hldy/share_304012692/er1/Qwen3-VL-8B-Instruct
 ROLLOUT_BS=512
 GEN_BS=128
 GLOBAL_BS=128

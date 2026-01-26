@@ -1,0 +1,117 @@
+# Example configuration for training with multiple data files
+
+data:
+  # Method 1: List format (recommended for multiple files)
+  train_files:
+    - /qy4/yyf/Embodied-R1.5/EasyR1/rft_datasets/ER1.5_Cosmos_video_qa_0.9k_cleaned.json
+    - /qy4/yyf/Embodied-R1.5/EasyR1/rft_datasets/ER1.5_Droid_trace_1k.json
+    - /qy4/yyf/Embodied-R1.5/EasyR1/rft_datasets/ER1.5_EgoPlan_2k.json
+
+  # Validation can also use multiple files
+  val_files:
+    - /qy4/yyf/Embodied-R1.5/EasyR1/rft_datasets/ER1.5_Cosmos_video_qa_0.9k_cleaned.json
+
+  # Method 2: Single file (still supported for backward compatibility)
+  # train_files: /path/to/single/file.json
+
+  prompt_key: problem
+  answer_key: answer
+  image_key: images
+  video_key: videos
+  problem_type_key: problem_type
+  problem_id_key: problem_id
+  options_key: options
+  data_type_key: data_type
+  data_source_key: data_source
+  image_dir: /apdcephfs_hldy/share_304012692/er1/Embodied-R1.5-RFT/data/
+  video_fps: 2.0
+  max_prompt_length: 4096
+  max_response_length: 3072
+  rollout_batch_size: 512
+  mini_rollout_batch_size: null
+  val_batch_size: 128
+  format_prompt: null
+  override_chat_template: null
+  shuffle: true
+  seed: 1
+  min_pixels: 262144
+  max_pixels: 1048576
+  filter_overlong_prompts: true
+
+algorithm:
+  adv_estimator: grpo
+  disable_kl: false
+  use_kl_loss: true
+  kl_penalty: low_var_kl
+  kl_coef: 1.0e-2
+  online_filtering: false
+  filter_key: accuracy
+  filter_low: 0.01
+  filter_high: 0.99
+
+worker:
+  actor:
+    global_batch_size: 128
+    micro_batch_size_per_device_for_update: 1
+    micro_batch_size_per_device_for_experience: 2
+    max_grad_norm: 1.0
+    padding_free: true
+    dynamic_batching: true
+    model:
+      model_path: Qwen/Qwen3-VL-8B-Instruct
+      enable_gradient_checkpointing: true
+      trust_remote_code: true
+      freeze_vision_tower: false
+    optim:
+      lr: 1.0e-6
+      weight_decay: 1.0e-2
+      strategy: adamw
+    fsdp:
+      enable_full_shard: true
+      enable_cpu_offload: false
+      enable_rank0_init: true
+    offload:
+      offload_params: true
+      offload_optimizer: true
+
+  rollout:
+    n: 4
+    temperature: 1.0
+    top_p: 1.0
+    gpu_memory_utilization: 0.5
+    tensor_parallel_size: 2
+    val_override_config:
+      temperature: 0.6
+      top_p: 0.95
+      n: 1
+
+  ref:
+    fsdp:
+      enable_full_shard: true
+      enable_cpu_offload: true
+      enable_rank0_init: true
+
+  reward:
+    reward_function: ./examples/reward_function/embodied_reward.py:compute_score
+    reward_function_kwargs:
+      format_weight: 0.1
+
+trainer:
+  total_epochs: 3
+  max_steps: null
+  project_name: embodied_r1_5
+  experiment_name: qwen3_vl_8b_embodied_multi_task
+  logger: ["file"]
+  nnodes: 1
+  n_gpus_per_node: 8
+  max_try_make_batch: 20
+  val_freq: 1
+  val_before_train: true
+  val_only: false
+  val_generations_to_log: 3
+  save_freq: 1
+  save_limit: 3
+  save_model_only: false
+  save_checkpoint_path: null
+  load_checkpoint_path: null
+  find_last_checkpoint: true

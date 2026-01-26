@@ -91,13 +91,22 @@ class RLHFDataset(Dataset):
 
     def __init__(
         self,
-        data_path: str,
+        data_path: Union[str, list[str]],  ### Embodied-R1.5: Support multiple files ###
         tokenizer: PreTrainedTokenizer,
         processor: Optional[ProcessorMixin],
         prompt_key: str = "prompt",
         answer_key: str = "answer",
         image_key: str = "images",
         video_key: str = "videos",
+
+        ### Embodied-R1.5 New Feature ###
+        problem_type_key: str = "problem_type",
+        problem_id_key: str = "problem_id",
+        options_key: str = "options",
+        data_type_key: str = "data_type",
+        data_source_key: str = "data_source",
+        ### Embodied-R1.5 New Feature ###
+
         image_dir: Optional[str] = None,
         video_fps: float = 2.0,
         max_prompt_length: int = 1024,
@@ -114,6 +123,15 @@ class RLHFDataset(Dataset):
         self.answer_key = answer_key
         self.image_key = image_key
         self.video_key = video_key
+
+        ### Embodied-R1.5 New Feature ###
+        self.problem_type_key = problem_type_key
+        self.problem_id_key = problem_id_key
+        self.options_key = options_key
+        self.data_type_key = data_type_key
+        self.data_source_key = data_source_key
+        ### Embodied-R1.5 New Feature ###
+
         self.image_dir = image_dir
         self.video_fps = video_fps
         self.max_prompt_length = max_prompt_length
@@ -121,21 +139,41 @@ class RLHFDataset(Dataset):
         self.min_pixels = min_pixels
         self.max_pixels = max_pixels
 
-        if "@" in data_path:
-            data_path, data_split = data_path.split("@")
+        ### Embodied-R1.5 New Feature: Support multiple data files ###
+        # Convert single file to list for unified processing
+        if isinstance(data_path, str):
+            data_paths = [data_path]
         else:
-            data_split = "train"
+            data_paths = data_path
 
-        if os.path.isdir(data_path):
-            # when we use dataset builder, we should always refer to the train split
-            file_type = os.path.splitext(os.listdir(data_path)[0])[-1][1:].replace("jsonl", "json")
-            self.dataset = load_dataset(file_type, data_dir=data_path, split=data_split)
-        elif os.path.isfile(data_path):
-            file_type = os.path.splitext(data_path)[-1][1:].replace("jsonl", "json")
-            self.dataset = load_dataset(file_type, data_files=data_path, split=data_split)
+        datasets = []
+        for single_path in data_paths:
+            if "@" in single_path:
+                single_path, data_split = single_path.split("@")
+            else:
+                data_split = "train"
+
+            if os.path.isdir(single_path):
+                # when we use dataset builder, we should always refer to the train split
+                file_type = os.path.splitext(os.listdir(single_path)[0])[-1][1:].replace("jsonl", "json")
+                ds = load_dataset(file_type, data_dir=single_path, split=data_split)
+            elif os.path.isfile(single_path):
+                file_type = os.path.splitext(single_path)[-1][1:].replace("jsonl", "json")
+                ds = load_dataset(file_type, data_files=single_path, split=data_split)
+            else:
+                # load remote dataset from huggingface hub
+                ds = load_dataset(single_path, split=data_split)
+
+            datasets.append(ds)
+
+        # Concatenate all datasets if multiple files provided
+        if len(datasets) == 1:
+            self.dataset = datasets[0]
         else:
-            # load remote dataset from huggingface hub
-            self.dataset = load_dataset(data_path, split=data_split)
+            from datasets import concatenate_datasets
+            self.dataset = concatenate_datasets(datasets)
+            print(f"Loaded and concatenated {len(datasets)} datasets, total samples: {len(self.dataset)}")
+        ### Embodied-R1.5 New Feature ###
 
         self.format_prompt = None
         if format_prompt:
@@ -305,5 +343,11 @@ class RLHFDataset(Dataset):
         example["attention_mask"] = attention_mask
         example["position_ids"] = position_ids
         example["raw_prompt_ids"] = raw_prompt_ids
+
+        ### Embodied-R1.5 New Feature ###
+        # Preserve metadata fields (don't pop them) so they can be passed to reward function
+        # These fields may or may not exist in the data, which is fine
+        ### Embodied-R1.5 New Feature ###
+
         example["ground_truth"] = example.pop(self.answer_key)
         return example

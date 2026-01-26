@@ -26,10 +26,25 @@ from ...protocol import DataProto
 from .config import RewardConfig
 
 
-class RewardInput(TypedDict):
+### Embodied-R1.5 New Feature ###
+class RewardInputRequired(TypedDict):
+    """Required fields for all reward functions"""
     response: str
     response_length: int
     ground_truth: str
+
+
+class RewardInput(RewardInputRequired, total=False):
+    """
+    Optional fields for Embodied-R1.5 multi-task data format.
+    Using total=False makes all additional fields optional.
+    """
+    options: list
+    problem_type: str
+    problem_id: int
+    data_type: str
+    data_source: str
+### Embodied-R1.5 New Feature ###
 
 
 class RewardScore(TypedDict):
@@ -57,13 +72,22 @@ class SequentialFunctionRewardManagerMixin:
             response_str = self.tokenizer.decode(
                 valid_response_ids, skip_special_tokens=self.config.skip_special_tokens
             )
-            score = self.reward_fn(
-                {
-                    "response": response_str,
-                    "response_length": cur_response_length,
-                    "ground_truth": data.non_tensor_batch["ground_truth"][i],
-                }
-            )
+
+            reward_input = {
+                "response": response_str,
+                "response_length": cur_response_length,
+                "ground_truth": data.non_tensor_batch["ground_truth"][i],
+            }
+
+            ### Embodied-R1.5 New Feature ###
+            # Add optional fields if they exist in non_tensor_batch
+            optional_fields = ["options", "problem_type", "problem_id", "data_type", "data_source"]
+            for field in optional_fields:
+                if field in data.non_tensor_batch:
+                    reward_input[field] = data.non_tensor_batch[field][i]
+            ### Embodied-R1.5 New Feature ###
+
+            score = self.reward_fn(reward_input)
             reward_tensor[i, cur_response_length - 1] = score["overall"]
             for key, value in score.items():
                 reward_metrics[key].append(value)
@@ -84,13 +108,22 @@ class BatchFunctionRewardManagerMixin:
             response_str = self.tokenizer.decode(
                 valid_response_ids, skip_special_tokens=self.config.skip_special_tokens
             )
-            reward_inputs.append(
-                {
-                    "response": response_str,
-                    "response_length": cur_response_length,
-                    "ground_truth": data.non_tensor_batch["ground_truth"][i],
-                }
-            )
+
+            reward_input = {
+                "response": response_str,
+                "response_length": cur_response_length,
+                "ground_truth": data.non_tensor_batch["ground_truth"][i],
+            }
+
+            ### Embodied-R1.5 New Feature ###
+            # Add optional fields if they exist in non_tensor_batch
+            optional_fields = ["options", "problem_type", "problem_id", "data_type", "data_source"]
+            for field in optional_fields:
+                if field in data.non_tensor_batch:
+                    reward_input[field] = data.non_tensor_batch[field][i]
+            ### Embodied-R1.5 New Feature ###
+
+            reward_inputs.append(reward_input)
 
         scores = self.reward_fn(reward_inputs)
         reward_tensor = torch.zeros_like(data.batch["responses"], dtype=torch.float32)
