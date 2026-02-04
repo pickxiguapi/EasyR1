@@ -213,7 +213,7 @@ class RLHFDataset(Dataset):
         filter_overlong_prompts: bool = True,
         filter_overlong_prompts_workers: int = 16,
         debug: bool = False,  # Debug mode: sample 200 examples per dataset
-        debug_sample_size: int = 180,  # Number of samples in debug mode
+        debug_sample_size: int = 160,  # Number of samples in debug mode
     ):
         self.tokenizer = tokenizer
         self.processor = processor
@@ -340,9 +340,9 @@ class RLHFDataset(Dataset):
             with open(format_prompt, encoding="utf-8") as f:
                 self.format_prompt = f.read()
 
-        # if debug:
-        #     print(f"[DEBUG] Dataset size after loading: {len(self.dataset)}")
-        #     self._analyze_token_statistics()
+        if debug:
+            print(f"[DEBUG] Dataset size after loading: {len(self.dataset)}")
+            self._analyze_token_statistics()
 
         if filter_overlong_prompts:
             self.dataset = self.dataset.filter(

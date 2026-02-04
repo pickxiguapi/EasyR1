@@ -77,11 +77,11 @@ def test_rft_datasets(model_path, image_dir):
         ### Embodied-R1.5 New Feature ###
         image_dir=image_dir,
         video_fps=2,
-        max_prompt_length=3200,
+        max_prompt_length=3100,
         truncation="right",
         format_prompt="",
         min_pixels=32*32*8,
-        max_pixels=32*32*2900,
+        max_pixels=32*32*2800,
         filter_overlong_prompts=True,
         filter_overlong_prompts_workers=32,
         debug=True,
