@@ -1,0 +1,4674 @@
+{
+  "description": "Test dataset sampled from all rft_datasets",
+  "total_samples": 135,
+  "datasets": {
+    "ER1.5_CoSyn-point_image_point_15k": 5,
+    "ER1.5_Cosmos_video_qa_700": 5,
+    "ER1.5_Droid-Trace_image_trace_13k": 5,
+    "ER1.5_EO_image_qa_10k": 5,
+    "ER1.5_ER1-point_image_point_33k": 5,
+    "ER1.5_ER1-trace_image_trace_15k": 5,
+    "ER1.5_ERQA1_image_qa_580": 5,
+    "ER1.5_ERQA2_image_qa_10k": 5,
+    "ER1.5_EgoPlan_mixed_qa_10k": 5,
+    "ER1.5_HOI4D-Trace_image_trace_8k": 5,
+    "ER1.5_HandAL_image_point_32k": 5,
+    "ER1.5_InstructPart_image_point_4k": 5,
+    "ER1.5_InternData-Trace_image_trace_10k": 5,
+    "ER1.5_Ref_L4_image_point_40k": 5,
+    "ER1.5_Refspatial_image_point_60k": 5,
+    "ER1.5_Robo2VLM_image_qa_10k": 5,
+    "ER1.5_RoboFAC_video_qa_8k": 5,
+    "ER1.5_RoboVQA_image_qa_20k": 5,
+    "ER1.5_Roborefit_image_point_20k": 5,
+    "ER1.5_SAT_image_qa_20k": 5,
+    "ER1.5_general_image_qa_42k": 5,
+    "ER1.5_general_video_qa_15k": 5,
+    "ER1.5_regular_simulation_image_point_5k": 5,
+    "ER1.5_regular_simulation_image_point_5k_fixed": 5,
+    "ER1.5_regular_synthetic_image_point_5k": 5,
+    "ER1.5_robocasa_partnet_2d_image_trace_1k": 5,
+    "ER1.5_robocasa_partnet_3d_image_trace_1k": 5
+  },
+  "data": [
+    {
+      "problem_id": "49570_HTMLDocumentPipeline_budget_claude_2-243_turn_2",
+      "problem": "<image>Generate points for all promotional activities involving design work.\nUse pointing to answer questions. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "CoSyn-Point",
+      "answer": [
+        {
+          "point_2d": [
+            159,
+            802
+          ]
+        }
+      ],
+      "problem_reserved_text": "Generate points for all promotional activities involving design work.\nUse pointing to answer questions. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "images": [
+        "cosyn_images/HTMLDocumentPipeline_budget_claude_2-243.png"
+      ],
+      "source_dataset": "ER1.5_CoSyn-point_image_point_15k"
+    },
+    {
+      "problem_id": "6785_HTMLDocumentPipeline_transaction_claude_1-408_turn_3",
+      "problem": "<image>Point to the SWIFT code used for international bank transfers\nUse pointing to answer questions. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "CoSyn-Point",
+      "answer": [
+        {
+          "point_2d": [
+            237,
+            717
+          ]
+        }
+      ],
+      "problem_reserved_text": "Point to the SWIFT code used for international bank transfers\nUse pointing to answer questions. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "images": [
+        "cosyn_images/HTMLDocumentPipeline_transaction_claude_1-408.png"
+      ],
+      "source_dataset": "ER1.5_CoSyn-point_image_point_15k"
+    },
+    {
+      "problem_id": "18980_HTMLTablePipeline_periodic_1-68_turn_4",
+      "problem": "<image>Highlight the impact statement that mentions an outcome that's not immediately visible but has long-term effects on team dynamics.\nUse pointing to answer questions. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "CoSyn-Point",
+      "answer": [
+        {
+          "point_2d": [
+            132,
+            743
+          ]
+        }
+      ],
+      "problem_reserved_text": "Highlight the impact statement that mentions an outcome that's not immediately visible but has long-term effects on team dynamics.\nUse pointing to answer questions. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "images": [
+        "cosyn_images/HTMLTablePipeline_periodic_1-68.png"
+      ],
+      "source_dataset": "ER1.5_CoSyn-point_image_point_15k"
+    },
+    {
+      "problem_id": "63606_HTMLDocumentPipeline_incident_1-40_turn_1",
+      "problem": "<image>Point to the dish that had the highest price increase after the menu reboot.\nUse pointing to answer questions. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "CoSyn-Point",
+      "answer": [
+        {
+          "point_2d": [
+            679,
+            390
+          ]
+        }
+      ],
+      "problem_reserved_text": "Point to the dish that had the highest price increase after the menu reboot.\nUse pointing to answer questions. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "images": [
+        "cosyn_images/HTMLDocumentPipeline_incident_1-40.png"
+      ],
+      "source_dataset": "ER1.5_CoSyn-point_image_point_15k"
+    },
+    {
+      "problem_id": "43989_HTMLDocumentPipeline_menu_claude_2-24_turn_3",
+      "problem": "<image>Help me find the estimated preparation time mentioned for these lunch specials.\nUse pointing to answer questions. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "CoSyn-Point",
+      "answer": [
+        {
+          "point_2d": [
+            449,
+            939
+          ]
+        }
+      ],
+      "problem_reserved_text": "Help me find the estimated preparation time mentioned for these lunch specials.\nUse pointing to answer questions. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "images": [
+        "cosyn_images/HTMLDocumentPipeline_menu_claude_2-24.png"
+      ],
+      "source_dataset": "ER1.5_CoSyn-point_image_point_15k"
+    },
+    {
+      "problem_id": 10250,
+      "problem": "<video>\nThe agent in the video was given the instruction - put the orange in the bowl. Was the agent successful in completing the task specified by the instruction? Please answer directly with only the letter of the correct option and nothing else.",
+      "data_type": "video",
+      "problem_type": "multiple choice",
+      "options": [
+        "A. no",
+        "B. yes"
+      ],
+      "data_source": "Cosmos",
+      "answer": "B",
+      "videos": [
+        "cosmos/robovqa/clips/8128244649777902126.mp4"
+      ],
+      "problem_reserved_text": "The agent in the video was given the instruction - put the orange in the bowl. Was the agent successful in completing the task specified by the instruction?",
+      "source_dataset": "ER1.5_Cosmos_video_qa_700"
+    },
+    {
+      "problem_id": 10228,
+      "problem": "<video>\nThe agent in the video was given the instruction - put box in stand. Was the agent successful in completing the task specified by the instruction? Please answer directly with only the letter of the correct option and nothing else.",
+      "data_type": "video",
+      "problem_type": "multiple choice",
+      "options": [
+        "A. yes",
+        "B. no"
+      ],
+      "data_source": "Cosmos",
+      "answer": "A",
+      "videos": [
+        "cosmos/robovqa/clips/7255771370340031917.mp4"
+      ],
+      "problem_reserved_text": "The agent in the video was given the instruction - put box in stand. Was the agent successful in completing the task specified by the instruction?",
+      "source_dataset": "ER1.5_Cosmos_video_qa_700"
+    },
+    {
+      "problem_id": 10142,
+      "problem": "<video>\nThe agent in the video was given the instruction - pick knife from the table. Was the agent successful in completing the task specified by the instruction? Please answer directly with only the letter of the correct option and nothing else.",
+      "data_type": "video",
+      "problem_type": "multiple choice",
+      "options": [
+        "A. no",
+        "B. yes"
+      ],
+      "data_source": "Cosmos",
+      "answer": "A",
+      "videos": [
+        "cosmos/robovqa/clips/9630595825834198201.mp4"
+      ],
+      "problem_reserved_text": "The agent in the video was given the instruction - pick knife from the table. Was the agent successful in completing the task specified by the instruction?",
+      "source_dataset": "ER1.5_Cosmos_video_qa_700"
+    },
+    {
+      "problem_id": 10104,
+      "problem": "<video>\nThe agent in the video was given the instruction - put the chips packet in the drawer. Was the agent successful in completing the task specified by the instruction? Please answer directly with only the letter of the correct option and nothing else.",
+      "data_type": "video",
+      "problem_type": "multiple choice",
+      "options": [
+        "A. no",
+        "B. yes"
+      ],
+      "data_source": "Cosmos",
+      "answer": "A",
+      "videos": [
+        "cosmos/robovqa/clips/10278340446422916350.mp4"
+      ],
+      "problem_reserved_text": "The agent in the video was given the instruction - put the chips packet in the drawer. Was the agent successful in completing the task specified by the instruction?",
+      "source_dataset": "ER1.5_Cosmos_video_qa_700"
+    },
+    {
+      "problem_id": 20000,
+      "problem": "<video>\nThe overall goal is to \"Transport table with another robot\". The agent in the video is currently performing one subtask out of many to complete this instruction. For the agent in the video, what is the most plausible next immediate subtask from the choices below? Please answer directly with only the letter of the correct option and nothing else.",
+      "data_type": "video",
+      "problem_type": "multiple choice",
+      "options": [
+        "A. Release the grasped white table with both arms.",
+        "B. Move backward 20 centimeters.",
+        "C. Lower the grasped white table with both arms in coordination.",
+        "D. Grasp the arms of white table."
+      ],
+      "data_source": "Cosmos",
+      "answer": "B",
+      "videos": [
+        "cosmos/agibot/clips/446-687616-head_center_fisheye_color-366-531-1.mp4"
+      ],
+      "problem_reserved_text": "The overall goal is to \"Transport table with another robot\". The agent in the video is currently performing one subtask out of many to complete this instruction. For the agent in the video, what is the most plausible next immediate subtask from the choices below?",
+      "source_dataset": "ER1.5_Cosmos_video_qa_700"
+    },
+    {
+      "problem_id": "RAIL+daf8a660+2023-08-29-15h-34m-32s_object_move",
+      "problem": "<image> You are currently a robot performing robotic manipulation tasks. The task instruction is: Take the green plush out of the pot. Use 2D points to trace the movement trajectory of the manipulated object (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 7.",
+      "data_type": "image",
+      "problem_type": "trace",
+      "options": [],
+      "data_source": "Droid-Trace",
+      "answer": [
+        {
+          "point_2d": [
+            258,
+            585
+          ]
+        },
+        {
+          "point_2d": [
+            259,
+            560
+          ]
+        },
+        {
+          "point_2d": [
+            259,
+            523
+          ]
+        },
+        {
+          "point_2d": [
+            258,
+            485
+          ]
+        },
+        {
+          "point_2d": [
+            258,
+            461
+          ]
+        },
+        {
+          "point_2d": [
+            260,
+            468
+          ]
+        },
+        {
+          "point_2d": [
+            267,
+            521
+          ]
+        }
+      ],
+      "problem_reserved_text": "You are currently a robot performing robotic manipulation tasks. The task instruction is: Take the green plush out of the pot. Use 2D points to trace the movement trajectory of the manipulated object (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 7.",
+      "images": [
+        "droid/droid/7172_RAIL+daf8a660+2023-08-29-15h-34m-32s/object_move.jpg"
+      ],
+      "source_dataset": "ER1.5_Droid-Trace_image_trace_13k"
+    },
+    {
+      "problem_id": "IRIS+7dfa2da3+2023-05-11-15h-27m-22s_robot_approach",
+      "problem": "<image> You are currently a robot performing robotic manipulation tasks. The task instruction is: Reach pen. Use 2D points to trace the movement trajectory of the robot arm as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "data_type": "image",
+      "problem_type": "trace",
+      "options": [],
+      "data_source": "Droid-Trace",
+      "answer": [
+        {
+          "point_2d": [
+            502,
+            138
+          ]
+        },
+        {
+          "point_2d": [
+            510,
+            112
+          ]
+        },
+        {
+          "point_2d": [
+            497,
+            125
+          ]
+        },
+        {
+          "point_2d": [
+            485,
+            153
+          ]
+        },
+        {
+          "point_2d": [
+            483,
+            185
+          ]
+        },
+        {
+          "point_2d": [
+            486,
+            220
+          ]
+        },
+        {
+          "point_2d": [
+            489,
+            255
+          ]
+        },
+        {
+          "point_2d": [
+            489,
+            287
+          ]
+        }
+      ],
+      "problem_reserved_text": "You are currently a robot performing robotic manipulation tasks. The task instruction is: Reach pen. Use 2D points to trace the movement trajectory of the robot arm as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "images": [
+        "droid/droid/5260_IRIS+7dfa2da3+2023-05-11-15h-27m-22s/robot_approach.jpg"
+      ],
+      "source_dataset": "ER1.5_Droid-Trace_image_trace_13k"
+    },
+    {
+      "problem_id": "ILIAD+sbd7d2c6+2023-12-24-16h-15m-24s_robot_approach",
+      "problem": "<image> You are currently a robot performing robotic manipulation tasks. The task instruction is: Reach mug. Use 2D points to trace the movement trajectory of the robot arm as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "data_type": "image",
+      "problem_type": "trace",
+      "options": [],
+      "data_source": "Droid-Trace",
+      "answer": [
+        {
+          "point_2d": [
+            881,
+            336
+          ]
+        },
+        {
+          "point_2d": [
+            843,
+            367
+          ]
+        },
+        {
+          "point_2d": [
+            800,
+            396
+          ]
+        },
+        {
+          "point_2d": [
+            768,
+            428
+          ]
+        },
+        {
+          "point_2d": [
+            764,
+            468
+          ]
+        },
+        {
+          "point_2d": [
+            770,
+            514
+          ]
+        },
+        {
+          "point_2d": [
+            756,
+            557
+          ]
+        },
+        {
+          "point_2d": [
+            715,
+            591
+          ]
+        }
+      ],
+      "problem_reserved_text": "You are currently a robot performing robotic manipulation tasks. The task instruction is: Reach mug. Use 2D points to trace the movement trajectory of the robot arm as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "images": [
+        "droid/droid/837_ILIAD+sbd7d2c6+2023-12-24-16h-15m-24s/robot_approach.jpg"
+      ],
+      "source_dataset": "ER1.5_Droid-Trace_image_trace_13k"
+    },
+    {
+      "problem_id": "IRIS+ef107c48+2023-04-07-13h-28m-33s_object_move",
+      "problem": "<image> You are currently a robot performing robotic manipulation tasks. The task instruction is: Put the marker in the green/white mug. Use 2D points to trace the movement trajectory of the manipulated object (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "data_type": "image",
+      "problem_type": "trace",
+      "options": [],
+      "data_source": "Droid-Trace",
+      "answer": [
+        {
+          "point_2d": [
+            671,
+            578
+          ]
+        },
+        {
+          "point_2d": [
+            656,
+            570
+          ]
+        },
+        {
+          "point_2d": [
+            649,
+            478
+          ]
+        },
+        {
+          "point_2d": [
+            617,
+            415
+          ]
+        },
+        {
+          "point_2d": [
+            573,
+            362
+          ]
+        },
+        {
+          "point_2d": [
+            527,
+            295
+          ]
+        },
+        {
+          "point_2d": [
+            491,
+            258
+          ]
+        },
+        {
+          "point_2d": [
+            500,
+            330
+          ]
+        }
+      ],
+      "problem_reserved_text": "You are currently a robot performing robotic manipulation tasks. The task instruction is: Put the marker in the green/white mug. Use 2D points to trace the movement trajectory of the manipulated object (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "images": [
+        "droid/droid/5708_IRIS+ef107c48+2023-04-07-13h-28m-33s/object_move.jpg"
+      ],
+      "source_dataset": "ER1.5_Droid-Trace_image_trace_13k"
+    },
+    {
+      "problem_id": "AUTOLab+9aed6d7a+2023-12-02-17h-04m-33s_robot_approach",
+      "problem": "<image> You are currently a robot performing robotic manipulation tasks. The task instruction is: Reach bottle. Use 2D points to trace the movement trajectory of the robot arm as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 5.",
+      "data_type": "image",
+      "problem_type": "trace",
+      "options": [],
+      "data_source": "Droid-Trace",
+      "answer": [
+        {
+          "point_2d": [
+            799,
+            225
+          ]
+        },
+        {
+          "point_2d": [
+            744,
+            301
+          ]
+        },
+        {
+          "point_2d": [
+            633,
+            388
+          ]
+        },
+        {
+          "point_2d": [
+            551,
+            476
+          ]
+        },
+        {
+          "point_2d": [
+            583,
+            558
+          ]
+        }
+      ],
+      "problem_reserved_text": "You are currently a robot performing robotic manipulation tasks. The task instruction is: Reach bottle. Use 2D points to trace the movement trajectory of the robot arm as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 5.",
+      "images": [
+        "droid/droid/4063_AUTOLab+9aed6d7a+2023-12-02-17h-04m-33s/robot_approach.jpg"
+      ],
+      "source_dataset": "ER1.5_Droid-Trace_image_trace_13k"
+    },
+    {
+      "problem_id": "qa-episode_caption_59566",
+      "problem": "<image>Please give an account of the current scene.",
+      "data_type": "image",
+      "problem_type": "open-ended",
+      "options": [],
+      "data_source": "EO",
+      "answer": "The robotic arm holds chopsticks above a tray. The tray contains a cup, a bowl with food, and a small container. The setup is ready for serving the meal.",
+      "problem_reserved_text": "Please give an account of the current scene.",
+      "images": [
+        "EO-images/images/qa-episode_caption_59566_0.jpg"
+      ],
+      "source_dataset": "ER1.5_EO_image_qa_10k"
+    },
+    {
+      "problem_id": "qa-task_planning_169902",
+      "problem": "<image>After cut the dough into small pieces with a knife using both hands, what action is generally next in sequence?",
+      "data_type": "image",
+      "problem_type": "open-ended",
+      "options": [],
+      "data_source": "EO",
+      "answer": "cut the dough into small pieces with a knife using both hands",
+      "problem_reserved_text": "After cut the dough into small pieces with a knife using both hands, what action is generally next in sequence?",
+      "images": [
+        "EO-images/images/qa-task_planning_169902_0.jpg"
+      ],
+      "source_dataset": "ER1.5_EO_image_qa_10k"
+    },
+    {
+      "problem_id": "qa-task_planning_84630",
+      "problem": "<image>Given the objective of #place items in the bag#, and with *0-open the black shoulder bag on the desktop with the left arm, 1-pick up hand sanitizer gel from the desktop with the right arm, 2-place the picked-up hand sanitizer gel into the black shoulder bag on the desktop with the right arm* already done, what is the subsequent step?",
+      "data_type": "image",
+      "problem_type": "open-ended",
+      "options": [],
+      "data_source": "EO",
+      "answer": "pick up the face cream from the desktop with the left arm",
+      "problem_reserved_text": "Given the objective of #place items in the bag#, and with *0-open the black shoulder bag on the desktop with the left arm, 1-pick up hand sanitizer gel from the desktop with the right arm, 2-place the picked-up hand sanitizer gel into the black shoulder bag on the desktop with the right arm* already done, what is the subsequent step?",
+      "images": [
+        "EO-images/images/qa-task_planning_84630_0.jpg"
+      ],
+      "source_dataset": "ER1.5_EO_image_qa_10k"
+    },
+    {
+      "problem_id": "qa-task_planning_129552",
+      "problem": "<image>What is the immediate next step in reaching #restock the hanging basket area#, considering *0-pick up the shrimp chips from the replenishment box with the right arm, 1-place the held shrimp chips on the shelf at the position with shrimp chips using the right arm* has been accomplished?",
+      "data_type": "image",
+      "problem_type": "open-ended",
+      "options": [],
+      "data_source": "EO",
+      "answer": "pick up the shrimp chips from the replenishment box with the right arm",
+      "problem_reserved_text": "What is the immediate next step in reaching #restock the hanging basket area#, considering *0-pick up the shrimp chips from the replenishment box with the right arm, 1-place the held shrimp chips on the shelf at the position with shrimp chips using the right arm* has been accomplished?",
+      "images": [
+        "EO-images/images/qa-task_planning_129552_0.jpg"
+      ],
+      "source_dataset": "ER1.5_EO_image_qa_10k"
+    },
+    {
+      "problem_id": "qa-task_planning_134104",
+      "problem": "<image>Aiming to elevate the garden's charm, what’s the immediate step needed?",
+      "data_type": "image",
+      "problem_type": "open-ended",
+      "options": [],
+      "data_source": "EO",
+      "answer": "pick up the green corn snacks from the restocking box with the right arm",
+      "problem_reserved_text": "Aiming to elevate the garden's charm, what’s the immediate step needed?",
+      "images": [
+        "EO-images/images/qa-task_planning_134104_0.jpg"
+      ],
+      "source_dataset": "ER1.5_EO_image_qa_10k"
+    },
+    {
+      "problem_id": "er1_point_1739",
+      "problem": "<image>  The task instruction is: Put the silver pot on the upper right burner.. Use 2D points to mark the target location where the object you need to manipulate in the task should ultimately be moved.\n The answer should be presented in JSON format as follows: [{\"point_2d\": [x, y]}, ...].",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "ER1-Point",
+      "answer": [
+        {
+          "box_2d": [
+            653,
+            190,
+            820,
+            385
+          ]
+        }
+      ],
+      "problem_reserved_text": "The task instruction is: Put the silver pot on the upper right burner.. Use 2D points to mark the target location where the object you need to manipulate in the task should ultimately be moved.\n The answer should be presented in JSON format as follows: [{\"point_2d\": [x, y]}, ...].",
+      "images": [
+        "er1_point_images/1739_0.png"
+      ],
+      "source_dataset": "ER1.5_ER1-point_image_point_33k"
+    },
+    {
+      "problem_id": "er1_point_13031",
+      "problem": "<image>  The task instruction is: put lid on pot or pan. Use 2D points to mark the target location where the object you need to manipulate in the task should ultimately be moved.\n The answer should be presented in JSON format as follows: [{\"point_2d\": [x, y]}, ...].",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "ER1-Point",
+      "answer": [
+        {
+          "box_2d": [
+            381,
+            350,
+            545,
+            458
+          ]
+        }
+      ],
+      "problem_reserved_text": "The task instruction is: put lid on pot or pan. Use 2D points to mark the target location where the object you need to manipulate in the task should ultimately be moved.\n The answer should be presented in JSON format as follows: [{\"point_2d\": [x, y]}, ...].",
+      "images": [
+        "er1_point_images/13031_0.png"
+      ],
+      "source_dataset": "ER1.5_ER1-point_image_point_33k"
+    },
+    {
+      "problem_id": "er1_point_27493",
+      "problem": "<image>  The task instruction is: move orange near blue plastic bottle. Use 2D points to mark the target location where the object you need to manipulate in the task should ultimately be moved.\n The answer should be presented in JSON format as follows: [{\"point_2d\": [x, y]}, ...].",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "ER1-Point",
+      "answer": [
+        {
+          "box_2d": [
+            606,
+            273,
+            672,
+            355
+          ]
+        }
+      ],
+      "problem_reserved_text": "The task instruction is: move orange near blue plastic bottle. Use 2D points to mark the target location where the object you need to manipulate in the task should ultimately be moved.\n The answer should be presented in JSON format as follows: [{\"point_2d\": [x, y]}, ...].",
+      "images": [
+        "er1_point_images/27493_0.png"
+      ],
+      "source_dataset": "ER1.5_ER1-point_image_point_33k"
+    },
+    {
+      "problem_id": "er1_point_14446",
+      "problem": "<image>  The task instruction is: move yellow cloth between the spoon and the can. Use 2D points to mark the target location where the object you need to manipulate in the task should ultimately be moved.\n The answer should be presented in JSON format as follows: [{\"point_2d\": [x, y]}, ...].",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "ER1-Point",
+      "answer": [
+        {
+          "box_2d": [
+            128,
+            460,
+            592,
+            962
+          ]
+        }
+      ],
+      "problem_reserved_text": "The task instruction is: move yellow cloth between the spoon and the can. Use 2D points to mark the target location where the object you need to manipulate in the task should ultimately be moved.\n The answer should be presented in JSON format as follows: [{\"point_2d\": [x, y]}, ...].",
+      "images": [
+        "er1_point_images/14446_0.png"
+      ],
+      "source_dataset": "ER1.5_ER1-point_image_point_33k"
+    },
+    {
+      "problem_id": "er1_point_29439",
+      "problem": "<image>  The task instruction is: pick orange from top drawer and place on counter. Use 2D points to mark the target location where the object you need to manipulate in the task should ultimately be moved.\n The answer should be presented in JSON format as follows: [{\"point_2d\": [x, y]}, ...].",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "ER1-Point",
+      "answer": [
+        {
+          "box_2d": [
+            509,
+            277,
+            622,
+            406
+          ]
+        }
+      ],
+      "problem_reserved_text": "The task instruction is: pick orange from top drawer and place on counter. Use 2D points to mark the target location where the object you need to manipulate in the task should ultimately be moved.\n The answer should be presented in JSON format as follows: [{\"point_2d\": [x, y]}, ...].",
+      "images": [
+        "er1_point_images/29439_0.png"
+      ],
+      "source_dataset": "ER1.5_ER1-point_image_point_33k"
+    },
+    {
+      "problem_id": "fsd_pointbridge_51549",
+      "problem": "<image> You are currently a robot performing robotic manipulation tasks. The task instruction is: moved the can away from blue cloth to the upper side of the table. Use 2D points to trace the movement trajectory of the manipulated object (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "data_type": "image",
+      "problem_type": "trace",
+      "options": [],
+      "data_source": "ER1-Trace",
+      "answer": [
+        {
+          "point_2d": [
+            684,
+            743
+          ]
+        },
+        {
+          "point_2d": [
+            710,
+            700
+          ]
+        },
+        {
+          "point_2d": [
+            717,
+            606
+          ]
+        },
+        {
+          "point_2d": [
+            712,
+            516
+          ]
+        },
+        {
+          "point_2d": [
+            706,
+            445
+          ]
+        },
+        {
+          "point_2d": [
+            709,
+            368
+          ]
+        },
+        {
+          "point_2d": [
+            665,
+            289
+          ]
+        },
+        {
+          "point_2d": [
+            662,
+            231
+          ]
+        }
+      ],
+      "problem_reserved_text": "You are currently a robot performing robotic manipulation tasks. The task instruction is: moved the can away from blue cloth to the upper side of the table. Use 2D points to trace the movement trajectory of the manipulated object (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "images": [
+        "ER1-Trace/fsd_pointbridge_51549_0.jpg"
+      ],
+      "source_dataset": "ER1.5_ER1-trace_image_trace_15k"
+    },
+    {
+      "problem_id": "fsd_pointrtx_11426",
+      "problem": "<image> You are currently a robot performing robotic manipulation tasks. The task instruction is: place green jalapeno chip bag into top drawer. Use 2D points to trace the movement trajectory of the manipulated object (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "data_type": "image",
+      "problem_type": "trace",
+      "options": [],
+      "data_source": "ER1-Trace",
+      "answer": [
+        {
+          "point_2d": [
+            415,
+            304
+          ]
+        },
+        {
+          "point_2d": [
+            509,
+            167
+          ]
+        },
+        {
+          "point_2d": [
+            531,
+            93
+          ]
+        },
+        {
+          "point_2d": [
+            496,
+            257
+          ]
+        },
+        {
+          "point_2d": [
+            496,
+            429
+          ]
+        },
+        {
+          "point_2d": [
+            575,
+            531
+          ]
+        },
+        {
+          "point_2d": [
+            562,
+            550
+          ]
+        },
+        {
+          "point_2d": [
+            540,
+            699
+          ]
+        }
+      ],
+      "problem_reserved_text": "You are currently a robot performing robotic manipulation tasks. The task instruction is: place green jalapeno chip bag into top drawer. Use 2D points to trace the movement trajectory of the manipulated object (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "images": [
+        "ER1-Trace/fsd_pointrtx_11426_0.jpg"
+      ],
+      "source_dataset": "ER1.5_ER1-trace_image_trace_15k"
+    },
+    {
+      "problem_id": "fsd_pointbridge_72715",
+      "problem": "<image> You are currently a robot performing robotic manipulation tasks. The task instruction is: pick up yellow duck and move it to the upper right of the table. Use 2D points to trace the movement trajectory of the manipulated object (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "data_type": "image",
+      "problem_type": "trace",
+      "options": [],
+      "data_source": "ER1-Trace",
+      "answer": [
+        {
+          "point_2d": [
+            604,
+            725
+          ]
+        },
+        {
+          "point_2d": [
+            660,
+            614
+          ]
+        },
+        {
+          "point_2d": [
+            728,
+            489
+          ]
+        },
+        {
+          "point_2d": [
+            764,
+            358
+          ]
+        },
+        {
+          "point_2d": [
+            789,
+            254
+          ]
+        },
+        {
+          "point_2d": [
+            837,
+            110
+          ]
+        },
+        {
+          "point_2d": [
+            887,
+            168
+          ]
+        },
+        {
+          "point_2d": [
+            832,
+            281
+          ]
+        }
+      ],
+      "problem_reserved_text": "You are currently a robot performing robotic manipulation tasks. The task instruction is: pick up yellow duck and move it to the upper right of the table. Use 2D points to trace the movement trajectory of the manipulated object (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "images": [
+        "ER1-Trace/fsd_pointbridge_72715_0.jpg"
+      ],
+      "source_dataset": "ER1.5_ER1-trace_image_trace_15k"
+    },
+    {
+      "problem_id": "fsd_pointbridge_64274",
+      "problem": "<image> You are currently a robot performing robotic manipulation tasks. The task instruction is: Pick up the blue fork and place it where it was. Use 2D points to trace the movement trajectory of the manipulated object (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "data_type": "image",
+      "problem_type": "trace",
+      "options": [],
+      "data_source": "ER1-Trace",
+      "answer": [
+        {
+          "point_2d": [
+            464,
+            616
+          ]
+        },
+        {
+          "point_2d": [
+            520,
+            668
+          ]
+        },
+        {
+          "point_2d": [
+            490,
+            616
+          ]
+        },
+        {
+          "point_2d": [
+            442,
+            518
+          ]
+        },
+        {
+          "point_2d": [
+            354,
+            477
+          ]
+        },
+        {
+          "point_2d": [
+            364,
+            562
+          ]
+        },
+        {
+          "point_2d": [
+            412,
+            662
+          ]
+        },
+        {
+          "point_2d": [
+            446,
+            629
+          ]
+        }
+      ],
+      "problem_reserved_text": "You are currently a robot performing robotic manipulation tasks. The task instruction is: Pick up the blue fork and place it where it was. Use 2D points to trace the movement trajectory of the manipulated object (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "images": [
+        "ER1-Trace/fsd_pointbridge_64274_0.jpg"
+      ],
+      "source_dataset": "ER1.5_ER1-trace_image_trace_15k"
+    },
+    {
+      "problem_id": "fsd_pointbridge_45604",
+      "problem": "<image> You are currently a robot performing robotic manipulation tasks. The task instruction is: put the green cloth to the right of the purple cloth. Use 2D points to trace the movement trajectory of the manipulated object (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "data_type": "image",
+      "problem_type": "trace",
+      "options": [],
+      "data_source": "ER1-Trace",
+      "answer": [
+        {
+          "point_2d": [
+            434,
+            402
+          ]
+        },
+        {
+          "point_2d": [
+            415,
+            393
+          ]
+        },
+        {
+          "point_2d": [
+            446,
+            402
+          ]
+        },
+        {
+          "point_2d": [
+            520,
+            506
+          ]
+        },
+        {
+          "point_2d": [
+            578,
+            585
+          ]
+        },
+        {
+          "point_2d": [
+            607,
+            685
+          ]
+        },
+        {
+          "point_2d": [
+            631,
+            814
+          ]
+        },
+        {
+          "point_2d": [
+            660,
+            862
+          ]
+        }
+      ],
+      "problem_reserved_text": "You are currently a robot performing robotic manipulation tasks. The task instruction is: put the green cloth to the right of the purple cloth. Use 2D points to trace the movement trajectory of the manipulated object (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "images": [
+        "ER1-Trace/fsd_pointbridge_45604_0.jpg"
+      ],
+      "source_dataset": "ER1.5_ER1-trace_image_trace_15k"
+    },
+    {
+      "problem_id": 163,
+      "problem": "<image>\nWhich point (red, purple, orange, yellow) best represents the position of the center of the handle of the top drawer of the printer if I open the drawer? Choices: A. Purple. B. Green. C. Red. D. Yellow. Please answer directly with only the letter of the correct option and nothing else.",
+      "data_type": "image",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "ERQA",
+      "answer": "C",
+      "images": [
+        "ERQA/erqa_200_400/ERQA_274_0.png"
+      ],
+      "problem_reserved_text": "Which point (red, purple, orange, yellow) best represents the position of the center of the handle of the top drawer of the printer if I open the drawer? Choices: A. Purple. B. Green. C. Red. D. Yellow. Please answer directly with only the letter of the correct option and nothing else.",
+      "source_dataset": "ER1.5_ERQA1_image_qa_580"
+    },
+    {
+      "problem_id": 432,
+      "problem": "<image>\nCan the robot pick up the curtains? Choices: A. Yes, because they are made of a light fabric. B. No, because they are too heavy. C. No, because they are attached to the ceiling. D. No, because the robot would not be able to get a good grip on them.",
+      "data_type": "image",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "ERQA",
+      "answer": "C",
+      "images": [
+        "ERQA/erqa_plus/ERQA_205_0.jpg"
+      ],
+      "problem_reserved_text": "Can the robot pick up the curtains? Choices: A. Yes, because they are made of a light fabric. B. No, because they are too heavy. C. No, because they are attached to the ceiling. D. No, because the robot would not be able to get a good grip on them.",
+      "source_dataset": "ER1.5_ERQA1_image_qa_580"
+    },
+    {
+      "problem_id": 348,
+      "problem": "<image>\nDid he successfully erase all the writings on the white board? Choices: A. Yes. B. No.",
+      "data_type": "image",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "ERQA",
+      "answer": "B",
+      "images": [
+        "ERQA/erqa_1_100/ERQA_53_0.png"
+      ],
+      "problem_reserved_text": "Did he successfully erase all the writings on the white board? Choices: A. Yes. B. No.",
+      "source_dataset": "ER1.5_ERQA1_image_qa_580"
+    },
+    {
+      "problem_id": 284,
+      "problem": "<image>\n<image>\nHow did the position of the camera change from the first image to the second image? Choices: A. translate down and left. B. translate down and right. C. translate up and left. D. translate up and right. Please answer directly with only the letter of the correct option and nothing else.",
+      "data_type": "image",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "ERQA",
+      "answer": "A",
+      "images": [
+        "ERQA/erqa_200_400/ERQA_275_0.png"
+      ],
+      "problem_reserved_text": "How did the position of the camera change from the first image to the second image? Choices: A. translate down and left. B. translate down and right. C. translate up and left. D. translate up and right. Please answer directly with only the letter of the correct option and nothing else.",
+      "source_dataset": "ER1.5_ERQA1_image_qa_580"
+    },
+    {
+      "problem_id": 159,
+      "problem": "<image>\nThe next step of opening the oven door would have the hand moving in the direction pointed at by which arrow? Choices: A. green. B. pink. C. purple. D. red. Please answer directly with only the letter of the correct option and nothing else.",
+      "data_type": "image",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "ERQA",
+      "answer": "C",
+      "images": [
+        "ERQA/erqa_200_400/ERQA_254_0.png"
+      ],
+      "problem_reserved_text": "The next step of opening the oven door would have the hand moving in the direction pointed at by which arrow? Choices: A. green. B. pink. C. purple. D. red. Please answer directly with only the letter of the correct option and nothing else.",
+      "source_dataset": "ER1.5_ERQA1_image_qa_580"
+    },
+    {
+      "problem_id": 3545,
+      "problem": "<image>\nWhich is below, green leafy tree at left or green leafy tree at right? Choices: A. Green leafy tree at left. B. Green leafy tree at right. Please answer directly with only the letter of the correct option and nothing else.",
+      "data_type": "image",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "ERQA",
+      "answer": "A",
+      "images": [
+        "ERQA/erqa_positive/54a9fa0fe8a33aa4.jpg"
+      ],
+      "problem_reserved_text": "Which is below, green leafy tree at left or green leafy tree at right? Choices: A. Green leafy tree at left. B. Green leafy tree at right. Please answer directly with only the letter of the correct option and nothing else.",
+      "source_dataset": "ER1.5_ERQA2_image_qa_10k"
+    },
+    {
+      "problem_id": 5545,
+      "problem": "<image>\nIs shiny silver convertible at center thinner than leather jacket at center? Choices: A. Yes. B. No. C. They are the same width. D. Cannot be determined. Please answer directly with only the letter of the correct option and nothing else.",
+      "data_type": "image",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "ERQA",
+      "answer": "B",
+      "images": [
+        "ERQA/erqa_positive/b62fd8b973f0ff7f.jpg"
+      ],
+      "problem_reserved_text": "Is shiny silver convertible at center thinner than leather jacket at center? Choices: A. Yes. B. No. C. They are the same width. D. Cannot be determined. Please answer directly with only the letter of the correct option and nothing else.",
+      "source_dataset": "ER1.5_ERQA2_image_qa_10k"
+    },
+    {
+      "problem_id": 1684,
+      "problem": "<image>\nIs green textured palm tree at center bigger than orange fuzzy bush at center? Choices: A. No. B. Yes. Please answer directly with only the letter of the correct option and nothing else.",
+      "data_type": "image",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "ERQA",
+      "answer": "A",
+      "images": [
+        "ERQA/erqa_positive/c7d04252de5128c7.jpg"
+      ],
+      "problem_reserved_text": "Is green textured palm tree at center bigger than orange fuzzy bush at center? Choices: A. No. B. Yes. Please answer directly with only the letter of the correct option and nothing else.",
+      "source_dataset": "ER1.5_ERQA2_image_qa_10k"
+    },
+    {
+      "problem_id": 1529,
+      "problem": "<image>\nWhat do you see at coordinate (673, 481)? Choices: A. Beige cotton shirt. B. Gray fabric shirt. C. Green wall. D. Metal fence. Please answer directly with only the letter of the correct option and nothing else.",
+      "data_type": "image",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "ERQA",
+      "answer": "A",
+      "images": [
+        "ERQA/erqa_positive/03b0e5f63d198459.jpg"
+      ],
+      "problem_reserved_text": "What do you see at coordinate (673, 481)? Choices: A. Beige cotton shirt. B. Gray fabric shirt. C. Green wall. D. Metal fence. Please answer directly with only the letter of the correct option and nothing else.",
+      "source_dataset": "ER1.5_ERQA2_image_qa_10k"
+    },
+    {
+      "problem_id": 6258,
+      "problem": "<image>\nWho is positioned more to the right, shiny brown wood at lower left or matte black picture frame at center? Choices: A. Matte black picture frame at center. B. Shiny brown wood at lower left. C. Both are equally to the right. D. It is unclear from the image. Please answer directly with only the letter of the correct option and nothing else.",
+      "data_type": "image",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "ERQA",
+      "answer": "A",
+      "images": [
+        "ERQA/erqa_positive/4a7ade39d8ded828.jpg"
+      ],
+      "problem_reserved_text": "Who is positioned more to the right, shiny brown wood at lower left or matte black picture frame at center? Choices: A. Matte black picture frame at center. B. Shiny brown wood at lower left. C. Both are equally to the right. D. It is unclear from the image. Please answer directly with only the letter of the correct option and nothing else.",
+      "source_dataset": "ER1.5_ERQA2_image_qa_10k"
+    },
+    {
+      "problem_id": 801584,
+      "problem": "<video> <image> Considering the progress shown in the video and my current observation shown in the image, what action should I take next in order to put away cutlery? A. put away spoon. B. put down forks. C. pick up spoon. D. pick up basket.Please answer directly with the correct option.",
+      "data_type": "mixed",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "EgoPlan",
+      "answer": "A",
+      "images": [
+        "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/original_P11_109-0000009909.png"
+      ],
+      "videos": [
+        [
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00001.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00002.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00003.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00004.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00005.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00006.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00007.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00008.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00009.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00010.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00011.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00012.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00013.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00014.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00015.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00016.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00017.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00018.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00019.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00020.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00021.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00022.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00023.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00024.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00025.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00026.jpg",
+          "Egoplan2/processed_videos_frames/P11_109-0000009089_0000009909_processed_fixed/00027.jpg"
+        ]
+      ],
+      "problem_reserved_text": "Considering the progress shown in the video and my current observation shown in the image, what action should I take next in order to put away cutlery? A. put away spoon. B. put down forks. C. pick up spoon. D. pick up basket.Please answer directly with the correct option.",
+      "source_dataset": "ER1.5_EgoPlan_mixed_qa_10k"
+    },
+    {
+      "problem_id": 805881,
+      "problem": "<video> <image> Considering the progress shown in the video and my current observation shown in the image, what action should I take next in order to open fridge, pick up cheese and pesto, and close fridge? A. pick up pesto. B. close fridge. C. pick up cheese. D. open fridge.Please answer directly with the correct option.",
+      "data_type": "mixed",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "EgoPlan",
+      "answer": "B",
+      "images": [
+        "Egoplan2/processed_videos_frames/P26_11-0000000974_0000001201_processed_fixed/original_P26_11-0000001201.png"
+      ],
+      "videos": [
+        [
+          "Egoplan2/processed_videos_frames/P26_11-0000000974_0000001201_processed_fixed/00001.jpg",
+          "Egoplan2/processed_videos_frames/P26_11-0000000974_0000001201_processed_fixed/00002.jpg",
+          "Egoplan2/processed_videos_frames/P26_11-0000000974_0000001201_processed_fixed/00003.jpg",
+          "Egoplan2/processed_videos_frames/P26_11-0000000974_0000001201_processed_fixed/00004.jpg",
+          "Egoplan2/processed_videos_frames/P26_11-0000000974_0000001201_processed_fixed/00005.jpg",
+          "Egoplan2/processed_videos_frames/P26_11-0000000974_0000001201_processed_fixed/00006.jpg",
+          "Egoplan2/processed_videos_frames/P26_11-0000000974_0000001201_processed_fixed/00007.jpg"
+        ]
+      ],
+      "problem_reserved_text": "Considering the progress shown in the video and my current observation shown in the image, what action should I take next in order to open fridge, pick up cheese and pesto, and close fridge? A. pick up pesto. B. close fridge. C. pick up cheese. D. open fridge.Please answer directly with the correct option.",
+      "source_dataset": "ER1.5_EgoPlan_mixed_qa_10k"
+    },
+    {
+      "problem_id": 805635,
+      "problem": "<video> <image> Considering the progress shown in the video and my current observation shown in the image, what action should I take next in order to add salt to pasta and store the salt? A. put salt in pasta. B. put down pasta box. C. close cabinet. D. put down salt.Please answer directly with the correct option.",
+      "data_type": "mixed",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "EgoPlan",
+      "answer": "B",
+      "images": [
+        "Egoplan2/processed_videos_frames/P26_13-0000003625_0000003700_processed_fixed/original_P26_13-0000003700.png"
+      ],
+      "videos": [
+        [
+          "Egoplan2/processed_videos_frames/P26_13-0000003625_0000003700_processed_fixed/00001.jpg",
+          "Egoplan2/processed_videos_frames/P26_13-0000003625_0000003700_processed_fixed/00002.jpg"
+        ]
+      ],
+      "problem_reserved_text": "Considering the progress shown in the video and my current observation shown in the image, what action should I take next in order to add salt to pasta and store the salt? A. put salt in pasta. B. put down pasta box. C. close cabinet. D. put down salt.Please answer directly with the correct option.",
+      "source_dataset": "ER1.5_EgoPlan_mixed_qa_10k"
+    },
+    {
+      "problem_id": 809891,
+      "problem": "<video> <image> Considering the progress shown in the video and my current observation shown in the image, what action should I take next in order to wash and put away saucer? A. pick up washing up brush. B. put down washing up brush. C. shake off washing up brush. D. pick up saucer.Please answer directly with the correct option.",
+      "data_type": "mixed",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "EgoPlan",
+      "answer": "B",
+      "images": [
+        "Egoplan2/processed_videos_frames/P03_109-0000024102_0000024268_processed_fixed/original_P03_109-0000024268.png"
+      ],
+      "videos": [
+        [
+          "Egoplan2/processed_videos_frames/P03_109-0000024102_0000024268_processed_fixed/00001.jpg",
+          "Egoplan2/processed_videos_frames/P03_109-0000024102_0000024268_processed_fixed/00002.jpg",
+          "Egoplan2/processed_videos_frames/P03_109-0000024102_0000024268_processed_fixed/00003.jpg",
+          "Egoplan2/processed_videos_frames/P03_109-0000024102_0000024268_processed_fixed/00004.jpg",
+          "Egoplan2/processed_videos_frames/P03_109-0000024102_0000024268_processed_fixed/00005.jpg"
+        ]
+      ],
+      "problem_reserved_text": "Considering the progress shown in the video and my current observation shown in the image, what action should I take next in order to wash and put away saucer? A. pick up washing up brush. B. put down washing up brush. C. shake off washing up brush. D. pick up saucer.Please answer directly with the correct option.",
+      "source_dataset": "ER1.5_EgoPlan_mixed_qa_10k"
+    },
+    {
+      "problem_id": 804333,
+      "problem": "<video> <image> Considering the progress shown in the video and my current observation shown in the image, what action should I take next in order to cook potatoes in oven? A. remove oven glove. B. paste olive oil onto potatoes. C. pick up baking tray. D. put oven glove down.Please answer directly with the correct option.",
+      "data_type": "mixed",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "EgoPlan",
+      "answer": "C",
+      "images": [
+        "Egoplan2/processed_videos_frames/P29_05-0000107309_0000108007_processed_fixed/original_P29_05-0000108007.png"
+      ],
+      "videos": [
+        [
+          "Egoplan2/processed_videos_frames/P29_05-0000107309_0000108007_processed_fixed/00001.jpg",
+          "Egoplan2/processed_videos_frames/P29_05-0000107309_0000108007_processed_fixed/00002.jpg",
+          "Egoplan2/processed_videos_frames/P29_05-0000107309_0000108007_processed_fixed/00003.jpg",
+          "Egoplan2/processed_videos_frames/P29_05-0000107309_0000108007_processed_fixed/00004.jpg",
+          "Egoplan2/processed_videos_frames/P29_05-0000107309_0000108007_processed_fixed/00005.jpg",
+          "Egoplan2/processed_videos_frames/P29_05-0000107309_0000108007_processed_fixed/00006.jpg",
+          "Egoplan2/processed_videos_frames/P29_05-0000107309_0000108007_processed_fixed/00007.jpg",
+          "Egoplan2/processed_videos_frames/P29_05-0000107309_0000108007_processed_fixed/00008.jpg",
+          "Egoplan2/processed_videos_frames/P29_05-0000107309_0000108007_processed_fixed/00009.jpg",
+          "Egoplan2/processed_videos_frames/P29_05-0000107309_0000108007_processed_fixed/00010.jpg",
+          "Egoplan2/processed_videos_frames/P29_05-0000107309_0000108007_processed_fixed/00011.jpg",
+          "Egoplan2/processed_videos_frames/P29_05-0000107309_0000108007_processed_fixed/00012.jpg",
+          "Egoplan2/processed_videos_frames/P29_05-0000107309_0000108007_processed_fixed/00013.jpg",
+          "Egoplan2/processed_videos_frames/P29_05-0000107309_0000108007_processed_fixed/00014.jpg",
+          "Egoplan2/processed_videos_frames/P29_05-0000107309_0000108007_processed_fixed/00015.jpg",
+          "Egoplan2/processed_videos_frames/P29_05-0000107309_0000108007_processed_fixed/00016.jpg",
+          "Egoplan2/processed_videos_frames/P29_05-0000107309_0000108007_processed_fixed/00017.jpg",
+          "Egoplan2/processed_videos_frames/P29_05-0000107309_0000108007_processed_fixed/00018.jpg",
+          "Egoplan2/processed_videos_frames/P29_05-0000107309_0000108007_processed_fixed/00019.jpg",
+          "Egoplan2/processed_videos_frames/P29_05-0000107309_0000108007_processed_fixed/00020.jpg",
+          "Egoplan2/processed_videos_frames/P29_05-0000107309_0000108007_processed_fixed/00021.jpg",
+          "Egoplan2/processed_videos_frames/P29_05-0000107309_0000108007_processed_fixed/00022.jpg",
+          "Egoplan2/processed_videos_frames/P29_05-0000107309_0000108007_processed_fixed/00023.jpg"
+        ]
+      ],
+      "problem_reserved_text": "Considering the progress shown in the video and my current observation shown in the image, what action should I take next in order to cook potatoes in oven? A. remove oven glove. B. paste olive oil onto potatoes. C. pick up baking tray. D. put oven glove down.Please answer directly with the correct option.",
+      "source_dataset": "ER1.5_EgoPlan_mixed_qa_10k"
+    },
+    {
+      "problem_id": "8611",
+      "problem": "<image> You are observing a human performing a manipulation task. The task instruction is: close Trash Can. Use 2D points to trace the movement trajectory of the manipulated object (not the human hand) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 4.",
+      "data_type": "image",
+      "problem_type": "trace",
+      "options": [],
+      "data_source": "HOI4D-Trace",
+      "answer": [
+        {
+          "point_2d": [
+            494,
+            583
+          ]
+        },
+        {
+          "point_2d": [
+            492,
+            622
+          ]
+        },
+        {
+          "point_2d": [
+            489,
+            692
+          ]
+        },
+        {
+          "point_2d": [
+            486,
+            700
+          ]
+        }
+      ],
+      "problem_reserved_text": "You are observing a human performing a manipulation task. The task instruction is: close Trash Can. Use 2D points to trace the movement trajectory of the manipulated object (not the human hand) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 4.",
+      "images": [
+        "HOI4D-Trace/images/8611.jpg"
+      ],
+      "source_dataset": "ER1.5_HOI4D-Trace_image_trace_8k"
+    },
+    {
+      "problem_id": "29805",
+      "problem": "<image> You are observing a human performing a manipulation task. The task instruction is: close Safe. Use 2D points to trace the movement trajectory of the manipulated object (not the human hand) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 4.",
+      "data_type": "image",
+      "problem_type": "trace",
+      "options": [],
+      "data_source": "HOI4D-Trace",
+      "answer": [
+        {
+          "point_2d": [
+            461,
+            668
+          ]
+        },
+        {
+          "point_2d": [
+            401,
+            565
+          ]
+        },
+        {
+          "point_2d": [
+            379,
+            491
+          ]
+        },
+        {
+          "point_2d": [
+            376,
+            459
+          ]
+        }
+      ],
+      "problem_reserved_text": "You are observing a human performing a manipulation task. The task instruction is: close Safe. Use 2D points to trace the movement trajectory of the manipulated object (not the human hand) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 4.",
+      "images": [
+        "HOI4D-Trace/images/29805.jpg"
+      ],
+      "source_dataset": "ER1.5_HOI4D-Trace_image_trace_8k"
+    },
+    {
+      "problem_id": "13304",
+      "problem": "<image> You are observing a human performing a manipulation task. The task instruction is: put down Toy Car. Use 2D points to trace the movement trajectory of the manipulated object (not the human hand) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 4.",
+      "data_type": "image",
+      "problem_type": "trace",
+      "options": [],
+      "data_source": "HOI4D-Trace",
+      "answer": [
+        {
+          "point_2d": [
+            486,
+            568
+          ]
+        },
+        {
+          "point_2d": [
+            489,
+            649
+          ]
+        },
+        {
+          "point_2d": [
+            490,
+            652
+          ]
+        },
+        {
+          "point_2d": [
+            495,
+            647
+          ]
+        }
+      ],
+      "problem_reserved_text": "You are observing a human performing a manipulation task. The task instruction is: put down Toy Car. Use 2D points to trace the movement trajectory of the manipulated object (not the human hand) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 4.",
+      "images": [
+        "HOI4D-Trace/images/13304.jpg"
+      ],
+      "source_dataset": "ER1.5_HOI4D-Trace_image_trace_8k"
+    },
+    {
+      "problem_id": "9690",
+      "problem": "<image> You are observing a human performing a manipulation task. The task instruction is: pick up Knife. Use 2D points to trace the movement trajectory of the manipulated object (not the human hand) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 4.",
+      "data_type": "image",
+      "problem_type": "trace",
+      "options": [],
+      "data_source": "HOI4D-Trace",
+      "answer": [
+        {
+          "point_2d": [
+            632,
+            647
+          ]
+        },
+        {
+          "point_2d": [
+            643,
+            592
+          ]
+        },
+        {
+          "point_2d": [
+            651,
+            533
+          ]
+        },
+        {
+          "point_2d": [
+            637,
+            495
+          ]
+        }
+      ],
+      "problem_reserved_text": "You are observing a human performing a manipulation task. The task instruction is: pick up Knife. Use 2D points to trace the movement trajectory of the manipulated object (not the human hand) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 4.",
+      "images": [
+        "HOI4D-Trace/images/9690.jpg"
+      ],
+      "source_dataset": "ER1.5_HOI4D-Trace_image_trace_8k"
+    },
+    {
+      "problem_id": "17150",
+      "problem": "<image> You are observing a human performing a manipulation task. The task instruction is: open Safe. Use 2D points to trace the movement trajectory of the manipulated object (not the human hand) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 4.",
+      "data_type": "image",
+      "problem_type": "trace",
+      "options": [],
+      "data_source": "HOI4D-Trace",
+      "answer": [
+        {
+          "point_2d": [
+            511,
+            579
+          ]
+        },
+        {
+          "point_2d": [
+            533,
+            598
+          ]
+        },
+        {
+          "point_2d": [
+            551,
+            600
+          ]
+        },
+        {
+          "point_2d": [
+            545,
+            601
+          ]
+        }
+      ],
+      "problem_reserved_text": "You are observing a human performing a manipulation task. The task instruction is: open Safe. Use 2D points to trace the movement trajectory of the manipulated object (not the human hand) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 4.",
+      "images": [
+        "HOI4D-Trace/images/17150.jpg"
+      ],
+      "source_dataset": "ER1.5_HOI4D-Trace_image_trace_8k"
+    },
+    {
+      "problem_id": "handal_4124",
+      "problem": "<image> Which part of the tool is designed to be held during automotive repairs? Use pointing to answer questions. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "Handal",
+      "answer": [
+        {
+          "segmentation": [
+            [
+              610,
+              467
+            ],
+            [
+              598,
+              453
+            ],
+            [
+              565,
+              450
+            ],
+            [
+              510,
+              453
+            ],
+            [
+              500,
+              472
+            ],
+            [
+              517,
+              492
+            ],
+            [
+              606,
+              486
+            ]
+          ]
+        }
+      ],
+      "problem_reserved_text": "Which part of the tool is designed to be held during automotive repairs? Use pointing to answer questions. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "images": [
+        "handal_images/4124_0.png"
+      ],
+      "source_dataset": "ER1.5_HandAL_image_point_32k"
+    },
+    {
+      "problem_id": "handal_30492",
+      "problem": "<image> Locate the part that directly interacts with the environment during clamping objects. Use pointing to answer questions. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "Handal",
+      "answer": [
+        {
+          "segmentation": [
+            [
+              519,
+              450
+            ],
+            [
+              504,
+              492
+            ],
+            [
+              477,
+              528
+            ],
+            [
+              544,
+              556
+            ],
+            [
+              550,
+              542
+            ],
+            [
+              523,
+              506
+            ],
+            [
+              556,
+              503
+            ],
+            [
+              560,
+              492
+            ]
+          ]
+        }
+      ],
+      "problem_reserved_text": "Locate the part that directly interacts with the environment during clamping objects. Use pointing to answer questions. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "images": [
+        "handal_images/30492_0.png"
+      ],
+      "source_dataset": "ER1.5_HandAL_image_point_32k"
+    },
+    {
+      "problem_id": "handal_12500",
+      "problem": "<image> What is the active surface or edge required for loosening screws? Use pointing to answer questions. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "Handal",
+      "answer": [
+        {
+          "segmentation": [
+            [
+              723,
+              225
+            ],
+            [
+              710,
+              222
+            ],
+            [
+              721,
+              236
+            ],
+            [
+              712,
+              258
+            ],
+            [
+              700,
+              261
+            ],
+            [
+              690,
+              250
+            ],
+            [
+              696,
+              225
+            ],
+            [
+              688,
+              253
+            ],
+            [
+              704,
+              264
+            ],
+            [
+              719,
+              258
+            ],
+            [
+              725,
+              247
+            ]
+          ]
+        }
+      ],
+      "problem_reserved_text": "What is the active surface or edge required for loosening screws? Use pointing to answer questions. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "images": [
+        "handal_images/12500_0.png"
+      ],
+      "source_dataset": "ER1.5_HandAL_image_point_32k"
+    },
+    {
+      "problem_id": "handal_2601",
+      "problem": "<image> Point out the part that performs the action of beating eggs. Use pointing to answer questions. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "Handal",
+      "answer": [
+        {
+          "segmentation": [
+            [
+              379,
+              528
+            ],
+            [
+              369,
+              522
+            ],
+            [
+              365,
+              492
+            ],
+            [
+              262,
+              564
+            ],
+            [
+              254,
+              592
+            ],
+            [
+              273,
+              603
+            ]
+          ]
+        }
+      ],
+      "problem_reserved_text": "Point out the part that performs the action of beating eggs. Use pointing to answer questions. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "images": [
+        "handal_images/2601_0.png"
+      ],
+      "source_dataset": "ER1.5_HandAL_image_point_32k"
+    },
+    {
+      "problem_id": "handal_18240",
+      "problem": "<image> Show me the handle or gripping surface for gripping objects. Use pointing to answer questions. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "Handal",
+      "answer": [
+        {
+          "segmentation": [
+            [
+              452,
+              422
+            ],
+            [
+              431,
+              426
+            ],
+            [
+              415,
+              474
+            ],
+            [
+              379,
+              656
+            ],
+            [
+              398,
+              652
+            ],
+            [
+              458,
+              444
+            ]
+          ]
+        }
+      ],
+      "problem_reserved_text": "Show me the handle or gripping surface for gripping objects. Use pointing to answer questions. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "images": [
+        "handal_images/18240_0.png"
+      ],
+      "source_dataset": "ER1.5_HandAL_image_point_32k"
+    },
+    {
+      "problem_id": "instructpart_000600_0",
+      "problem": "<image>Identify the part of the bench designed for sitting.. Use pointing to answer questions. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "InstructPart",
+      "answer": [
+        {
+          "segmentation": [
+            [
+              710,
+              531
+            ],
+            [
+              693,
+              528
+            ],
+            [
+              599,
+              522
+            ],
+            [
+              509,
+              544
+            ],
+            [
+              451,
+              558
+            ],
+            [
+              320,
+              587
+            ],
+            [
+              309,
+              597
+            ],
+            [
+              318,
+              622
+            ],
+            [
+              349,
+              621
+            ],
+            [
+              374,
+              628
+            ],
+            [
+              394,
+              631
+            ],
+            [
+              407,
+              632
+            ],
+            [
+              442,
+              635
+            ],
+            [
+              473,
+              637
+            ],
+            [
+              708,
+              544
+            ]
+          ]
+        }
+      ],
+      "problem_reserved_text": "Identify the part of the bench designed for sitting.",
+      "images": [
+        "InstructPart/instructpart_000600.jpg"
+      ],
+      "source_dataset": "ER1.5_InstructPart_image_point_4k"
+    },
+    {
+      "problem_id": "instructpart_001698_1",
+      "problem": "<image>Indicate the part of the scissors in the picture used for cutting.. Use pointing to answer questions. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "InstructPart",
+      "answer": [
+        {
+          "segmentation": [
+            [
+              545,
+              115
+            ],
+            [
+              533,
+              139
+            ],
+            [
+              619,
+              371
+            ],
+            [
+              711,
+              606
+            ],
+            [
+              736,
+              585
+            ],
+            [
+              764,
+              565
+            ],
+            [
+              794,
+              622
+            ],
+            [
+              751,
+              54
+            ],
+            [
+              741,
+              27
+            ],
+            [
+              720,
+              55
+            ],
+            [
+              726,
+              185
+            ],
+            [
+              748,
+              509
+            ],
+            [
+              728,
+              464
+            ],
+            [
+              705,
+              408
+            ],
+            [
+              562,
+              101
+            ]
+          ]
+        }
+      ],
+      "problem_reserved_text": "Indicate the part of the scissors in the picture used for cutting.",
+      "images": [
+        "InstructPart/instructpart_001698.jpg"
+      ],
+      "source_dataset": "ER1.5_InstructPart_image_point_4k"
+    },
+    {
+      "problem_id": "instructpart_001287_0",
+      "problem": "<image>Which part of the knife is safe to hold when picking it up?. Use pointing to answer questions. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "InstructPart",
+      "answer": [
+        {
+          "segmentation": [
+            [
+              599,
+              302
+            ],
+            [
+              583,
+              365
+            ],
+            [
+              585,
+              424
+            ],
+            [
+              604,
+              460
+            ],
+            [
+              697,
+              497
+            ],
+            [
+              727,
+              509
+            ],
+            [
+              772,
+              526
+            ],
+            [
+              999,
+              600
+            ],
+            [
+              945,
+              335
+            ],
+            [
+              914,
+              328
+            ],
+            [
+              810,
+              303
+            ],
+            [
+              743,
+              283
+            ],
+            [
+              720,
+              277
+            ],
+            [
+              653,
+              259
+            ],
+            [
+              611,
+              279
+            ]
+          ]
+        }
+      ],
+      "problem_reserved_text": "Which part of the knife is safe to hold when picking it up?",
+      "images": [
+        "InstructPart/instructpart_001287.jpg"
+      ],
+      "source_dataset": "ER1.5_InstructPart_image_point_4k"
+    },
+    {
+      "problem_id": "instructpart_001266_1",
+      "problem": "<image>If I want to pick up the knife, which part in the picture can be used?. Use pointing to answer questions. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "InstructPart",
+      "answer": [
+        {
+          "segmentation": [
+            [
+              296,
+              100
+            ],
+            [
+              304,
+              134
+            ],
+            [
+              311,
+              184
+            ],
+            [
+              315,
+              235
+            ],
+            [
+              350,
+              258
+            ],
+            [
+              369,
+              289
+            ],
+            [
+              374,
+              309
+            ],
+            [
+              398,
+              337
+            ],
+            [
+              416,
+              334
+            ],
+            [
+              393,
+              302
+            ],
+            [
+              421,
+              289
+            ],
+            [
+              455,
+              277
+            ],
+            [
+              474,
+              264
+            ],
+            [
+              389,
+              165
+            ],
+            [
+              298,
+              101
+            ]
+          ]
+        }
+      ],
+      "problem_reserved_text": "If I want to pick up the knife, which part in the picture can be used?",
+      "images": [
+        "InstructPart/instructpart_001266.jpg"
+      ],
+      "source_dataset": "ER1.5_InstructPart_image_point_4k"
+    },
+    {
+      "problem_id": "instructpart_001764_1",
+      "problem": "<image>Where is the touchpad of the laptop in this image?. Use pointing to answer questions. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "InstructPart",
+      "answer": [
+        {
+          "segmentation": [
+            [
+              237,
+              762
+            ],
+            [
+              267,
+              781
+            ],
+            [
+              303,
+              795
+            ],
+            [
+              329,
+              809
+            ],
+            [
+              360,
+              819
+            ],
+            [
+              390,
+              828
+            ],
+            [
+              434,
+              807
+            ],
+            [
+              467,
+              746
+            ],
+            [
+              459,
+              720
+            ],
+            [
+              428,
+              708
+            ],
+            [
+              395,
+              697
+            ],
+            [
+              360,
+              687
+            ],
+            [
+              335,
+              676
+            ],
+            [
+              298,
+              671
+            ],
+            [
+              237,
+              758
+            ]
+          ]
+        }
+      ],
+      "problem_reserved_text": "Where is the touchpad of the laptop in this image?",
+      "images": [
+        "InstructPart/instructpart_001764.jpg"
+      ],
+      "source_dataset": "ER1.5_InstructPart_image_point_4k"
+    },
+    {
+      "problem_id": "chunk-160_episode_160073",
+      "problem": "<image> You are currently a robot performing robotic manipulation tasks. The task instruction is: put the soccer ball that’s near the lenovo laptop on top of the laptop. Use 2D points to trace the movement trajectory of the manipulated object (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "data_type": "image",
+      "problem_type": "trace",
+      "options": [],
+      "data_source": "InternData-Trace",
+      "answer": [
+        {
+          "point_2d": [
+            642,
+            608
+          ]
+        },
+        {
+          "point_2d": [
+            636,
+            449
+          ]
+        },
+        {
+          "point_2d": [
+            503,
+            568
+          ]
+        },
+        {
+          "point_2d": [
+            545,
+            489
+          ]
+        },
+        {
+          "point_2d": [
+            699,
+            468
+          ]
+        },
+        {
+          "point_2d": [
+            724,
+            666
+          ]
+        },
+        {
+          "point_2d": [
+            598,
+            803
+          ]
+        },
+        {
+          "point_2d": [
+            471,
+            810
+          ]
+        }
+      ],
+      "problem_reserved_text": "You are currently a robot performing robotic manipulation tasks. The task instruction is: put the soccer ball that’s near the lenovo laptop on top of the laptop. Use 2D points to trace the movement trajectory of the manipulated object (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "images": [
+        "InternData-Trace/dataset_frames/chunk-160_episode_160073.jpg"
+      ],
+      "source_dataset": "ER1.5_InternData-Trace_image_trace_10k"
+    },
+    {
+      "problem_id": "chunk-016_episode_016380",
+      "problem": "<image> You are currently a robot performing robotic manipulation tasks. The task instruction is: stack the cucumber atop the pile of books nearby. Use 2D points to trace the movement trajectory of the manipulated object (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "data_type": "image",
+      "problem_type": "trace",
+      "options": [],
+      "data_source": "InternData-Trace",
+      "answer": [
+        {
+          "point_2d": [
+            457,
+            628
+          ]
+        },
+        {
+          "point_2d": [
+            479,
+            576
+          ]
+        },
+        {
+          "point_2d": [
+            475,
+            491
+          ]
+        },
+        {
+          "point_2d": [
+            521,
+            466
+          ]
+        },
+        {
+          "point_2d": [
+            564,
+            501
+          ]
+        },
+        {
+          "point_2d": [
+            564,
+            585
+          ]
+        },
+        {
+          "point_2d": [
+            547,
+            666
+          ]
+        },
+        {
+          "point_2d": [
+            542,
+            686
+          ]
+        }
+      ],
+      "problem_reserved_text": "You are currently a robot performing robotic manipulation tasks. The task instruction is: stack the cucumber atop the pile of books nearby. Use 2D points to trace the movement trajectory of the manipulated object (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "images": [
+        "InternData-Trace/dataset_frames/chunk-016_episode_016380.jpg"
+      ],
+      "source_dataset": "ER1.5_InternData-Trace_image_trace_10k"
+    },
+    {
+      "problem_id": "chunk-074_episode_074322",
+      "problem": "<image> You are currently a robot performing robotic manipulation tasks. The task instruction is: stack the blue, cylindrical container on the circular decorative bowl. Use 2D points to trace the movement trajectory of the manipulated object (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "data_type": "image",
+      "problem_type": "trace",
+      "options": [],
+      "data_source": "InternData-Trace",
+      "answer": [
+        {
+          "point_2d": [
+            660,
+            480
+          ]
+        },
+        {
+          "point_2d": [
+            648,
+            396
+          ]
+        },
+        {
+          "point_2d": [
+            658,
+            319
+          ]
+        },
+        {
+          "point_2d": [
+            743,
+            309
+          ]
+        },
+        {
+          "point_2d": [
+            828,
+            309
+          ]
+        },
+        {
+          "point_2d": [
+            876,
+            361
+          ]
+        },
+        {
+          "point_2d": [
+            890,
+            467
+          ]
+        },
+        {
+          "point_2d": [
+            908,
+            546
+          ]
+        }
+      ],
+      "problem_reserved_text": "You are currently a robot performing robotic manipulation tasks. The task instruction is: stack the blue, cylindrical container on the circular decorative bowl. Use 2D points to trace the movement trajectory of the manipulated object (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "images": [
+        "InternData-Trace/dataset_frames/chunk-074_episode_074322.jpg"
+      ],
+      "source_dataset": "ER1.5_InternData-Trace_image_trace_10k"
+    },
+    {
+      "problem_id": "chunk-030_episode_030891",
+      "problem": "<image> You are currently a robot performing robotic manipulation tasks. The task instruction is: move the toaster so it rests above the pile of books. Use 2D points to trace the movement trajectory of the manipulated object (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "data_type": "image",
+      "problem_type": "trace",
+      "options": [],
+      "data_source": "InternData-Trace",
+      "answer": [
+        {
+          "point_2d": [
+            915,
+            603
+          ]
+        },
+        {
+          "point_2d": [
+            932,
+            512
+          ]
+        },
+        {
+          "point_2d": [
+            904,
+            430
+          ]
+        },
+        {
+          "point_2d": [
+            838,
+            383
+          ]
+        },
+        {
+          "point_2d": [
+            765,
+            356
+          ]
+        },
+        {
+          "point_2d": [
+            691,
+            335
+          ]
+        },
+        {
+          "point_2d": [
+            689,
+            401
+          ]
+        },
+        {
+          "point_2d": [
+            707,
+            470
+          ]
+        }
+      ],
+      "problem_reserved_text": "You are currently a robot performing robotic manipulation tasks. The task instruction is: move the toaster so it rests above the pile of books. Use 2D points to trace the movement trajectory of the manipulated object (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "images": [
+        "InternData-Trace/dataset_frames/chunk-030_episode_030891.jpg"
+      ],
+      "source_dataset": "ER1.5_InternData-Trace_image_trace_10k"
+    },
+    {
+      "problem_id": "chunk-207_episode_207772",
+      "problem": "<image> You are currently a robot performing robotic manipulation tasks. The task instruction is: adjust the microphone on its stand so that it rests above the old book located near the blue-handled pliers. Use 2D points to trace the movement trajectory of the manipulated object (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "data_type": "image",
+      "problem_type": "trace",
+      "options": [],
+      "data_source": "InternData-Trace",
+      "answer": [
+        {
+          "point_2d": [
+            593,
+            421
+          ]
+        },
+        {
+          "point_2d": [
+            534,
+            293
+          ]
+        },
+        {
+          "point_2d": [
+            397,
+            272
+          ]
+        },
+        {
+          "point_2d": [
+            375,
+            301
+          ]
+        },
+        {
+          "point_2d": [
+            401,
+            118
+          ]
+        },
+        {
+          "point_2d": [
+            378,
+            156
+          ]
+        },
+        {
+          "point_2d": [
+            386,
+            344
+          ]
+        },
+        {
+          "point_2d": [
+            418,
+            474
+          ]
+        }
+      ],
+      "problem_reserved_text": "You are currently a robot performing robotic manipulation tasks. The task instruction is: adjust the microphone on its stand so that it rests above the old book located near the blue-handled pliers. Use 2D points to trace the movement trajectory of the manipulated object (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "images": [
+        "InternData-Trace/dataset_frames/chunk-207_episode_207772.jpg"
+      ],
+      "source_dataset": "ER1.5_InternData-Trace_image_trace_10k"
+    },
+    {
+      "problem_id": "ref_l4_8163_o365_14259553",
+      "problem": "<image>\nLocate The vertical storage unit overflowing with CDs, positioned at the far left corner beside a vintage-style red armchair.. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "Ref-L4",
+      "answer": [
+        {
+          "box_2d": [
+            20,
+            25,
+            210,
+            641
+          ]
+        }
+      ],
+      "problem_reserved_text": "Locate The vertical storage unit overflowing with CDs, positioned at the far left corner beside a vintage-style red armchair.. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "images": [
+        "ref_l4/objects365_v2_01501233.jpg"
+      ],
+      "source_dataset": "ER1.5_Ref_L4_image_point_40k"
+    },
+    {
+      "problem_id": "ref_l4_3971_o365_12046499",
+      "problem": "<image>\nLocate A skateboard is placed under the feet of a person sitting on the bench, on the cement pathway.. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "Ref-L4",
+      "answer": [
+        {
+          "box_2d": [
+            572,
+            843,
+            713,
+            958
+          ]
+        }
+      ],
+      "problem_reserved_text": "Locate A skateboard is placed under the feet of a person sitting on the bench, on the cement pathway.. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "images": [
+        "ref_l4/objects365_v2_01407835.jpg"
+      ],
+      "source_dataset": "ER1.5_Ref_L4_image_point_40k"
+    },
+    {
+      "problem_id": "ref_l4_25133_coco_55261",
+      "problem": "<image>\nLocate The chestnut horse on the left, accompanied by a younger rider wearing a blue shirt, is distinguished by its white nose and protective turquoise leg wraps.. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "Ref-L4",
+      "answer": [
+        {
+          "box_2d": [
+            103,
+            272,
+            318,
+            956
+          ]
+        }
+      ],
+      "problem_reserved_text": "Locate The chestnut horse on the left, accompanied by a younger rider wearing a blue shirt, is distinguished by its white nose and protective turquoise leg wraps.. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "images": [
+        "ref_l4/COCO_train2014_000000273197.jpg"
+      ],
+      "source_dataset": "ER1.5_Ref_L4_image_point_40k"
+    },
+    {
+      "problem_id": "ref_l4_23062_coco_1727394",
+      "problem": "<image>\nLocate Seated at the dining table, the leftmost individual is adorned with a cream-colored turtleneck sweater.. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "Ref-L4",
+      "answer": [
+        {
+          "box_2d": [
+            3,
+            269,
+            266,
+            860
+          ]
+        }
+      ],
+      "problem_reserved_text": "Locate Seated at the dining table, the leftmost individual is adorned with a cream-colored turtleneck sweater.. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "images": [
+        "ref_l4/COCO_train2014_000000391739.jpg"
+      ],
+      "source_dataset": "ER1.5_Ref_L4_image_point_40k"
+    },
+    {
+      "problem_id": "ref_l4_40586_coco_461539",
+      "problem": "<image>\nLocate The woman with red hair stands in a kitchen, adorned with a black shawl and gazes downward.. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "Ref-L4",
+      "answer": [
+        {
+          "box_2d": [
+            508,
+            259,
+            762,
+            882
+          ]
+        }
+      ],
+      "problem_reserved_text": "Locate The woman with red hair stands in a kitchen, adorned with a black shawl and gazes downward.. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "images": [
+        "ref_l4/COCO_train2014_000000350280.jpg"
+      ],
+      "source_dataset": "ER1.5_Ref_L4_image_point_40k"
+    },
+    {
+      "problem_id": "47670044_33361409100375_4",
+      "problem": "<image>In the image, there is a woven wicker basket at lower left. Identify some points in the unoccupied region to the right of woven wicker basket at lower left. The answer should be presented in JSON format as follows: [{\"point_2d\": [x, y]}].",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "refspatial_3d",
+      "answer": [
+        {
+          "point_2d": [
+            415,
+            724
+          ]
+        }
+      ],
+      "problem_reserved_text": "In the image, there is a woven wicker basket at lower left. Identify some points in the unoccupied region to the right of woven wicker basket at lower left. The answer should be presented in JSON format as follows: [{\"point_2d\": [x, y]}].",
+      "images": [
+        "refspatial/3D/image/47670044_33361409100375_wide_image.png"
+      ],
+      "source_dataset": "ER1.5_Refspatial_image_point_60k"
+    },
+    {
+      "problem_id": "44358673_915089315375_4",
+      "problem": "<image>Where is a free space in front of clear glass vase at upper right? Please provide its 2D coordinates.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "refspatial_3d",
+      "answer": [
+        {
+          "point_2d": [
+            779,
+            391
+          ]
+        }
+      ],
+      "problem_reserved_text": "Where is a free space in front of clear glass vase at upper right? Please provide its 2D coordinates.",
+      "images": [
+        "refspatial/3D/image/44358673_915089315375_wide_image.png"
+      ],
+      "source_dataset": "ER1.5_Refspatial_image_point_60k"
+    },
+    {
+      "problem_id": "48458572_237567138541_1",
+      "problem": "<image>In the image, there is a blue and white ceramic mug at left, the fifth appliance when ordered from right to left. Locate some points within the free space in front of blue and white ceramic mug at left, the fifth appliance when ordered from right to left. The answer should be presented in JSON format as follows: [{\"point_2d\": [x, y]}].",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "refspatial_3d",
+      "answer": [
+        {
+          "point_2d": [
+            154,
+            715
+          ]
+        }
+      ],
+      "problem_reserved_text": "In the image, there is a blue and white ceramic mug at left, the fifth appliance when ordered from right to left. Locate some points within the free space in front of blue and white ceramic mug at left, the fifth appliance when ordered from right to left. The answer should be presented in JSON format as follows: [{\"point_2d\": [x, y]}].",
+      "images": [
+        "refspatial/3D/image/48458572_237567138541_wide_image.png"
+      ],
+      "source_dataset": "ER1.5_Refspatial_image_point_60k"
+    },
+    {
+      "problem_id": "32fe8c11eced44ad_turn_0",
+      "problem": "<image>Point to a free spot located on the laces of the football (American). The answer should be presented in JSON format as follows: [{\"point_2d\": [x, y]}].",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "refspatial_simulation",
+      "answer": [
+        {
+          "point_2d": [
+            374,
+            592
+          ]
+        }
+      ],
+      "problem_reserved_text": "Point to a free spot located on the laces of the football (American). The answer should be presented in JSON format as follows: [{\"point_2d\": [x, y]}].",
+      "images": [
+        "refspatial/Simulator/image/32fe8c11eced44ad.jpg"
+      ],
+      "source_dataset": "ER1.5_Refspatial_image_point_60k"
+    },
+    {
+      "problem_id": "289b0ae5b38c87fd_turn_0",
+      "problem": "<image>Give me the position of a free location that satisfies the following two spatial constraints: 1. on the shackle of the padlock; 2. on the right side of the shortest pear. The answer should be presented in JSON format as follows: [{\"point_2d\": [x, y]}].",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "refspatial_simulation",
+      "answer": [
+        {
+          "point_2d": [
+            307,
+            570
+          ]
+        }
+      ],
+      "problem_reserved_text": "Give me the position of a free location that satisfies the following two spatial constraints: 1. on the shackle of the padlock; 2. on the right side of the shortest pear. The answer should be presented in JSON format as follows: [{\"point_2d\": [x, y]}].",
+      "images": [
+        "refspatial/Simulator/image/289b0ae5b38c87fd.jpg"
+      ],
+      "source_dataset": "ER1.5_Refspatial_image_point_60k"
+    },
+    {
+      "problem_id": "fractal20220817_data_move_green_jalapeno_chip_bag_near_green_rice_chip_bag_556_q29",
+      "problem": "<image>The robot's task is to move green jalapeno chip bag near green rice chip bag. Which configuration shows the goal state that the robot should achieve?\n\nA. Configuration D\nB. None of the above\nC. Configuration B\nD. Configuration C\nE. Configuration E",
+      "data_type": "image",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "Robo2VLM",
+      "answer": "B",
+      "images": [
+        "robo2vlm_images/robo2vlm_623209.jpg"
+      ],
+      "problem_reserved_text": "The robot's task is to move green jalapeno chip bag near green rice chip bag. Which configuration shows the goal state that the robot should achieve?\n\nA. Configuration D\nB. None of the above\nC. Configuration B\nD. Configuration C\nE. Configuration E",
+      "source_dataset": "ER1.5_Robo2VLM_image_qa_10k"
+    },
+    {
+      "problem_id": "droid_uncover_the_lunch_box__pour_the_sweets_inside_it_into_the_mug_and_then_put_it_back_on_the_table_14783_q54",
+      "problem": "<image>The robot task is to uncover the lunch box, pour the sweets inside it into the mug and then put it back on the table. Which colored arrow correctly shows the direction the robot will move next?\n\nA. Yellow\nB. Blue\nC. Purple\nD. Green\nE. Red",
+      "data_type": "image",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "Robo2VLM",
+      "answer": "E",
+      "images": [
+        "robo2vlm_images/robo2vlm_535441.jpg"
+      ],
+      "problem_reserved_text": "The robot task is to uncover the lunch box, pour the sweets inside it into the mug and then put it back on the table. Which colored arrow correctly shows the direction the robot will move next?\n\nA. Yellow\nB. Blue\nC. Purple\nD. Green\nE. Red",
+      "source_dataset": "ER1.5_Robo2VLM_image_qa_10k"
+    },
+    {
+      "problem_id": "stanford_kuka_multimodal_dataset_converted_externally_to_rlds_insert_the_peg_into_the_hole_93_q89",
+      "problem": "<image>The robot is to insert the peg into the hole. Has the robot successfully completed the task?\n\nA. Yes\nB. Task was not attempted\nC. No\nD. Cannot be determined",
+      "data_type": "image",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "Robo2VLM",
+      "answer": "C",
+      "images": [
+        "robo2vlm_images/robo2vlm_12071.jpg"
+      ],
+      "problem_reserved_text": "The robot is to insert the peg into the hole. Has the robot successfully completed the task?\n\nA. Yes\nB. Task was not attempted\nC. No\nD. Cannot be determined",
+      "source_dataset": "ER1.5_Robo2VLM_image_qa_10k"
+    },
+    {
+      "problem_id": "droid_pick_up_the_black_pepper_shaker_from_the_bottom_left_shelf_and_place_it_laying_down_to_the_left_of_the_cup_holder_11202_q5",
+      "problem": "<image>In the image from ext1, which colored point is farthest from the camera?\n\nA. Purple\nB. Green\nC. Yellow\nD. Blue\nE. Red",
+      "data_type": "image",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "Robo2VLM",
+      "answer": "B",
+      "images": [
+        "robo2vlm_images/robo2vlm_90603.jpg"
+      ],
+      "problem_reserved_text": "In the image from ext1, which colored point is farthest from the camera?\n\nA. Purple\nB. Green\nC. Yellow\nD. Blue\nE. Red",
+      "source_dataset": "ER1.5_Robo2VLM_image_qa_10k"
+    },
+    {
+      "problem_id": "droid_use_the_yellow_towel_to_wipe_the_tabletop_13737_q28",
+      "problem": "<image>The robot's task is to use the yellow towel to wipe the tabletop. Which configuration shows the goal state that the robot should achieve?\n\nA. Configuration D\nB. Configuration B\nC. Configuration E\nD. None of the above\nE. Configuration C",
+      "data_type": "image",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "Robo2VLM",
+      "answer": "D",
+      "images": [
+        "robo2vlm_images/robo2vlm_606721.jpg"
+      ],
+      "problem_reserved_text": "The robot's task is to use the yellow towel to wipe the tabletop. Which configuration shows the goal state that the robot should achieve?\n\nA. Configuration D\nB. Configuration B\nC. Configuration E\nD. None of the above\nE. Configuration C",
+      "source_dataset": "ER1.5_Robo2VLM_image_qa_10k"
+    },
+    {
+      "problem_id": "a493bc88-9fbf-4b38-a7d3-46c5f5a4645f",
+      "problem": "<video>\nThis is a video of a robotic arm performing a task, please explain in detail the reason for the task failure.",
+      "data_type": "video",
+      "problem_type": "open-ended",
+      "options": [],
+      "data_source": "RoboFAC",
+      "answer": "The task was failed because the robot arm encountered a grasping error at the stage of trying to pick up the ball. Specifically, the gripper did not close properly to grasp the ball, which means it could not secure the ball and lift it as intended. This could be due to incorrect position calibration, insufficient force applied by the gripper, or a mechanical failure in the gripping mechanism.",
+      "problem_reserved_text": "This is a video of a robotic arm performing a task, please explain in detail the reason for the task failure.",
+      "videos": [
+        [
+          "RoboFAC/a493bc88-9fbf-4b38-a7d3-46c5f5a4645f_frame_000.jpg",
+          "RoboFAC/a493bc88-9fbf-4b38-a7d3-46c5f5a4645f_frame_001.jpg",
+          "RoboFAC/a493bc88-9fbf-4b38-a7d3-46c5f5a4645f_frame_002.jpg",
+          "RoboFAC/a493bc88-9fbf-4b38-a7d3-46c5f5a4645f_frame_003.jpg",
+          "RoboFAC/a493bc88-9fbf-4b38-a7d3-46c5f5a4645f_frame_004.jpg",
+          "RoboFAC/a493bc88-9fbf-4b38-a7d3-46c5f5a4645f_frame_005.jpg",
+          "RoboFAC/a493bc88-9fbf-4b38-a7d3-46c5f5a4645f_frame_006.jpg",
+          "RoboFAC/a493bc88-9fbf-4b38-a7d3-46c5f5a4645f_frame_007.jpg"
+        ]
+      ],
+      "source_dataset": "ER1.5_RoboFAC_video_qa_8k"
+    },
+    {
+      "problem_id": "7fc86dea-c251-41d1-8787-5017bd663777",
+      "problem": "<video>\nIn this video, an error happened while the robotic arm was performing the task, please suggest high-level recovery steps so the robot can continue and complete the task.",
+      "data_type": "video",
+      "problem_type": "open-ended",
+      "options": [],
+      "data_source": "RoboFAC",
+      "answer": "To recover from the failure, the robot arm should first retract to the initial position to avoid further interference. Then, it should adjust the grip parameters by increasing the pressure applied by the gripper when grasping the peg. After recalibrating, the robot arm should re-attempt the task by reaching for the peg again, ensuring a secure hold before proceeding to align the peg with the hole. Once the peg is securely grasped, the robot arm can slowly move to align the peg accurately with the hole in the box, then confidently insert the peg into the hole.",
+      "problem_reserved_text": "In this video, an error happened while the robotic arm was performing the task, please suggest high-level recovery steps so the robot can continue and complete the task.",
+      "videos": [
+        [
+          "RoboFAC/7fc86dea-c251-41d1-8787-5017bd663777_frame_000.jpg",
+          "RoboFAC/7fc86dea-c251-41d1-8787-5017bd663777_frame_001.jpg",
+          "RoboFAC/7fc86dea-c251-41d1-8787-5017bd663777_frame_002.jpg",
+          "RoboFAC/7fc86dea-c251-41d1-8787-5017bd663777_frame_003.jpg",
+          "RoboFAC/7fc86dea-c251-41d1-8787-5017bd663777_frame_004.jpg",
+          "RoboFAC/7fc86dea-c251-41d1-8787-5017bd663777_frame_005.jpg",
+          "RoboFAC/7fc86dea-c251-41d1-8787-5017bd663777_frame_006.jpg",
+          "RoboFAC/7fc86dea-c251-41d1-8787-5017bd663777_frame_007.jpg"
+        ]
+      ],
+      "source_dataset": "ER1.5_RoboFAC_video_qa_8k"
+    },
+    {
+      "problem_id": "580e30ce-4a17-4bd7-a561-c9d650b77a22",
+      "problem": "<video>\nThis is a video of a robotic arm performing a task, please identify the subtask stage where the error occurred. (Your answer should choose one of the following options: ['Reach for the cube on the table.', 'Push the lemon to the red bowl.', 'Open the microwave door.', \"Reach for the Rubik's cube.\", 'Move the L-shaped tool behind the strawberry.'])",
+      "data_type": "video",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "RoboFAC",
+      "answer": "Open the microwave door.",
+      "problem_reserved_text": "This is a video of a robotic arm performing a task, please identify the subtask stage where the error occurred. (Your answer should choose one of the following options: ['Reach for the cube on the table.', 'Push the lemon to the red bowl.', 'Open the microwave door.', \"Reach for the Rubik's cube.\", 'Move the L-shaped tool behind the strawberry.'])",
+      "videos": [
+        [
+          "RoboFAC/580e30ce-4a17-4bd7-a561-c9d650b77a22_frame_000.jpg",
+          "RoboFAC/580e30ce-4a17-4bd7-a561-c9d650b77a22_frame_001.jpg",
+          "RoboFAC/580e30ce-4a17-4bd7-a561-c9d650b77a22_frame_002.jpg",
+          "RoboFAC/580e30ce-4a17-4bd7-a561-c9d650b77a22_frame_003.jpg",
+          "RoboFAC/580e30ce-4a17-4bd7-a561-c9d650b77a22_frame_004.jpg",
+          "RoboFAC/580e30ce-4a17-4bd7-a561-c9d650b77a22_frame_005.jpg",
+          "RoboFAC/580e30ce-4a17-4bd7-a561-c9d650b77a22_frame_006.jpg",
+          "RoboFAC/580e30ce-4a17-4bd7-a561-c9d650b77a22_frame_007.jpg"
+        ]
+      ],
+      "source_dataset": "ER1.5_RoboFAC_video_qa_8k"
+    },
+    {
+      "problem_id": "bf8bb85f-2ff0-4e03-83bd-970516bf269d",
+      "problem": "<video>\nFrom the video of the robotic arm executing a task, give a detailed explanation of the reason behind the task failure.",
+      "data_type": "video",
+      "problem_type": "open-ended",
+      "options": [],
+      "data_source": "RoboFAC",
+      "answer": "The task failed because the robot arm was unable to grasp the fork successfully. During the grasping phase, the arm did not reach the appropriate position to align with the fork, resulting in it missing the target entirely. The misalignment prevented the gripper from properly engaging with the fork, which is critical for the subsequent actions in the task sequence. The failure can be attributed to a deviation in the expected positioning of the end-effector when attempting to grasp the object, leading directly to task completion failure.",
+      "problem_reserved_text": "From the video of the robotic arm executing a task, give a detailed explanation of the reason behind the task failure.",
+      "videos": [
+        [
+          "RoboFAC/bf8bb85f-2ff0-4e03-83bd-970516bf269d_frame_000.jpg",
+          "RoboFAC/bf8bb85f-2ff0-4e03-83bd-970516bf269d_frame_001.jpg",
+          "RoboFAC/bf8bb85f-2ff0-4e03-83bd-970516bf269d_frame_002.jpg",
+          "RoboFAC/bf8bb85f-2ff0-4e03-83bd-970516bf269d_frame_003.jpg",
+          "RoboFAC/bf8bb85f-2ff0-4e03-83bd-970516bf269d_frame_004.jpg",
+          "RoboFAC/bf8bb85f-2ff0-4e03-83bd-970516bf269d_frame_005.jpg",
+          "RoboFAC/bf8bb85f-2ff0-4e03-83bd-970516bf269d_frame_006.jpg",
+          "RoboFAC/bf8bb85f-2ff0-4e03-83bd-970516bf269d_frame_007.jpg"
+        ]
+      ],
+      "source_dataset": "ER1.5_RoboFAC_video_qa_8k"
+    },
+    {
+      "problem_id": "ba6cf680-28c3-46d6-8506-d51c66791fda",
+      "problem": "<video>\nThis is a video of a robotic arm performing a task, please identify the type of error that occurred during execution. (Your answer should choose one of the following options: ['Orientation deviation.', 'Step omission.', 'Wrong target object.', 'Timing error.', 'Grasping error.', 'Position deviation.'])",
+      "data_type": "video",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "RoboFAC",
+      "answer": "Position deviation.",
+      "problem_reserved_text": "This is a video of a robotic arm performing a task, please identify the type of error that occurred during execution. (Your answer should choose one of the following options: ['Orientation deviation.', 'Step omission.', 'Wrong target object.', 'Timing error.', 'Grasping error.', 'Position deviation.'])",
+      "videos": [
+        [
+          "RoboFAC/ba6cf680-28c3-46d6-8506-d51c66791fda_frame_000.jpg",
+          "RoboFAC/ba6cf680-28c3-46d6-8506-d51c66791fda_frame_001.jpg",
+          "RoboFAC/ba6cf680-28c3-46d6-8506-d51c66791fda_frame_002.jpg",
+          "RoboFAC/ba6cf680-28c3-46d6-8506-d51c66791fda_frame_003.jpg",
+          "RoboFAC/ba6cf680-28c3-46d6-8506-d51c66791fda_frame_004.jpg",
+          "RoboFAC/ba6cf680-28c3-46d6-8506-d51c66791fda_frame_005.jpg",
+          "RoboFAC/ba6cf680-28c3-46d6-8506-d51c66791fda_frame_006.jpg",
+          "RoboFAC/ba6cf680-28c3-46d6-8506-d51c66791fda_frame_007.jpg"
+        ]
+      ],
+      "source_dataset": "ER1.5_RoboFAC_video_qa_8k"
+    },
+    {
+      "problem_id": "RoboVQA_2339",
+      "problem": "<image> <image> <image> <image> <image> <image> <image> <image>\ncurrent goal is: Organize supplies into the caddy. what is the immediate next step?",
+      "data_type": "image",
+      "problem_type": "open-ended",
+      "options": [],
+      "data_source": "RoboVQA",
+      "answer": "put the blue pen in the right holder",
+      "problem_reserved_text": "current goal is: Organize supplies into the caddy. what is the immediate next step?",
+      "images": [
+        "robovqa_train/robovqa_187470/01.jpg",
+        "robovqa_train/robovqa_187470/02.jpg",
+        "robovqa_train/robovqa_187470/03.jpg",
+        "robovqa_train/robovqa_187470/04.jpg",
+        "robovqa_train/robovqa_187470/05.jpg",
+        "robovqa_train/robovqa_187470/06.jpg",
+        "robovqa_train/robovqa_187470/07.jpg",
+        "robovqa_train/robovqa_187470/08.jpg"
+      ],
+      "source_dataset": "ER1.5_RoboVQA_image_qa_20k"
+    },
+    {
+      "problem_id": "RoboVQA_19960",
+      "problem": "<image> <image> <image> <image> <image> <image> <image> <image>\nwhat action is possible right now?",
+      "data_type": "image",
+      "problem_type": "open-ended",
+      "options": [],
+      "data_source": "RoboVQA",
+      "answer": "put the orange in the bowl",
+      "problem_reserved_text": "what action is possible right now?",
+      "images": [
+        "robovqa_train/robovqa_012724/01.jpg",
+        "robovqa_train/robovqa_012724/02.jpg",
+        "robovqa_train/robovqa_012724/03.jpg",
+        "robovqa_train/robovqa_012724/04.jpg",
+        "robovqa_train/robovqa_012724/05.jpg",
+        "robovqa_train/robovqa_012724/06.jpg",
+        "robovqa_train/robovqa_012724/07.jpg",
+        "robovqa_train/robovqa_012724/08.jpg"
+      ],
+      "source_dataset": "ER1.5_RoboVQA_image_qa_20k"
+    },
+    {
+      "problem_id": "RoboVQA_5607",
+      "problem": "<image> <image> <image> <image> <image> <image> <image> <image>\nMove your arm close to the orange cable. is it satisfied?",
+      "data_type": "image",
+      "problem_type": "multiple choice",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "data_source": "RoboVQA",
+      "answer": "no",
+      "problem_reserved_text": "Move your arm close to the orange cable. is it satisfied?",
+      "images": [
+        "robovqa_train/robovqa_011715/01.jpg",
+        "robovqa_train/robovqa_011715/02.jpg",
+        "robovqa_train/robovqa_011715/03.jpg",
+        "robovqa_train/robovqa_011715/04.jpg",
+        "robovqa_train/robovqa_011715/05.jpg",
+        "robovqa_train/robovqa_011715/06.jpg",
+        "robovqa_train/robovqa_011715/07.jpg",
+        "robovqa_train/robovqa_011715/08.jpg"
+      ],
+      "source_dataset": "ER1.5_RoboVQA_image_qa_20k"
+    },
+    {
+      "problem_id": "RoboVQA_17502",
+      "problem": "<image> <image> <image> <image> <image> <image> <image> <image>\nPlace Blue pen inside the pen holder. is it satisfied?",
+      "data_type": "image",
+      "problem_type": "multiple choice",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "data_source": "RoboVQA",
+      "answer": "yes",
+      "problem_reserved_text": "Place Blue pen inside the pen holder. is it satisfied?",
+      "images": [
+        "robovqa_train/robovqa_184111/01.jpg",
+        "robovqa_train/robovqa_184111/02.jpg",
+        "robovqa_train/robovqa_184111/03.jpg",
+        "robovqa_train/robovqa_184111/04.jpg",
+        "robovqa_train/robovqa_184111/05.jpg",
+        "robovqa_train/robovqa_184111/06.jpg",
+        "robovqa_train/robovqa_184111/07.jpg",
+        "robovqa_train/robovqa_184111/08.jpg"
+      ],
+      "source_dataset": "ER1.5_RoboVQA_image_qa_20k"
+    },
+    {
+      "problem_id": "RoboVQA_8021",
+      "problem": "<image> <image> <image> <image> <image> <image> <image> <image>\nput the orange in the bowl. is it satisfied?",
+      "data_type": "image",
+      "problem_type": "multiple choice",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "data_source": "RoboVQA",
+      "answer": "yes",
+      "problem_reserved_text": "put the orange in the bowl. is it satisfied?",
+      "images": [
+        "robovqa_train/robovqa_112790/01.jpg",
+        "robovqa_train/robovqa_112790/02.jpg",
+        "robovqa_train/robovqa_112790/03.jpg",
+        "robovqa_train/robovqa_112790/04.jpg",
+        "robovqa_train/robovqa_112790/05.jpg",
+        "robovqa_train/robovqa_112790/06.jpg",
+        "robovqa_train/robovqa_112790/07.jpg",
+        "robovqa_train/robovqa_112790/08.jpg"
+      ],
+      "source_dataset": "ER1.5_RoboVQA_image_qa_20k"
+    },
+    {
+      "problem_id": "roborefit_5355",
+      "problem": "<image> Show me the interaction point to can you find the rubik's cube. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "Roborefit",
+      "answer": [
+        {
+          "segmentation": [
+            [
+              644,
+              492
+            ],
+            [
+              612,
+              525
+            ],
+            [
+              600,
+              558
+            ],
+            [
+              625,
+              592
+            ],
+            [
+              625,
+              617
+            ],
+            [
+              656,
+              625
+            ],
+            [
+              675,
+              600
+            ],
+            [
+              700,
+              592
+            ],
+            [
+              694,
+              583
+            ],
+            [
+              706,
+              542
+            ],
+            [
+              681,
+              508
+            ]
+          ]
+        }
+      ],
+      "problem_reserved_text": "Show me the interaction point to can you find the rubik's cube. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "images": [
+        "roborefit_images/5355_0.png"
+      ],
+      "source_dataset": "ER1.5_Roborefit_image_point_20k"
+    },
+    {
+      "problem_id": "roborefit_15148",
+      "problem": "<image> Given the command 'find the giraffe', locate the target. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "Roborefit",
+      "answer": [
+        {
+          "segmentation": [
+            [
+              512,
+              425
+            ],
+            [
+              438,
+              400
+            ],
+            [
+              431,
+              442
+            ],
+            [
+              238,
+              475
+            ],
+            [
+              181,
+              542
+            ],
+            [
+              262,
+              583
+            ],
+            [
+              319,
+              533
+            ],
+            [
+              400,
+              542
+            ],
+            [
+              362,
+              517
+            ],
+            [
+              444,
+              475
+            ],
+            [
+              469,
+              508
+            ]
+          ]
+        }
+      ],
+      "problem_reserved_text": "Given the command 'find the giraffe', locate the target. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "images": [
+        "roborefit_images/15148_0.png"
+      ],
+      "source_dataset": "ER1.5_Roborefit_image_point_20k"
+    },
+    {
+      "problem_id": "roborefit_12434",
+      "problem": "<image> Given the command 'will you please give me the two-headed dinosaur model', locate the target. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "Roborefit",
+      "answer": [
+        {
+          "segmentation": [
+            [
+              438,
+              283
+            ],
+            [
+              431,
+              300
+            ],
+            [
+              394,
+              317
+            ],
+            [
+              412,
+              325
+            ],
+            [
+              400,
+              333
+            ],
+            [
+              400,
+              350
+            ],
+            [
+              431,
+              358
+            ],
+            [
+              431,
+              383
+            ],
+            [
+              444,
+              400
+            ],
+            [
+              450,
+              392
+            ],
+            [
+              438,
+              383
+            ],
+            [
+              431,
+              325
+            ],
+            [
+              444,
+              317
+            ],
+            [
+              431,
+              308
+            ]
+          ]
+        }
+      ],
+      "problem_reserved_text": "Given the command 'will you please give me the two-headed dinosaur model', locate the target. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "images": [
+        "roborefit_images/12434_0.png"
+      ],
+      "source_dataset": "ER1.5_Roborefit_image_point_20k"
+    },
+    {
+      "problem_id": "roborefit_8846",
+      "problem": "<image> Show me the interaction point to would you bring me the big toy lion. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "Roborefit",
+      "answer": [
+        {
+          "segmentation": [
+            [
+              812,
+              300
+            ],
+            [
+              812,
+              350
+            ],
+            [
+              750,
+              383
+            ],
+            [
+              738,
+              475
+            ],
+            [
+              694,
+              508
+            ],
+            [
+              706,
+              567
+            ],
+            [
+              800,
+              542
+            ],
+            [
+              838,
+              575
+            ],
+            [
+              825,
+              508
+            ],
+            [
+              794,
+              492
+            ],
+            [
+              800,
+              433
+            ],
+            [
+              844,
+              450
+            ],
+            [
+              806,
+              383
+            ]
+          ]
+        }
+      ],
+      "problem_reserved_text": "Show me the interaction point to would you bring me the big toy lion. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "images": [
+        "roborefit_images/8846_0.png"
+      ],
+      "source_dataset": "ER1.5_Roborefit_image_point_20k"
+    },
+    {
+      "problem_id": "roborefit_18251",
+      "problem": "<image> Show me the interaction point to where is the yellow glue stick on the right. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "Roborefit",
+      "answer": [
+        {
+          "segmentation": [
+            [
+              269,
+              408
+            ],
+            [
+              269,
+              425
+            ],
+            [
+              288,
+              425
+            ],
+            [
+              362,
+              483
+            ],
+            [
+              362,
+              458
+            ],
+            [
+              288,
+              400
+            ]
+          ]
+        }
+      ],
+      "problem_reserved_text": "Show me the interaction point to where is the yellow glue stick on the right. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "images": [
+        "roborefit_images/18251_0.png"
+      ],
+      "source_dataset": "ER1.5_Roborefit_image_point_20k"
+    },
+    {
+      "problem": "<image>Considering the relative positions, is glass metal tv stand above or below gray secure safe? Choose between the following options: below or above",
+      "data_type": "image",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "SAT",
+      "answer": "above",
+      "images": [
+        "SAT-Data/image_47304_0.jpg"
+      ],
+      "problem_reserved_text": "Considering the relative positions, is glass metal tv stand above or below gray secure safe? Choose between the following options: below or above",
+      "problem_id": 7196,
+      "source_dataset": "ER1.5_SAT_image_qa_20k"
+    },
+    {
+      "problem": "<image>If I turn right by 41 degrees, will I be facing away from dark brown square dresser (near the mark 2 in the image)? Choose between the following options: no or yes",
+      "data_type": "image",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "SAT",
+      "answer": "yes",
+      "images": [
+        "SAT-Data/image_150415_0.jpg"
+      ],
+      "problem_reserved_text": "If I turn right by 41 degrees, will I be facing away from dark brown square dresser (near the mark 2 in the image)? Choose between the following options: no or yes",
+      "problem_id": 10626,
+      "source_dataset": "ER1.5_SAT_image_qa_20k"
+    },
+    {
+      "problem": "<image>Is wall paint to the right of white color dining table? Choose between the following options: yes or no",
+      "data_type": "image",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "SAT",
+      "answer": "yes",
+      "images": [
+        "SAT-Data/image_41156_0.jpg"
+      ],
+      "problem_reserved_text": "Is wall paint to the right of white color dining table? Choose between the following options: yes or no",
+      "problem_id": 1832,
+      "source_dataset": "ER1.5_SAT_image_qa_20k"
+    },
+    {
+      "problem": "<image>Considering the relative positions, is dark wooden countertop island (marked A) to the left or right of Window (marked C)? Choose between the following options: left or right",
+      "data_type": "image",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "SAT",
+      "answer": "left",
+      "images": [
+        "SAT-Data/image_50231_0.jpg"
+      ],
+      "problem_reserved_text": "Considering the relative positions, is dark wooden countertop island (marked A) to the left or right of Window (marked C)? Choose between the following options: left or right",
+      "problem_id": 7505,
+      "source_dataset": "ER1.5_SAT_image_qa_20k"
+    },
+    {
+      "problem": "<image>Considering the relative positions, where is Doorway (highlighted by a blue box) with respect to black glossy granite countertop (highlighted by a red box)? Choose between the following options: above or below",
+      "data_type": "image",
+      "problem_type": "multiple choice",
+      "options": [],
+      "data_source": "SAT",
+      "answer": "below",
+      "images": [
+        "SAT-Data/image_62114_0.jpg"
+      ],
+      "problem_reserved_text": "Considering the relative positions, where is Doorway (highlighted by a blue box) with respect to black glossy granite countertop (highlighted by a red box)? Choose between the following options: above or below",
+      "problem_id": 1051,
+      "source_dataset": "ER1.5_SAT_image_qa_20k"
+    },
+    {
+      "problem_id": 198517,
+      "problem": "<image> For 'nursing homes in your area', how many responses are positive?",
+      "data_type": "image",
+      "problem_type": "numerical",
+      "options": [],
+      "data_source": "ChartQA",
+      "answer": "54",
+      "images": [
+        "./QA/Chart/ChartQA/images/1714.png"
+      ],
+      "problem_reserved_text": "For 'nursing homes in your area', how many responses are positive?",
+      "source_dataset": "ER1.5_general_image_qa_42k"
+    },
+    {
+      "problem_id": 60145,
+      "problem": "<image> Is the white bar stools with wood legs in front of the red sofa with blue pillow?",
+      "data_type": "image",
+      "problem_type": "multiple choice",
+      "options": [
+        "A. Yes",
+        "B. No"
+      ],
+      "data_source": "Spacellava",
+      "answer": "B",
+      "images": [
+        "./QA/Spatial/Spacellava/image_21508.png"
+      ],
+      "problem_reserved_text": "Is the white bar stools with wood legs in front of the red sofa with blue pillow?",
+      "source_dataset": "ER1.5_general_image_qa_42k"
+    },
+    {
+      "problem_id": 349957,
+      "problem": "<image> Please provide the bounding box coordinate of the region this sentence describes: gray car on right.",
+      "data_type": "image",
+      "problem_type": "spatial grounding",
+      "options": [],
+      "data_source": "RefCOCO",
+      "answer": [
+        {
+          "boxes": [
+            699,
+            512,
+            993,
+            998
+          ]
+        }
+      ],
+      "images": [
+        "./Spatial-Grounding/train2014/COCO_train2014_000000166529.jpg"
+      ],
+      "problem_reserved_text": "Please provide the bounding box coordinate of the region this sentence describes: gray car on right.",
+      "source_dataset": "ER1.5_general_image_qa_42k"
+    },
+    {
+      "problem_id": 224520,
+      "problem": "<image> 如图,点D在以AC为直径的圆上,若∠BDC=35°,那么∠ACB的度数是()",
+      "data_type": "image",
+      "problem_type": "multiple choice",
+      "options": [
+        "A. 35°",
+        "B. 55°",
+        "C. 70°",
+        "D. 110°"
+      ],
+      "data_source": "UniGeo",
+      "answer": "B",
+      "images": [
+        "./QA/Math/UniGeo/images/3316.png"
+      ],
+      "problem_reserved_text": "如图,点D在以AC为直径的圆上,若∠BDC=35°,那么∠ACB的度数是()",
+      "source_dataset": "ER1.5_general_image_qa_42k"
+    },
+    {
+      "problem_id": 115141,
+      "problem": "<image> As shown in the figure, the flame $AC$ forms an inverted real image on the screen through a small hole $O$ on the cardboard $EF$. The length of the image $BD=2\\operatorname{cm}$, $OA=60\\operatorname{cm}$, and $OB=20\\operatorname{cm}$. What is the length of the flame $AC$?",
+      "data_type": "image",
+      "problem_type": "math",
+      "options": [],
+      "data_source": "MMK12",
+      "answer": "6cm",
+      "images": [
+        "./QA/Math/MMK12/train-00000-of-00003/846.png"
+      ],
+      "problem_reserved_text": "As shown in the figure, the flame $AC$ forms an inverted real image on the screen through a small hole $O$ on the cardboard $EF$. The length of the image $BD=2\\operatorname{cm}$, $OA=60\\operatorname{cm}$, and $OB=20\\operatorname{cm}$. What is the length of the flame $AC$?",
+      "source_dataset": "ER1.5_general_image_qa_42k"
+    },
+    {
+      "problem_id": 4720,
+      "problem": "<video> Measuring from the closest point of each object, which of the following objects is the closest to the water bottle?",
+      "data_type": "video",
+      "problem_type": "multiple choice",
+      "options": [
+        "A. trash can\n",
+        "B. mouse\n",
+        "C. desk\n",
+        "D. shelf\n"
+      ],
+      "data_source": "SR-91k",
+      "answer": "D",
+      "videos": [
+        "./QA/SR-91k/videos/scene0098_00.mp4"
+      ],
+      "problem_reserved_text": "Measuring from the closest point of each object, which of the following objects is the closest to the water bottle?",
+      "source_dataset": "ER1.5_general_video_qa_15k"
+    },
+    {
+      "problem_id": 68495,
+      "problem": "<video> If I am standing by the table and facing the whiteboard, is the clock to the left or the right of the whiteboard?",
+      "data_type": "video",
+      "problem_type": "multiple choice",
+      "options": [
+        "A. right\n",
+        "B. left\n"
+      ],
+      "data_source": "SR-91k",
+      "answer": "A",
+      "videos": [
+        "./QA/SR-91k/videos/scene0452_01.mp4"
+      ],
+      "problem_reserved_text": "If I am standing by the table and facing the whiteboard, is the clock to the left or the right of the whiteboard?",
+      "source_dataset": "ER1.5_general_video_qa_15k"
+    },
+    {
+      "problem_id": 70635,
+      "problem": "<video> Measuring from the closest point of each object, which of the following objects is the closest to the table?",
+      "data_type": "video",
+      "problem_type": "multiple choice",
+      "options": [
+        "A. chair\n",
+        "B. door\n",
+        "C. sink\n",
+        "D. coffee table\n"
+      ],
+      "data_source": "SR-91k",
+      "answer": "A",
+      "videos": [
+        "./QA/SR-91k/videos/scene0181_02.mp4"
+      ],
+      "problem_reserved_text": "Measuring from the closest point of each object, which of the following objects is the closest to the table?",
+      "source_dataset": "ER1.5_general_video_qa_15k"
+    },
+    {
+      "problem_id": 242401,
+      "problem": "<video> What will be the first-time appearance order of the following categories in the video: boxes, dish rack, refrigerator, shower curtain rod?",
+      "data_type": "video",
+      "problem_type": "multiple choice",
+      "options": [
+        "A. boxes, shower curtain rod, refrigerator, dish rack",
+        "B. boxes, dish rack, refrigerator, shower curtain rod",
+        "C. shower curtain rod, boxes, dish rack, refrigerator",
+        "D. refrigerator, boxes, dish rack, shower curtain rod"
+      ],
+      "data_source": "SR-91k",
+      "answer": "B",
+      "videos": [
+        "./QA/SR-91k/videos/scene0101_00.mp4"
+      ],
+      "problem_reserved_text": "What will be the first-time appearance order of the following categories in the video: boxes, dish rack, refrigerator, shower curtain rod?",
+      "source_dataset": "ER1.5_general_video_qa_15k"
+    },
+    {
+      "problem_id": 34559,
+      "problem": "<video> Which object would the person take next after they put down the food?",
+      "data_type": "video",
+      "problem_type": "multiple choice",
+      "options": [
+        "A. The clothes.",
+        "B. The cup/glass/bottle.",
+        "C. The phone/camera.",
+        "D. The shoe."
+      ],
+      "data_source": "STAR",
+      "answer": "D",
+      "videos": [
+        "./QA/STAR/QCAUL.mp4"
+      ],
+      "problem_reserved_text": "Which object would the person take next after they put down the food?",
+      "source_dataset": "ER1.5_general_video_qa_15k"
+    },
+    {
+      "problem_id": "sample_4089",
+      "problem": "<image> The scene arranges apple objects to form the letter E with normalized image coordinates defined on [0,1000], where (0,0) is the top-left of the image, x increases to the right, and y increases downward. Exactly 4 apple objects are missing. Return the center coordinates of the missing locations as a JSON array where each entry uses the format {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "regular_simulation",
+      "answer": [
+        {
+          "count": 4
+        },
+        {
+          "point_2d": [
+            316,
+            520
+          ]
+        },
+        {
+          "point_2d": [
+            382,
+            451
+          ]
+        },
+        {
+          "point_2d": [
+            405,
+            704
+          ]
+        },
+        {
+          "point_2d": [
+            338,
+            704
+          ]
+        }
+      ],
+      "problem_reserved_text": "The scene arranges apple objects to form the letter E with normalized image coordinates defined on [0,1000], where (0,0) is the top-left of the image, x increases to the right, and y increases downward. Exactly 4 apple objects are missing. Return the center coordinates of the missing locations as a JSON array where each entry uses the format {\"point_2d\": [x, y]}.",
+      "images": [
+        "regular-simulation/renders/letter_E_9x9_miss04_4089.png"
+      ],
+      "source_dataset": "ER1.5_regular_simulation_image_point_5k"
+    },
+    {
+      "problem_id": "sample_3241",
+      "problem": "<image> The scene arranges avocado objects to form the letter Q with normalized image coordinates defined on [0,1000], where (0,0) is the top-left of the image, x increases to the right, and y increases downward. Exactly 1 avocado objects are missing. Return the center coordinates of the missing locations as a JSON array where each entry uses the format {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "regular_simulation",
+      "answer": [
+        {
+          "count": 1
+        },
+        {
+          "point_2d": [
+            290,
+            573
+          ]
+        }
+      ],
+      "problem_reserved_text": "The scene arranges avocado objects to form the letter Q with normalized image coordinates defined on [0,1000], where (0,0) is the top-left of the image, x increases to the right, and y increases downward. Exactly 1 avocado objects are missing. Return the center coordinates of the missing locations as a JSON array where each entry uses the format {\"point_2d\": [x, y]}.",
+      "images": [
+        "regular-simulation/renders/letter_Q_9x9_miss01_3241.png"
+      ],
+      "source_dataset": "ER1.5_regular_simulation_image_point_5k"
+    },
+    {
+      "problem_id": "sample_3758",
+      "problem": "<image> The scene arranges tomato objects to form the letter ■ with normalized image coordinates defined on [0,1000], where (0,0) is the top-left of the image, x increases to the right, and y increases downward. Exactly 3 tomato objects are missing. Return the center coordinates of the missing locations as a JSON array where each entry uses the format {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "regular_simulation",
+      "answer": [
+        {
+          "count": 3
+        },
+        {
+          "point_2d": [
+            556,
+            444
+          ]
+        },
+        {
+          "point_2d": [
+            454,
+            632
+          ]
+        },
+        {
+          "point_2d": [
+            368,
+            585
+          ]
+        }
+      ],
+      "problem_reserved_text": "The scene arranges tomato objects to form the letter ■ with normalized image coordinates defined on [0,1000], where (0,0) is the top-left of the image, x increases to the right, and y increases downward. Exactly 3 tomato objects are missing. Return the center coordinates of the missing locations as a JSON array where each entry uses the format {\"point_2d\": [x, y]}.",
+      "images": [
+        "regular-simulation/renders/letter_■_9x9_miss03_3758.png"
+      ],
+      "source_dataset": "ER1.5_regular_simulation_image_point_5k"
+    },
+    {
+      "problem_id": "sample_1170",
+      "problem": "<image> The scene arranges avocado objects to form the letter P with normalized image coordinates defined on [0,1000], where (0,0) is the top-left of the image, x increases to the right, and y increases downward. Exactly 4 avocado objects are missing. Return the center coordinates of the missing locations as a JSON array where each entry uses the format {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "regular_simulation",
+      "answer": [
+        {
+          "count": 4
+        },
+        {
+          "point_2d": [
+            482,
+            773
+          ]
+        },
+        {
+          "point_2d": [
+            369,
+            502
+          ]
+        },
+        {
+          "point_2d": [
+            803,
+            773
+          ]
+        },
+        {
+          "point_2d": [
+            432,
+            463
+          ]
+        }
+      ],
+      "problem_reserved_text": "The scene arranges avocado objects to form the letter P with normalized image coordinates defined on [0,1000], where (0,0) is the top-left of the image, x increases to the right, and y increases downward. Exactly 4 avocado objects are missing. Return the center coordinates of the missing locations as a JSON array where each entry uses the format {\"point_2d\": [x, y]}.",
+      "images": [
+        "regular-simulation/renders/letter_P_9x9_miss04_1170.png"
+      ],
+      "source_dataset": "ER1.5_regular_simulation_image_point_5k"
+    },
+    {
+      "problem_id": "sample_2169",
+      "problem": "<image> The scene arranges tomato objects to form the letter Q with normalized image coordinates defined on [0,1000], where (0,0) is the top-left of the image, x increases to the right, and y increases downward. Exactly 2 tomato objects are missing. Return the center coordinates of the missing locations as a JSON array where each entry uses the format {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "regular_simulation",
+      "answer": [
+        {
+          "count": 2
+        },
+        {
+          "point_2d": [
+            335,
+            545
+          ]
+        },
+        {
+          "point_2d": [
+            704,
+            726
+          ]
+        }
+      ],
+      "problem_reserved_text": "The scene arranges tomato objects to form the letter Q with normalized image coordinates defined on [0,1000], where (0,0) is the top-left of the image, x increases to the right, and y increases downward. Exactly 2 tomato objects are missing. Return the center coordinates of the missing locations as a JSON array where each entry uses the format {\"point_2d\": [x, y]}.",
+      "images": [
+        "regular-simulation/renders/letter_Q_9x9_miss02_2169.png"
+      ],
+      "source_dataset": "ER1.5_regular_simulation_image_point_5k"
+    },
+    {
+      "problem_id": "sample_1143",
+      "problem": "<image> The scene arranges avocado objects to form the loving heart with normalized image coordinates defined on [0,1000], where (0,0) is the top-left of the image, x increases to the right, and y increases downward. Exactly 2 avocado objects are missing. Return the center coordinates of the missing locations as a JSON array where each entry uses the format {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "regular_simulation",
+      "answer": [
+        {
+          "count": 2
+        },
+        {
+          "point_2d": [
+            404,
+            565
+          ]
+        },
+        {
+          "point_2d": [
+            451,
+            601
+          ]
+        }
+      ],
+      "problem_reserved_text": "The scene arranges avocado objects to form the loving heart with normalized image coordinates defined on [0,1000], where (0,0) is the top-left of the image, x increases to the right, and y increases downward. Exactly 2 avocado objects are missing. Return the center coordinates of the missing locations as a JSON array where each entry uses the format {\"point_2d\": [x, y]}.",
+      "images": [
+        "regular-simulation/renders/letter_♥_9x9_miss02_1143.png"
+      ],
+      "source_dataset": "ER1.5_regular_simulation_image_point_5k_fixed"
+    },
+    {
+      "problem_id": "sample_2020",
+      "problem": "<image> The scene arranges avocado objects to form the letter Y with normalized image coordinates defined on [0,1000], where (0,0) is the top-left of the image, x increases to the right, and y increases downward. Exactly 2 avocado objects are missing. Return the center coordinates of the missing locations as a JSON array where each entry uses the format {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "regular_simulation",
+      "answer": [
+        {
+          "count": 2
+        },
+        {
+          "point_2d": [
+            468,
+            516
+          ]
+        },
+        {
+          "point_2d": [
+            272,
+            552
+          ]
+        }
+      ],
+      "problem_reserved_text": "The scene arranges avocado objects to form the letter Y with normalized image coordinates defined on [0,1000], where (0,0) is the top-left of the image, x increases to the right, and y increases downward. Exactly 2 avocado objects are missing. Return the center coordinates of the missing locations as a JSON array where each entry uses the format {\"point_2d\": [x, y]}.",
+      "images": [
+        "regular-simulation/renders/letter_Y_9x9_miss02_2020.png"
+      ],
+      "source_dataset": "ER1.5_regular_simulation_image_point_5k_fixed"
+    },
+    {
+      "problem_id": "sample_4598",
+      "problem": "<image> The scene arranges orange objects to form the letter J with normalized image coordinates defined on [0,1000], where (0,0) is the top-left of the image, x increases to the right, and y increases downward. Exactly 1 orange objects are missing. Return the center coordinates of the missing locations as a JSON array where each entry uses the format {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "regular_simulation",
+      "answer": [
+        {
+          "count": 1
+        },
+        {
+          "point_2d": [
+            504,
+            623
+          ]
+        }
+      ],
+      "problem_reserved_text": "The scene arranges orange objects to form the letter J with normalized image coordinates defined on [0,1000], where (0,0) is the top-left of the image, x increases to the right, and y increases downward. Exactly 1 orange objects are missing. Return the center coordinates of the missing locations as a JSON array where each entry uses the format {\"point_2d\": [x, y]}.",
+      "images": [
+        "regular-simulation/renders/letter_J_9x9_miss01_4598.png"
+      ],
+      "source_dataset": "ER1.5_regular_simulation_image_point_5k_fixed"
+    },
+    {
+      "problem_id": "sample_4415",
+      "problem": "<image> The scene arranges orange objects to form the letter X with normalized image coordinates defined on [0,1000], where (0,0) is the top-left of the image, x increases to the right, and y increases downward. Exactly 2 orange objects are missing. Return the center coordinates of the missing locations as a JSON array where each entry uses the format {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "regular_simulation",
+      "answer": [
+        {
+          "count": 2
+        },
+        {
+          "point_2d": [
+            473,
+            518
+          ]
+        },
+        {
+          "point_2d": [
+            452,
+            567
+          ]
+        }
+      ],
+      "problem_reserved_text": "The scene arranges orange objects to form the letter X with normalized image coordinates defined on [0,1000], where (0,0) is the top-left of the image, x increases to the right, and y increases downward. Exactly 2 orange objects are missing. Return the center coordinates of the missing locations as a JSON array where each entry uses the format {\"point_2d\": [x, y]}.",
+      "images": [
+        "regular-simulation/renders/letter_X_9x9_miss02_4415.png"
+      ],
+      "source_dataset": "ER1.5_regular_simulation_image_point_5k_fixed"
+    },
+    {
+      "problem_id": "sample_2152",
+      "problem": "<image> The scene arranges avocado objects to form the letter U with normalized image coordinates defined on [0,1000], where (0,0) is the top-left of the image, x increases to the right, and y increases downward. Exactly 3 avocado objects are missing. Return the center coordinates of the missing locations as a JSON array where each entry uses the format {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "regular_simulation",
+      "answer": [
+        {
+          "count": 3
+        },
+        {
+          "point_2d": [
+            588,
+            430
+          ]
+        },
+        {
+          "point_2d": [
+            324,
+            496
+          ]
+        },
+        {
+          "point_2d": [
+            646,
+            684
+          ]
+        }
+      ],
+      "problem_reserved_text": "The scene arranges avocado objects to form the letter U with normalized image coordinates defined on [0,1000], where (0,0) is the top-left of the image, x increases to the right, and y increases downward. Exactly 3 avocado objects are missing. Return the center coordinates of the missing locations as a JSON array where each entry uses the format {\"point_2d\": [x, y]}.",
+      "images": [
+        "regular-simulation/renders/letter_U_9x9_miss03_2152.png"
+      ],
+      "source_dataset": "ER1.5_regular_simulation_image_point_5k_fixed"
+    },
+    {
+      "problem_id": "38414_74cab7",
+      "problem": "<image> Fill in the missing stars to ensure the completed shape follows a semi-circular arrangement. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "regular_synthetic",
+      "answer": [
+        {
+          "count": 1
+        },
+        {
+          "point_2d": [
+            480,
+            157
+          ]
+        }
+      ],
+      "problem_reserved_text": "Fill in the missing stars to ensure the completed shape follows a semi-circular arrangement. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "images": [
+        "regular-synthetic/images/38414_74cab7.png"
+      ],
+      "source_dataset": "ER1.5_regular_synthetic_image_point_5k"
+    },
+    {
+      "problem_id": "6833_b1c394",
+      "problem": "<image> This is a point prediction task. Determine where missing diamonds should be placed to make the arrangement smiley face. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "regular_synthetic",
+      "answer": [
+        {
+          "count": 1
+        },
+        {
+          "point_2d": [
+            805,
+            608
+          ]
+        }
+      ],
+      "problem_reserved_text": "This is a point prediction task. Determine where missing diamonds should be placed to make the arrangement smiley face. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "images": [
+        "regular-synthetic/images/6833_b1c394.png"
+      ],
+      "source_dataset": "ER1.5_regular_synthetic_image_point_5k"
+    },
+    {
+      "problem_id": "37706_a67dc1",
+      "problem": "<image> Restore the 3x2 parallelogram arrangement by predicting the locations of the 1 missing circles. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "regular_synthetic",
+      "answer": [
+        {
+          "count": 1
+        },
+        {
+          "point_2d": [
+            597,
+            529
+          ]
+        }
+      ],
+      "problem_reserved_text": "Restore the 3x2 parallelogram arrangement by predicting the locations of the 1 missing circles. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "images": [
+        "regular-synthetic/images/37706_a67dc1.png"
+      ],
+      "source_dataset": "ER1.5_regular_synthetic_image_point_5k"
+    },
+    {
+      "problem_id": "17414_fb35bc",
+      "problem": "<image> Analyze the spatial arrangement and predict the center coordinates required to complete the semi-circular structure. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "regular_synthetic",
+      "answer": [
+        {
+          "count": 1
+        },
+        {
+          "point_2d": [
+            230,
+            516
+          ]
+        }
+      ],
+      "problem_reserved_text": "Analyze the spatial arrangement and predict the center coordinates required to complete the semi-circular structure. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "images": [
+        "regular-synthetic/images/17414_fb35bc.png"
+      ],
+      "source_dataset": "ER1.5_regular_synthetic_image_point_5k"
+    },
+    {
+      "problem_id": "2253_57f71c",
+      "problem": "<image> Fill in the missing circles to ensure the completed shape follows a rectangular arrangement. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "data_type": "image",
+      "problem_type": "point",
+      "options": [],
+      "data_source": "regular_synthetic",
+      "answer": [
+        {
+          "count": 3
+        },
+        {
+          "point_2d": [
+            731,
+            713
+          ]
+        },
+        {
+          "point_2d": [
+            431,
+            413
+          ]
+        },
+        {
+          "point_2d": [
+            581,
+            413
+          ]
+        }
+      ],
+      "problem_reserved_text": "Fill in the missing circles to ensure the completed shape follows a rectangular arrangement. The answer should be presented in JSON format as follows: {\"point_2d\": [x, y]}.",
+      "images": [
+        "regular-synthetic/images/2253_57f71c.png"
+      ],
+      "source_dataset": "ER1.5_regular_synthetic_image_point_5k"
+    },
+    {
+      "problem_id": "partnet_maniskill_47595_10_2_2",
+      "problem": "<image> You are a robot performing robotic manipulation tasks. The task instruction is: open the right door of this storage cabinet. The handle starts at position [481, 531]. Use 2D points to trace the movement trajectory of the handle (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "data_type": "image",
+      "problem_type": "trace",
+      "options": [],
+      "data_source": "robocasa-partnet",
+      "answer": [
+        {
+          "point_2d": [
+            481,
+            531
+          ]
+        },
+        {
+          "point_2d": [
+            478,
+            536
+          ]
+        },
+        {
+          "point_2d": [
+            475,
+            545
+          ]
+        },
+        {
+          "point_2d": [
+            477,
+            558
+          ]
+        },
+        {
+          "point_2d": [
+            486,
+            574
+          ]
+        },
+        {
+          "point_2d": [
+            503,
+            590
+          ]
+        },
+        {
+          "point_2d": [
+            532,
+            606
+          ]
+        },
+        {
+          "point_2d": [
+            569,
+            618
+          ]
+        }
+      ],
+      "problem_reserved_text": "You are a robot performing robotic manipulation tasks. The task instruction is: open the right door of this storage cabinet. The handle starts at position [481, 531]. Use 2D points to trace the movement trajectory of the handle (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "images": [
+        "robocasa_partnet/47595/style_10/asset_47595_initial.png"
+      ],
+      "source_dataset": "ER1.5_robocasa_partnet_2d_image_trace_1k"
+    },
+    {
+      "problem_id": "partnet_maniskill_47290_9_2_0",
+      "problem": "<image> You are a robot performing robotic manipulation tasks. The task instruction is: open the right door of this storage cabinet. The handle starts at position [461, 645]. Use 2D points to trace the movement trajectory of the handle (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "data_type": "image",
+      "problem_type": "trace",
+      "options": [],
+      "data_source": "robocasa-partnet",
+      "answer": [
+        {
+          "point_2d": [
+            461,
+            645
+          ]
+        },
+        {
+          "point_2d": [
+            457,
+            648
+          ]
+        },
+        {
+          "point_2d": [
+            449,
+            654
+          ]
+        },
+        {
+          "point_2d": [
+            441,
+            662
+          ]
+        },
+        {
+          "point_2d": [
+            434,
+            672
+          ]
+        },
+        {
+          "point_2d": [
+            430,
+            685
+          ]
+        },
+        {
+          "point_2d": [
+            429,
+            699
+          ]
+        },
+        {
+          "point_2d": [
+            434,
+            714
+          ]
+        }
+      ],
+      "problem_reserved_text": "You are a robot performing robotic manipulation tasks. The task instruction is: open the right door of this storage cabinet. The handle starts at position [461, 645]. Use 2D points to trace the movement trajectory of the handle (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "images": [
+        "robocasa_partnet/47290/style_9/asset_47290_initial.png"
+      ],
+      "source_dataset": "ER1.5_robocasa_partnet_2d_image_trace_1k"
+    },
+    {
+      "problem_id": "partnet_maniskill_47976_3_2_1",
+      "problem": "<image> You are a robot performing robotic manipulation tasks. The task instruction is: open the left door of this storage cabinet. The handle starts at position [450, 567]. Use 2D points to trace the movement trajectory of the handle (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "data_type": "image",
+      "problem_type": "trace",
+      "options": [],
+      "data_source": "robocasa-partnet",
+      "answer": [
+        {
+          "point_2d": [
+            450,
+            567
+          ]
+        },
+        {
+          "point_2d": [
+            444,
+            570
+          ]
+        },
+        {
+          "point_2d": [
+            433,
+            575
+          ]
+        },
+        {
+          "point_2d": [
+            417,
+            581
+          ]
+        },
+        {
+          "point_2d": [
+            397,
+            585
+          ]
+        },
+        {
+          "point_2d": [
+            374,
+            588
+          ]
+        },
+        {
+          "point_2d": [
+            347,
+            590
+          ]
+        },
+        {
+          "point_2d": [
+            321,
+            588
+          ]
+        }
+      ],
+      "problem_reserved_text": "You are a robot performing robotic manipulation tasks. The task instruction is: open the left door of this storage cabinet. The handle starts at position [450, 567]. Use 2D points to trace the movement trajectory of the handle (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "images": [
+        "robocasa_partnet/47976/style_3/asset_47976_initial.png"
+      ],
+      "source_dataset": "ER1.5_robocasa_partnet_2d_image_trace_1k"
+    },
+    {
+      "problem_id": "partnet_maniskill_10036_8_2_1",
+      "problem": "<image> You are a robot performing robotic manipulation tasks. The task instruction is: open the left door of this refrigerator. The handle starts at position [419, 512]. Use 2D points to trace the movement trajectory of the handle (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "data_type": "image",
+      "problem_type": "trace",
+      "options": [],
+      "data_source": "robocasa-partnet",
+      "answer": [
+        {
+          "point_2d": [
+            419,
+            512
+          ]
+        },
+        {
+          "point_2d": [
+            410,
+            516
+          ]
+        },
+        {
+          "point_2d": [
+            392,
+            521
+          ]
+        },
+        {
+          "point_2d": [
+            367,
+            524
+          ]
+        },
+        {
+          "point_2d": [
+            338,
+            522
+          ]
+        },
+        {
+          "point_2d": [
+            313,
+            516
+          ]
+        },
+        {
+          "point_2d": [
+            296,
+            504
+          ]
+        },
+        {
+          "point_2d": [
+            292,
+            491
+          ]
+        }
+      ],
+      "problem_reserved_text": "You are a robot performing robotic manipulation tasks. The task instruction is: open the left door of this refrigerator. The handle starts at position [419, 512]. Use 2D points to trace the movement trajectory of the handle (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "images": [
+        "robocasa_partnet/10036/style_8/asset_10036_initial.png"
+      ],
+      "source_dataset": "ER1.5_robocasa_partnet_2d_image_trace_1k"
+    },
+    {
+      "problem_id": "partnet_maniskill_45667_8_2_0",
+      "problem": "<image> You are a robot performing robotic manipulation tasks. The task instruction is: open the bottom-right door of this storage cabinet. The handle starts at position [415, 690]. Use 2D points to trace the movement trajectory of the handle (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "data_type": "image",
+      "problem_type": "trace",
+      "options": [],
+      "data_source": "robocasa-partnet",
+      "answer": [
+        {
+          "point_2d": [
+            415,
+            690
+          ]
+        },
+        {
+          "point_2d": [
+            407,
+            695
+          ]
+        },
+        {
+          "point_2d": [
+            390,
+            708
+          ]
+        },
+        {
+          "point_2d": [
+            368,
+            730
+          ]
+        },
+        {
+          "point_2d": [
+            347,
+            759
+          ]
+        },
+        {
+          "point_2d": [
+            330,
+            795
+          ]
+        },
+        {
+          "point_2d": [
+            319,
+            835
+          ]
+        },
+        {
+          "point_2d": [
+            316,
+            877
+          ]
+        }
+      ],
+      "problem_reserved_text": "You are a robot performing robotic manipulation tasks. The task instruction is: open the bottom-right door of this storage cabinet. The handle starts at position [415, 690]. Use 2D points to trace the movement trajectory of the handle (not the robot arm) as it moves to complete the task. You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "images": [
+        "robocasa_partnet/45667/style_8/asset_45667_initial.png"
+      ],
+      "source_dataset": "ER1.5_robocasa_partnet_2d_image_trace_1k"
+    },
+    {
+      "problem_id": "partnet_maniskill_45387_10_2_1",
+      "problem": "<image> You are a robot performing robotic manipulation tasks. The task instruction is: open the right door of this storage cabinet. The handle starts at 2D position [475, 583] with depth 1.08m (distance from camera). Trace the movement trajectory of the handle (not the robot arm) as it moves to complete the task. For each point, provide: (1) point_2d: 2D coordinates in normalized range [0, 1000]; (2) depth: distance from camera in meters (typically 0.7-1.2m). You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "data_type": "image",
+      "problem_type": "trace_3d",
+      "options": [],
+      "data_source": "robocasa-partnet",
+      "answer": [
+        {
+          "point_2d": [
+            475,
+            583
+          ],
+          "depth": 1.08
+        },
+        {
+          "point_2d": [
+            471,
+            588
+          ],
+          "depth": 1.07
+        },
+        {
+          "point_2d": [
+            466,
+            595
+          ],
+          "depth": 1.06
+        },
+        {
+          "point_2d": [
+            462,
+            606
+          ],
+          "depth": 1.04
+        },
+        {
+          "point_2d": [
+            461,
+            619
+          ],
+          "depth": 1.02
+        },
+        {
+          "point_2d": [
+            466,
+            632
+          ],
+          "depth": 0.99
+        },
+        {
+          "point_2d": [
+            477,
+            648
+          ],
+          "depth": 0.97
+        },
+        {
+          "point_2d": [
+            495,
+            664
+          ],
+          "depth": 0.95
+        }
+      ],
+      "problem_reserved_text": "You are a robot performing robotic manipulation tasks. The task instruction is: open the right door of this storage cabinet. The handle starts at 2D position [475, 583] with depth 1.08m (distance from camera). Trace the movement trajectory of the handle (not the robot arm) as it moves to complete the task. For each point, provide: (1) point_2d: 2D coordinates in normalized range [0, 1000]; (2) depth: distance from camera in meters (typically 0.7-1.2m). You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "images": [
+        "robocasa_partnet/45387/style_10/asset_45387_initial.png"
+      ],
+      "source_dataset": "ER1.5_robocasa_partnet_3d_image_trace_1k"
+    },
+    {
+      "problem_id": "partnet_maniskill_45523_11_2_1",
+      "problem": "<image> You are a robot performing robotic manipulation tasks. The task instruction is: open the left door of this storage cabinet. The handle starts at 2D position [384, 687] with depth 1.26m (distance from camera). Trace the movement trajectory of the handle (not the robot arm) as it moves to complete the task. For each point, provide: (1) point_2d: 2D coordinates in normalized range [0, 1000]; (2) depth: distance from camera in meters (typically 0.7-1.2m). You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "data_type": "image",
+      "problem_type": "trace_3d",
+      "options": [],
+      "data_source": "robocasa-partnet",
+      "answer": [
+        {
+          "point_2d": [
+            384,
+            687
+          ],
+          "depth": 1.26
+        },
+        {
+          "point_2d": [
+            381,
+            689
+          ],
+          "depth": 1.26
+        },
+        {
+          "point_2d": [
+            375,
+            691
+          ],
+          "depth": 1.25
+        },
+        {
+          "point_2d": [
+            365,
+            694
+          ],
+          "depth": 1.25
+        },
+        {
+          "point_2d": [
+            352,
+            695
+          ],
+          "depth": 1.25
+        },
+        {
+          "point_2d": [
+            337,
+            695
+          ],
+          "depth": 1.26
+        },
+        {
+          "point_2d": [
+            322,
+            694
+          ],
+          "depth": 1.26
+        },
+        {
+          "point_2d": [
+            306,
+            690
+          ],
+          "depth": 1.27
+        }
+      ],
+      "problem_reserved_text": "You are a robot performing robotic manipulation tasks. The task instruction is: open the left door of this storage cabinet. The handle starts at 2D position [384, 687] with depth 1.26m (distance from camera). Trace the movement trajectory of the handle (not the robot arm) as it moves to complete the task. For each point, provide: (1) point_2d: 2D coordinates in normalized range [0, 1000]; (2) depth: distance from camera in meters (typically 0.7-1.2m). You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "images": [
+        "robocasa_partnet/45523/style_11/asset_45523_initial.png"
+      ],
+      "source_dataset": "ER1.5_robocasa_partnet_3d_image_trace_1k"
+    },
+    {
+      "problem_id": "partnet_maniskill_46002_6_2_2",
+      "problem": "<image> You are a robot performing robotic manipulation tasks. The task instruction is: open the right door of this storage cabinet. The handle starts at 2D position [438, 507] with depth 1.05m (distance from camera). Trace the movement trajectory of the handle (not the robot arm) as it moves to complete the task. For each point, provide: (1) point_2d: 2D coordinates in normalized range [0, 1000]; (2) depth: distance from camera in meters (typically 0.7-1.2m). You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "data_type": "image",
+      "problem_type": "trace_3d",
+      "options": [],
+      "data_source": "robocasa-partnet",
+      "answer": [
+        {
+          "point_2d": [
+            438,
+            507
+          ],
+          "depth": 1.05
+        },
+        {
+          "point_2d": [
+            422,
+            513
+          ],
+          "depth": 1.03
+        },
+        {
+          "point_2d": [
+            400,
+            525
+          ],
+          "depth": 1.01
+        },
+        {
+          "point_2d": [
+            379,
+            544
+          ],
+          "depth": 0.97
+        },
+        {
+          "point_2d": [
+            369,
+            572
+          ],
+          "depth": 0.93
+        },
+        {
+          "point_2d": [
+            377,
+            605
+          ],
+          "depth": 0.87
+        },
+        {
+          "point_2d": [
+            413,
+            637
+          ],
+          "depth": 0.82
+        },
+        {
+          "point_2d": [
+            473,
+            662
+          ],
+          "depth": 0.79
+        }
+      ],
+      "problem_reserved_text": "You are a robot performing robotic manipulation tasks. The task instruction is: open the right door of this storage cabinet. The handle starts at 2D position [438, 507] with depth 1.05m (distance from camera). Trace the movement trajectory of the handle (not the robot arm) as it moves to complete the task. For each point, provide: (1) point_2d: 2D coordinates in normalized range [0, 1000]; (2) depth: distance from camera in meters (typically 0.7-1.2m). You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "images": [
+        "robocasa_partnet/46002/style_6/asset_46002_initial.png"
+      ],
+      "source_dataset": "ER1.5_robocasa_partnet_3d_image_trace_1k"
+    },
+    {
+      "problem_id": "partnet_maniskill_10489_7_2_0",
+      "problem": "<image> You are a robot performing robotic manipulation tasks. The task instruction is: open the top-center door of this refrigerator. The handle starts at 2D position [389, 422] with depth 1.06m (distance from camera). Trace the movement trajectory of the handle (not the robot arm) as it moves to complete the task. For each point, provide: (1) point_2d: 2D coordinates in normalized range [0, 1000]; (2) depth: distance from camera in meters (typically 0.7-1.2m). You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "data_type": "image",
+      "problem_type": "trace_3d",
+      "options": [],
+      "data_source": "robocasa-partnet",
+      "answer": [
+        {
+          "point_2d": [
+            389,
+            422
+          ],
+          "depth": 1.06
+        },
+        {
+          "point_2d": [
+            376,
+            426
+          ],
+          "depth": 1.05
+        },
+        {
+          "point_2d": [
+            357,
+            436
+          ],
+          "depth": 1.03
+        },
+        {
+          "point_2d": [
+            337,
+            450
+          ],
+          "depth": 0.99
+        },
+        {
+          "point_2d": [
+            325,
+            466
+          ],
+          "depth": 0.96
+        },
+        {
+          "point_2d": [
+            323,
+            484
+          ],
+          "depth": 0.92
+        },
+        {
+          "point_2d": [
+            337,
+            500
+          ],
+          "depth": 0.88
+        },
+        {
+          "point_2d": [
+            367,
+            511
+          ],
+          "depth": 0.85
+        }
+      ],
+      "problem_reserved_text": "You are a robot performing robotic manipulation tasks. The task instruction is: open the top-center door of this refrigerator. The handle starts at 2D position [389, 422] with depth 1.06m (distance from camera). Trace the movement trajectory of the handle (not the robot arm) as it moves to complete the task. For each point, provide: (1) point_2d: 2D coordinates in normalized range [0, 1000]; (2) depth: distance from camera in meters (typically 0.7-1.2m). You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "images": [
+        "robocasa_partnet/10489/style_7/asset_10489_initial.png"
+      ],
+      "source_dataset": "ER1.5_robocasa_partnet_3d_image_trace_1k"
+    },
+    {
+      "problem_id": "partnet_maniskill_47613_11_2_0",
+      "problem": "<image> You are a robot performing robotic manipulation tasks. The task instruction is: open the right door of this storage cabinet. The handle starts at 2D position [476, 562] with depth 1.08m (distance from camera). Trace the movement trajectory of the handle (not the robot arm) as it moves to complete the task. For each point, provide: (1) point_2d: 2D coordinates in normalized range [0, 1000]; (2) depth: distance from camera in meters (typically 0.7-1.2m). You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "data_type": "image",
+      "problem_type": "trace_3d",
+      "options": [],
+      "data_source": "robocasa-partnet",
+      "answer": [
+        {
+          "point_2d": [
+            476,
+            562
+          ],
+          "depth": 1.08
+        },
+        {
+          "point_2d": [
+            472,
+            566
+          ],
+          "depth": 1.07
+        },
+        {
+          "point_2d": [
+            467,
+            573
+          ],
+          "depth": 1.05
+        },
+        {
+          "point_2d": [
+            464,
+            583
+          ],
+          "depth": 1.03
+        },
+        {
+          "point_2d": [
+            466,
+            596
+          ],
+          "depth": 1.01
+        },
+        {
+          "point_2d": [
+            476,
+            610
+          ],
+          "depth": 0.98
+        },
+        {
+          "point_2d": [
+            493,
+            625
+          ],
+          "depth": 0.96
+        },
+        {
+          "point_2d": [
+            517,
+            638
+          ],
+          "depth": 0.94
+        }
+      ],
+      "problem_reserved_text": "You are a robot performing robotic manipulation tasks. The task instruction is: open the right door of this storage cabinet. The handle starts at 2D position [476, 562] with depth 1.08m (distance from camera). Trace the movement trajectory of the handle (not the robot arm) as it moves to complete the task. For each point, provide: (1) point_2d: 2D coordinates in normalized range [0, 1000]; (2) depth: distance from camera in meters (typically 0.7-1.2m). You must provide the points in the order of the trajectory, and the number of points must be 8.",
+      "images": [
+        "robocasa_partnet/47613/style_11/asset_47613_initial.png"
+      ],
+      "source_dataset": "ER1.5_robocasa_partnet_3d_image_trace_1k"
+    }
+  ]
+}

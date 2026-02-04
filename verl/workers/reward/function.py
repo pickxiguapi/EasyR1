@@ -33,17 +33,17 @@ class RewardInputRequired(TypedDict):
     response_length: int
     ground_truth: str
 
-
 class RewardInput(RewardInputRequired, total=False):
     """
     Optional fields for Embodied-R1.5 multi-task data format.
-    Using total=False makes all additional fields optional.
     """
     options: list
     problem_type: str
     problem_id: int
     data_type: str
     data_source: str
+    problem: str
+    dataset_name: str
 ### Embodied-R1.5 New Feature ###
 
 
@@ -51,6 +51,7 @@ class RewardScore(TypedDict):
     overall: float
     format: Optional[float]
     accuracy: Optional[float]
+    dataset_name: Optional[str]
 
 
 SequentialRewardFunction = Callable[[RewardInput], RewardScore]
@@ -73,15 +74,14 @@ class SequentialFunctionRewardManagerMixin:
                 valid_response_ids, skip_special_tokens=self.config.skip_special_tokens
             )
 
+            ### Embodied-R1.5 New Feature ###
             reward_input = {
                 "response": response_str,
                 "response_length": cur_response_length,
                 "ground_truth": data.non_tensor_batch["ground_truth"][i],
             }
-
-            ### Embodied-R1.5 New Feature ###
             # Add optional fields if they exist in non_tensor_batch
-            optional_fields = ["options", "problem_type", "problem_id", "data_type", "data_source"]
+            optional_fields = ["options", "problem_type", "problem_id", "data_type", "data_source", "problem", "dataset_name"]
             for field in optional_fields:
                 if field in data.non_tensor_batch:
                     reward_input[field] = data.non_tensor_batch[field][i]
@@ -91,6 +91,20 @@ class SequentialFunctionRewardManagerMixin:
             reward_tensor[i, cur_response_length - 1] = score["overall"]
             for key, value in score.items():
                 reward_metrics[key].append(value)
+
+        # Add dataset-specific metrics
+        if "dataset_name" in reward_metrics:
+            dataset_metrics = defaultdict(lambda: defaultdict(list))
+            for i, dataset_name in enumerate(reward_metrics["dataset_name"]):
+                if dataset_name is not None:
+                    for key in ["overall", "format", "accuracy"]:
+                        if key in reward_metrics:
+                            dataset_metrics[dataset_name][key].append(reward_metrics[key][i])
+
+            # Add grouped metrics to reward_metrics
+            for dataset_name, metrics in dataset_metrics.items():
+                for metric_name, values in metrics.items():
+                    reward_metrics[f"{dataset_name}/{metric_name}"] = values
 
         return reward_tensor, reward_metrics
 
@@ -109,15 +123,14 @@ class BatchFunctionRewardManagerMixin:
                 valid_response_ids, skip_special_tokens=self.config.skip_special_tokens
             )
 
+            ### Embodied-R1.5 New Feature ###
             reward_input = {
                 "response": response_str,
                 "response_length": cur_response_length,
                 "ground_truth": data.non_tensor_batch["ground_truth"][i],
             }
-
-            ### Embodied-R1.5 New Feature ###
             # Add optional fields if they exist in non_tensor_batch
-            optional_fields = ["options", "problem_type", "problem_id", "data_type", "data_source"]
+            optional_fields = ["options", "problem_type", "problem_id", "data_type", "data_source", "problem", "dataset_name"]
             for field in optional_fields:
                 if field in data.non_tensor_batch:
                     reward_input[field] = data.non_tensor_batch[field][i]
@@ -133,6 +146,20 @@ class BatchFunctionRewardManagerMixin:
             reward_tensor[i, cur_response_length - 1] = score["overall"]
             for key, value in score.items():
                 reward_metrics[key].append(value)
+
+        # Add dataset-specific metrics
+        if "dataset_name" in reward_metrics:
+            dataset_metrics = defaultdict(lambda: defaultdict(list))
+            for i, dataset_name in enumerate(reward_metrics["dataset_name"]):
+                if dataset_name is not None:
+                    for key in ["overall", "format", "accuracy"]:
+                        if key in reward_metrics:
+                            dataset_metrics[dataset_name][key].append(reward_metrics[key][i])
+
+            # Add grouped metrics to reward_metrics
+            for dataset_name, metrics in dataset_metrics.items():
+                for metric_name, values in metrics.items():
+                    reward_metrics[f"{dataset_name}/{metric_name}"] = values
 
         return reward_tensor, reward_metrics
 
