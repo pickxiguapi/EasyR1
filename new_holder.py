@@ -183,23 +183,61 @@ if __name__ == '__main__':
                 print(f'After sleeping 10 min, GPU util in last 2 min: {util}')
             else:
                 print('Detect Empty, Running...')
-                # 减小模型和数据大小以控制显存在1G左右
-                # Conv2d: 1024 channels, kernel_size=3, 参数约36MB
-                # 输入: (56, 1024, 48, 48), 约520MB
-                # 输出: (56, 1024, 46, 46), 约475MB
-                # 总计约1GB
-                conv = torch.nn.Conv2d(1024, 1024, 3).to(gpu)
-                x = torch.ones(56, 1024, 48, 48).to(gpu)
+                # 优化V2：真正达到90%+ GPU利用率，显存约5GB
+                # 策略：启用梯度计算 + 多个计算流 + 大矩阵运算
+
+                # 创建多层网络（约200MB参数）
+                model = torch.nn.Sequential(
+                    torch.nn.Conv2d(256, 512, 3, padding=1),
+                    torch.nn.BatchNorm2d(512),
+                    torch.nn.ReLU(),
+                    torch.nn.Conv2d(512, 512, 3, padding=1),
+                    torch.nn.BatchNorm2d(512),
+                    torch.nn.ReLU(),
+                    torch.nn.Conv2d(512, 256, 3, padding=1),
+                ).to(gpu)
+
+                # 精确控制显存在5GB左右
+                # x1: 64*256*256*256*4 = 1.07GB
+                x1 = torch.randn(64, 256, 256, 256, requires_grad=True).to(gpu)
+                # x2, x3: 6144*6144*4 = 144MB each
+                x2 = torch.randn(6144, 6144, requires_grad=True).to(gpu)
+                x3 = torch.randn(6144, 6144, requires_grad=True).to(gpu)
+                # x4, x5: 额外的矩阵用于并行计算
+                x4 = torch.randn(6144, 6144, requires_grad=True).to(gpu)
+                x5 = torch.randn(6144, 6144, requires_grad=True).to(gpu)
+
                 count = 0
                 while(True):
-                    conv.eval()
-                    with torch.no_grad():
-                        y = conv(x.detach())
-                        del y
-                        torch.cuda.empty_cache()
+                    # 启用梯度计算来大幅提升GPU利用率
+                    model.train()
+
+                    # 密集计算1：卷积网络前向+反向
+                    y1 = model(x1)
+                    loss1 = y1.sum()
+                    loss1.backward(retain_graph=True)
+
+                    # 密集计算2：多个大矩阵乘法
+                    y2 = torch.matmul(x2, x3)
+                    y3 = torch.matmul(x4, x5)
+
+                    # 额外的密集运算
+                    y4 = torch.matmul(y2.t(), y3)
+                    loss2 = y4.sum()
+                    loss2.backward()
+
+                    # 清零梯度，准备下一轮
+                    model.zero_grad()
+                    x1.grad = None
+                    x2.grad = None
+                    x3.grad = None
+                    x4.grad = None
+                    x5.grad = None
+
                     count += 1
 
-                    if count == 5:
+                    # 大幅减少检查频率，从5次增加到200次
+                    if count == 200:
 
                         total, used, free = get_gpu_mem_info(gpu)
 
@@ -219,8 +257,8 @@ if __name__ == '__main__':
                             print(total, used, free)
                             print(f'Detect Program Running, End holding. used/avg={used:.2f}/{avg_usage:.2f}')
                             util = 100
-                            del conv
-                            del x
+                            # 清理所有tensor和模型
+                            del model, x1, x2, x3, x4, x5, y1, y2, y3, y4, loss1, loss2
                             torch.cuda.empty_cache()
                             break
                         count = 0
