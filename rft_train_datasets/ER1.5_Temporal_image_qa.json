@@ -1,0 +1,2102 @@
+[
+  {
+    "problem_id": "Temporal_0",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the pencil in the desk",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/2316/000000201.png",
+      "temporal/images/task_type_1_high/2316/000000215.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_1",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the spoon in the cup",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/92/000000091.png",
+      "temporal/images/task_type_1_high/92/000000105.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_2",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "pick up the mug",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/16/000000219.png",
+      "temporal/images/task_type_1_high/16/000000233.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_3",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the egg in the diningtable",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/306/000000299.png",
+      "temporal/images/task_type_1_high/306/000000313.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_4",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the pan in the fridge",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/271/000000349.png",
+      "temporal/images/task_type_1_high/271/000000371.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_5",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the tomato in the countertop",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/231/000000209.png",
+      "temporal/images/task_type_1_high/231/000000223.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_6",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "toggle the desklamp",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/118/000000195.png",
+      "temporal/images/task_type_1_low/118/000000212.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_7",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "open the fridge",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/82/000000460.png",
+      "temporal/images/task_type_1_low/82/000000463.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_8",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "slice the potato",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/1324/000000132.png",
+      "temporal/images/task_type_1_low/1324/000000141.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_9",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "close the cabinet",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/72/000000174.png",
+      "temporal/images/task_type_1_low/72/000000177.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_10",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the fork in the mug",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/1746/000000160.png",
+      "temporal/images/task_type_1_high/1746/000000174.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_11",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the vase in the shelf",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/682/000000144.png",
+      "temporal/images/task_type_1_high/682/000000158.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_12",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "toggle the floorlamp",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/23/000000211.png",
+      "temporal/images/task_type_1_low/23/000000228.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_13",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "close the fridge",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/21/000000371.png",
+      "temporal/images/task_type_1_low/21/000000374.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_14",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "close the microwave",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/76/000000317.png",
+      "temporal/images/task_type_1_low/76/000000320.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_15",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "pick up the pot",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/225/000000105.png",
+      "temporal/images/task_type_1_high/225/000000119.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_16",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "pick up the tissuebox",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/257/000000062.png",
+      "temporal/images/task_type_1_high/257/000000076.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_17",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the watch in the sidetable",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/1039/000000115.png",
+      "temporal/images/task_type_1_high/1039/000000129.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_18",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "slice the bread",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/1870/000000101.png",
+      "temporal/images/task_type_1_low/1870/000000110.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_19",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the mug in the countertop",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/17/000000319.png",
+      "temporal/images/task_type_1_high/17/000000333.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_20",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "close the safe",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/1391/000000379.png",
+      "temporal/images/task_type_1_low/1391/000000382.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_21",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the cellphone in the box",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/191/000000203.png",
+      "temporal/images/task_type_1_high/191/000000217.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_22",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the box in the diningtable",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/3140/000000148.png",
+      "temporal/images/task_type_1_high/3140/000000162.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_23",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the apple in the garbagecan",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/657/000000320.png",
+      "temporal/images/task_type_1_high/657/000000334.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_24",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the pot in the diningtable",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/226/000000176.png",
+      "temporal/images/task_type_1_high/226/000000190.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_25",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the dishsponge in the plate",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/797/000000098.png",
+      "temporal/images/task_type_1_high/797/000000112.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_26",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "close the laptop",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/1714/000000113.png",
+      "temporal/images/task_type_1_low/1714/000000116.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_27",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the pot in the stoveburner",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/318/000000225.png",
+      "temporal/images/task_type_1_high/318/000000239.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_28",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the cloth in the bathtub",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/5/000000220.png",
+      "temporal/images/task_type_1_high/5/000000234.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_29",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the egg in the garbagecan",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/136/000000334.png",
+      "temporal/images/task_type_1_high/136/000000348.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_30",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "close the box",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/2933/000000326.png",
+      "temporal/images/task_type_1_low/2933/000000329.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_31",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the knife in the microwave",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/455/000000095.png",
+      "temporal/images/task_type_1_high/455/000000117.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_32",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "close the safe",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/2292/000000158.png",
+      "temporal/images/task_type_1_low/2292/000000161.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_33",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the box in the coffeetable",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/131/000000284.png",
+      "temporal/images/task_type_1_high/131/000000298.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_34",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the spatula in the pot",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/224/000000090.png",
+      "temporal/images/task_type_1_high/224/000000104.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_35",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the toiletpaper in the toiletpaperhanger",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/446/000000086.png",
+      "temporal/images/task_type_1_high/446/000000100.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_36",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the creditcard in the plate",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/3221/000000192.png",
+      "temporal/images/task_type_1_high/3221/000000206.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_37",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the cellphone in the sidetable",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/2641/000000154.png",
+      "temporal/images/task_type_1_high/2641/000000168.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_38",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "pick up the plunger",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/555/000000060.png",
+      "temporal/images/task_type_1_high/555/000000074.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_39",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the cd in the sidetable",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/79/000000161.png",
+      "temporal/images/task_type_1_high/79/000000175.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_40",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "close the drawer",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/486/000000148.png",
+      "temporal/images/task_type_1_low/486/000000151.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_41",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the apple in the plate",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/465/000000302.png",
+      "temporal/images/task_type_1_high/465/000000316.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_42",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the lettuce in the garbagecan",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/298/000000136.png",
+      "temporal/images/task_type_1_high/298/000000150.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_43",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the potato in the microwave",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/35/000000315.png",
+      "temporal/images/task_type_1_high/35/000000337.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_44",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the keychain in the sofa",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/824/000000181.png",
+      "temporal/images/task_type_1_high/824/000000195.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_45",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the creditcard in the sofa",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/1253/000000142.png",
+      "temporal/images/task_type_1_high/1253/000000156.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_46",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "pick up the pillow",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/103/000000034.png",
+      "temporal/images/task_type_1_high/103/000000048.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_47",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the bowl in the fridge",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/536/000000292.png",
+      "temporal/images/task_type_1_high/536/000000314.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_48",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "pick up the bowl",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/68/000000065.png",
+      "temporal/images/task_type_1_high/68/000000079.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_49",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the butterknife in the pot",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/1379/000000113.png",
+      "temporal/images/task_type_1_high/1379/000000127.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_50",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the remotecontrol in the sofa",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/350/000000151.png",
+      "temporal/images/task_type_1_high/350/000000165.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_51",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the tomato in the sidetable",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/510/000000461.png",
+      "temporal/images/task_type_1_high/510/000000475.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_52",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the candle in the toilet",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/1547/000000106.png",
+      "temporal/images/task_type_1_high/1547/000000120.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_53",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the pen in the bowl",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/184/000000101.png",
+      "temporal/images/task_type_1_high/184/000000115.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_54",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "pick up the laptop",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/60/000000108.png",
+      "temporal/images/task_type_1_high/60/000000126.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_55",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "pick up the knife",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/36/000000076.png",
+      "temporal/images/task_type_1_high/36/000000090.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_56",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the potato in the pan",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/237/000000220.png",
+      "temporal/images/task_type_1_high/237/000000234.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_57",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the keychain in the plate",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/334/000000235.png",
+      "temporal/images/task_type_1_high/334/000000249.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_58",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the keychain in the dresser",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/3042/000000223.png",
+      "temporal/images/task_type_1_high/3042/000000237.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_59",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the tissuebox in the plate",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/2489/000000150.png",
+      "temporal/images/task_type_1_high/2489/000000164.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_60",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the dishsponge in the bowl",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/81/000000193.png",
+      "temporal/images/task_type_1_high/81/000000207.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_61",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the pen in the sidetable",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/1969/000000232.png",
+      "temporal/images/task_type_1_high/1969/000000246.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_62",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the winebottle in the cabinet",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/2171/000000237.png",
+      "temporal/images/task_type_1_high/2171/000000259.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_63",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the lettuce in the fridge",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/810/000000111.png",
+      "temporal/images/task_type_1_high/810/000000133.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_64",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the kettle in the stoveburner",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/512/000000243.png",
+      "temporal/images/task_type_1_high/512/000000257.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_65",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the butterknife in the sidetable",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/146/000000158.png",
+      "temporal/images/task_type_1_high/146/000000172.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_66",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the bowl in the coffeetable",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/524/000000260.png",
+      "temporal/images/task_type_1_high/524/000000274.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_67",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the box in the armchair",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/482/000000363.png",
+      "temporal/images/task_type_1_high/482/000000377.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_68",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the book in the coffeetable",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/218/000000167.png",
+      "temporal/images/task_type_1_high/218/000000181.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_69",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the box in the desk",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/300/000000106.png",
+      "temporal/images/task_type_1_high/300/000000120.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_70",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "close the fridge",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/61/000000177.png",
+      "temporal/images/task_type_1_low/61/000000214.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_71",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the mug in the diningtable",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/158/000000147.png",
+      "temporal/images/task_type_1_high/158/000000161.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_72",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the fork in the plate",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/1223/000000134.png",
+      "temporal/images/task_type_1_high/1223/000000152.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_73",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the spatula in the bowl",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/3809/000000119.png",
+      "temporal/images/task_type_1_high/3809/000000133.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_74",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the spraybottle in the dresser",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/1385/000000103.png",
+      "temporal/images/task_type_1_high/1385/000000117.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_75",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the statue in the coffeetable",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/828/000000172.png",
+      "temporal/images/task_type_1_high/828/000000186.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_76",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "slice the potato",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/1426/000000159.png",
+      "temporal/images/task_type_1_low/1426/000000168.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_77",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the alarmclock in the box",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/302/000000238.png",
+      "temporal/images/task_type_1_high/302/000000256.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_78",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the cup in the fridge",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/2310/000000328.png",
+      "temporal/images/task_type_1_high/2310/000000350.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_79",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "close the laptop",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/426/000000060.png",
+      "temporal/images/task_type_1_low/426/000000063.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_80",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the candle in the countertop",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/49/000000084.png",
+      "temporal/images/task_type_1_high/49/000000098.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_81",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "slice the bread",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/245/000000133.png",
+      "temporal/images/task_type_1_low/245/000000142.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_82",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the potato in the bowl",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/2868/000000108.png",
+      "temporal/images/task_type_1_high/2868/000000122.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_83",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the mug in the dresser",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/403/000000228.png",
+      "temporal/images/task_type_1_high/403/000000242.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_84",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the bowl in the sidetable",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/597/000000168.png",
+      "temporal/images/task_type_1_high/597/000000182.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_85",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "pick up the alarmclock",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/301/000000172.png",
+      "temporal/images/task_type_1_high/301/000000186.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_86",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "close the drawer",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/57/000000313.png",
+      "temporal/images/task_type_1_low/57/000000316.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_87",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "pick up the pencil",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/219/000000055.png",
+      "temporal/images/task_type_1_high/219/000000069.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_88",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the mug in the desk",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/1166/000000336.png",
+      "temporal/images/task_type_1_high/1166/000000350.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_89",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the book in the cabinet",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/1074/000000161.png",
+      "temporal/images/task_type_1_high/1074/000000183.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_90",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the dishsponge in the cart",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/982/000000216.png",
+      "temporal/images/task_type_1_high/982/000000230.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_91",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the handtowel in the countertop",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/588/000000128.png",
+      "temporal/images/task_type_1_high/588/000000142.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_92",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "open the drawer",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/816/000000054.png",
+      "temporal/images/task_type_1_low/816/000000057.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_93",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "pick up the box",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/121/000000178.png",
+      "temporal/images/task_type_1_high/121/000000192.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_94",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "open the safe",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/2470/000000126.png",
+      "temporal/images/task_type_1_low/2470/000000129.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_95",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the glassbottle in the plate",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/3593/000000226.png",
+      "temporal/images/task_type_1_high/3593/000000240.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_96",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the tomato in the garbagecan",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/1783/000000351.png",
+      "temporal/images/task_type_1_high/1783/000000365.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_97",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "pick up the basketball",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/528/000000060.png",
+      "temporal/images/task_type_1_high/528/000000074.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_98",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "pick up the statue",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/319/000000092.png",
+      "temporal/images/task_type_1_high/319/000000106.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_99",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the soapbar in the countertop",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/1087/000000236.png",
+      "temporal/images/task_type_1_high/1087/000000250.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_100",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the mug in the sink",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/110/000000075.png",
+      "temporal/images/task_type_1_high/110/000000089.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_101",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the knife in the sink",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/532/000000094.png",
+      "temporal/images/task_type_1_high/532/000000108.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_102",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the plate in the dresser",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/336/000000308.png",
+      "temporal/images/task_type_1_high/336/000000322.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_103",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "open the microwave",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/221/000000186.png",
+      "temporal/images/task_type_1_low/221/000000189.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_104",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "close the laptop",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/2305/000000102.png",
+      "temporal/images/task_type_1_low/2305/000000105.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_105",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "close the drawer",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/894/000000247.png",
+      "temporal/images/task_type_1_low/894/000000250.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_106",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the box in the sofa",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/193/000000300.png",
+      "temporal/images/task_type_1_high/193/000000314.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_107",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "pick up the spraybottle",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/167/000000065.png",
+      "temporal/images/task_type_1_high/167/000000079.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_108",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "pick up the spoon",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/91/000000050.png",
+      "temporal/images/task_type_1_high/91/000000064.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_109",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the keychain in the ottoman",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/1573/000000188.png",
+      "temporal/images/task_type_1_high/1573/000000202.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_110",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the book in the sofa",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/285/000000146.png",
+      "temporal/images/task_type_1_high/285/000000160.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_111",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "open the cabinet",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/272/000000214.png",
+      "temporal/images/task_type_1_low/272/000000217.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_112",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the cellphone in the bed",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/1585/000000138.png",
+      "temporal/images/task_type_1_high/1585/000000152.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_113",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the butterknife in the fridge",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/1767/000000453.png",
+      "temporal/images/task_type_1_high/1767/000000471.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_114",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "close the box",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/4020/000000231.png",
+      "temporal/images/task_type_1_low/4020/000000234.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_115",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "slice the potato",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/715/000000127.png",
+      "temporal/images/task_type_1_low/715/000000136.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_116",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the dishsponge in the pot",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/1198/000000178.png",
+      "temporal/images/task_type_1_high/1198/000000192.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_117",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the lettuce in the sidetable",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/67/000000266.png",
+      "temporal/images/task_type_1_high/67/000000280.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_118",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the pencil in the mug",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/401/000000103.png",
+      "temporal/images/task_type_1_high/401/000000117.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_119",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the toiletpaper in the toilet",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/1467/000000117.png",
+      "temporal/images/task_type_1_high/1467/000000131.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_120",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the bread in the countertop",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/1049/000000422.png",
+      "temporal/images/task_type_1_high/1049/000000436.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_121",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the saltshaker in the sidetable",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/2181/000000139.png",
+      "temporal/images/task_type_1_high/2181/000000153.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_122",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "close the safe",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/1061/000000172.png",
+      "temporal/images/task_type_1_low/1061/000000175.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_123",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the cloth in the shelf",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/359/000000127.png",
+      "temporal/images/task_type_1_high/359/000000141.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_124",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the cellphone in the plate",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/1179/000000418.png",
+      "temporal/images/task_type_1_high/1179/000000432.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_125",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the kettle in the shelf",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/1581/000000225.png",
+      "temporal/images/task_type_1_high/1581/000000239.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_126",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the mug in the cabinet",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/182/000000333.png",
+      "temporal/images/task_type_1_high/182/000000355.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_127",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the pan in the countertop",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/793/000000092.png",
+      "temporal/images/task_type_1_high/793/000000106.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_128",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the knife in the sidetable",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/1453/000000114.png",
+      "temporal/images/task_type_1_high/1453/000000128.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_129",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the pen in the plate",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/989/000000086.png",
+      "temporal/images/task_type_1_high/989/000000100.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_130",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the pillow in the ottoman",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/104/000000110.png",
+      "temporal/images/task_type_1_high/104/000000124.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_131",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the mug in the shelf",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/315/000000251.png",
+      "temporal/images/task_type_1_high/315/000000265.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_132",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "close the fridge",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/4/000000162.png",
+      "temporal/images/task_type_1_low/4/000000165.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_133",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the candle in the dresser",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/886/000000090.png",
+      "temporal/images/task_type_1_high/886/000000104.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_134",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the book in the diningtable",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/494/000000100.png",
+      "temporal/images/task_type_1_high/494/000000114.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_135",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "pick up the creditcard",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/50/000000108.png",
+      "temporal/images/task_type_1_high/50/000000122.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_136",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the handtowel in the garbagecan",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/686/000000118.png",
+      "temporal/images/task_type_1_high/686/000000132.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_137",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "close the box",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/961/000000357.png",
+      "temporal/images/task_type_1_low/961/000000360.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_138",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the apple in the bowl",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/534/000000184.png",
+      "temporal/images/task_type_1_high/534/000000198.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_139",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "pick up the soapbar",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/113/000000053.png",
+      "temporal/images/task_type_1_high/113/000000067.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_140",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the remotecontrol in the armchair",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/562/000000195.png",
+      "temporal/images/task_type_1_high/562/000000209.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_141",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "toggle the desklamp",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/413/000000105.png",
+      "temporal/images/task_type_1_low/413/000000122.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_142",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the dishsponge in the bathtub",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/2359/000000176.png",
+      "temporal/images/task_type_1_high/2359/000000190.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_143",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "close the safe",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/2472/000000145.png",
+      "temporal/images/task_type_1_low/2472/000000148.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_144",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "open the fridge",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_low/123/000000140.png",
+      "temporal/images/task_type_1_low/123/000000143.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_145",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the ladle in the bowl",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/2598/000000098.png",
+      "temporal/images/task_type_1_high/2598/000000116.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_146",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the book in the desk",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/801/000000098.png",
+      "temporal/images/task_type_1_high/801/000000112.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_147",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the candle in the plate",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/1523/000000247.png",
+      "temporal/images/task_type_1_high/1523/000000261.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_148",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "pick up the ladle",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/0/000000039.png",
+      "temporal/images/task_type_1_high/0/000000053.png"
+    ]
+  },
+  {
+    "problem_id": "Temporal_149",
+    "problem": "<image> <image>\nBased on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "data_type": "image",
+    "problem_type": "open-ended",
+    "options": [],
+    "data_source": "Temporal",
+    "answer": "put the spraybottle in the toilet",
+    "problem_reserved_text": "Based on these sequential images over time, determine what changes have occurred in the state of the environment. Focus on the changes in objects and surroundings before and after the robot performs its tasks, and explain what actions the robot has executed.",
+    "images": [
+      "temporal/images/task_type_1_high/2258/000000141.png",
+      "temporal/images/task_type_1_high/2258/000000155.png"
+    ]
+  }
+]

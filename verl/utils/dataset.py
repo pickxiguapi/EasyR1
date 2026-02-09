@@ -32,10 +32,18 @@ from transformers import PreTrainedTokenizer, ProcessorMixin
 from . import torch_functional as VF
 
 
+# QUESTION_TEMPLATE = (
+#     "{Question}\n"
+#     "Please answer this question based on the visual content."
+#     "Provide your thinking process between the <think> and </think> tags, and then give your final answer between the <answer> and </answer> tags."
+#     "At the end, you must output the final answer in the format:\n"
+#     "<answer><your_answer_here></answer>\n"
+# )
+
 QUESTION_TEMPLATE = (
     "{Question}\n"
     "Please answer this question based on the visual content."
-    "Provide your thinking process between the <think> and </think> tags, and then give your final answer between the <answer> and </answer> tags."
+    "You FIRST think about the reasoning process as an internal monologue and then provide the final answer."
     "At the end, you must output the final answer in the format:\n"
     "<answer><your_answer_here></answer>\n"
 )
@@ -108,19 +116,19 @@ def process_image(
 
     image.load()  # avoid "Too many open files" errors
     if max_pixels is not None and (image.width * image.height) > max_pixels:
-        original_pixels = image.width * image.height
+        # original_pixels = image.width * image.height
         resize_factor = math.sqrt(max_pixels / (image.width * image.height))
         width, height = int(image.width * resize_factor), int(image.height * resize_factor)
-        new_pixels = width * height
-        print(f"[Image Resize] max_pixels triggered: {original_pixels} pixels ({image.width}x{image.height}) -> {new_pixels} pixels ({width}x{height})")
+        # new_pixels = width * height
+        #print(f"[Image Resize] max_pixels triggered: {original_pixels} pixels ({image.width}x{image.height}) -> {new_pixels} pixels ({width}x{height})")
         image = image.resize((width, height))
 
     if min_pixels is not None and (image.width * image.height) < min_pixels:
-        original_pixels = image.width * image.height
+        # original_pixels = image.width * image.height
         resize_factor = math.sqrt(min_pixels / (image.width * image.height))
         width, height = int(image.width * resize_factor), int(image.height * resize_factor)
-        new_pixels = width * height
-        print(f"[Image Resize] min_pixels triggered: {original_pixels} pixels ({image.width}x{image.height}) -> {new_pixels} pixels ({width}x{height})")
+        # new_pixels = width * height
+        #print(f"[Image Resize] min_pixels triggered: {original_pixels} pixels ({image.width}x{image.height}) -> {new_pixels} pixels ({width}x{height})")
         image = image.resize((width, height))
 
     if image.mode != "RGB":
@@ -130,50 +138,36 @@ def process_image(
 
 
 def process_video(
-    video: Union[str, list],
-    min_pixels: Optional[int] = 8*32*32,
-    max_pixels: Optional[int] = 64*32*32,
-    video_fps: float = 2.0,
-    max_frames: int = 32,
+    video: str,
+    min_pixels: int = 4*32*32,
+    max_pixels: int = 64*32*32,
+    max_frames: int = 128,
+    video_fps: float = 2,
     return_fps: bool = False
-) -> Union[list[ImageObject], tuple[list[ImageObject], list[float]]]:
+):
     """
     Process video with fps sampling and max_frames limit.
 
-    ### Embodied-R1.5 New Feature ###
-    - If video is a list (pre-extracted frames):
-        ["frame1.png", "frame2.png", "frame3.png"]
-    - If video is a video file path, use fetch_video with max_frames support
-        video1_path.mp4
+    Args:
+        video: Video file path (e.g., "video1.mp4")
+        min_pixels: Minimum number of pixels
+        max_pixels: Maximum number of pixels
+        max_frames: Maximum number of frames to sample
+        video_fps: Frames per second for sampling
+        return_fps: Whether to return the video fps
     """
-    # Video file path: process with fps sampling and max_frames
-
-    if isinstance(video, list):
-        #  ["frame1.png", "frame2.png", "frame3.png"]
-        vision_info = {
-            "video": video,
-            "min_pixels": min_pixels,
-            "max_pixels": max_pixels,
-            "max_frames": max_frames,
-            "fps": 1
-        }
-    elif isinstance(video, str):
-        # video1_path.mp4
-        vision_info = {
-            "video": video,
-            "min_pixels": min_pixels,
-            "max_pixels": max_pixels,
-            "max_frames": max_frames,
-            "fps": video_fps
-        }
-    else:
-        raise ValueError("Video should be either a list of frame paths or a video file path.")
-    # print(vision_info)
+    vision_info = {
+        "video": video,
+        "min_pixels": min_pixels,
+        "max_pixels": max_pixels,
+        "max_frames": max_frames,
+        "fps": video_fps
+    }
     return fetch_video(
         vision_info,
         image_patch_size=16,
         return_video_sample_fps=return_fps,
-        return_video_metadata=False  # Don't return metadata to avoid format issues
+        return_video_metadata=return_fps
     )
 
 
@@ -213,7 +207,7 @@ class RLHFDataset(Dataset):
         filter_overlong_prompts: bool = True,
         filter_overlong_prompts_workers: int = 16,
         debug: bool = False,  # Debug mode: sample 200 examples per dataset
-        debug_sample_size: int = 160,  # Number of samples in debug mode
+        debug_sample_size: int = 200,  # Number of samples in debug mode
     ):
         self.tokenizer = tokenizer
         self.processor = processor
@@ -285,11 +279,6 @@ class RLHFDataset(Dataset):
             datasets.append(ds)
 
         # Concatenate all datasets if multiple files provided
-
-        # Define common schema with both images and videos fields
-        # videos is Sequence(Sequence(Value('string'))) to handle both:
-        # - list of video files: [["video1.mp4"], ["video2.mp4"]]
-        # - list of frame sequences: [["frame1.png", "frame2.png"], ...]
         common_features = Features({
             'problem_id': Value('string'),
             'problem': Value('string'),
@@ -300,11 +289,11 @@ class RLHFDataset(Dataset):
             'answer': Value('string'),
             'problem_reserved_text': Value('string'),
             'images': Sequence(Value('string')),
-            'videos': Sequence(Sequence(Value('string'))),
+            'videos': Sequence(Value('string')),
             'dataset_name': Value('string'),
         })
 
-        # Add missing fields and normalize videos format
+        # Add missing fields
         aligned_datasets = []
         for ds in datasets:
             # Add missing 'images' field if not present
@@ -313,18 +302,6 @@ class RLHFDataset(Dataset):
             # Add missing 'videos' field if not present
             if 'videos' not in ds.column_names:
                 ds = ds.map(lambda x: {**x, 'videos': []})
-            else:
-                # Normalize videos format: convert list of strings to list of lists
-                def normalize_videos(example):
-                    videos = example.get('videos', [])
-                    if videos and len(videos) > 0:
-                        # Check if first item is a string (not a list)
-                        if isinstance(videos[0], str):
-                            # Convert ["v1.mp4", "v2.mp4"] to [["v1.mp4"], ["v2.mp4"]]
-                            example['videos'] = [[v] for v in videos]
-                    return example
-
-                ds = ds.map(normalize_videos, desc="Normalizing videos format")
 
             # Cast to common schema
             aligned_datasets.append(ds.cast(common_features))
@@ -340,243 +317,12 @@ class RLHFDataset(Dataset):
             with open(format_prompt, encoding="utf-8") as f:
                 self.format_prompt = f.read()
 
-        if debug:
-            print(f"[DEBUG] Dataset size after loading: {len(self.dataset)}")
-            self._analyze_token_statistics()
-
         if filter_overlong_prompts:
             self.dataset = self.dataset.filter(
                 self._filter_overlong_prompts,
                 desc="Filtering overlong prompts",
                 num_proc=filter_overlong_prompts_workers,
             )
-
-    def _analyze_token_statistics(self):
-        """
-        Analyze token distribution statistics for the dataset.
-        This helps determine optimal hyperparameters like max_prompt_length, batch_size, etc.
-        """
-        print("\n" + "="*80)
-        print("TOKEN DISTRIBUTION ANALYSIS")
-        print("="*80)
-
-        # Collect token lengths for each example
-        token_stats = {
-            'all': [],
-            'by_dataset': defaultdict(list),
-            'by_data_type': defaultdict(list),
-            'by_problem_type': defaultdict(list),
-        }
-
-        print(f"\n[1/3] Analyzing token lengths for {len(self.dataset)} examples...")
-
-        for idx, example in enumerate(self.dataset):
-            if idx % 100 == 0:
-                print(f"  Progress: {idx}/{len(self.dataset)}", end='\r')
-
-            try:
-                messages = self._build_messages(example)
-                data_type = example.get(self.data_type_key, "text")
-                dataset_name = example.get("dataset_name", "unknown")
-                problem_type = example.get(self.problem_type_key, "unknown")
-
-                # Calculate token length based on data type (including visual tokens)
-                if data_type == "image" and self.processor:
-                    prompt = self.processor.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
-                    images = example[self.image_key]
-                    if self.image_dir is not None and len(images) != 0 and isinstance(images[0], str):
-                        images = [os.path.join(self.image_dir, image) for image in images]
-
-                    processed_images = [] if len(images) != 0 else None
-                    for image in images:
-                        processed_images.append(process_image(image, self.min_pixels, self.max_pixels))
-
-                    model_inputs = self.processor(processed_images, [prompt], add_special_tokens=False, return_tensors="pt")
-                    token_length = model_inputs["input_ids"].size(-1)
-
-                elif data_type == "video" and self.processor:
-                    prompt = self.processor.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
-                    videos = example[self.video_key]
-
-                    # Process video paths
-                    if self.image_dir is not None and len(videos) != 0 and videos[0][0].endswith(('.mp4', '.avi', '.mov', '.mkv')):
-                        videos = [os.path.join(self.image_dir, video[0]) for video in videos]
-                    elif self.image_dir is not None and len(videos) != 0 and videos[0][0].endswith(('.png', '.jpg', '.jpeg', '.bmp', '.gif', '.webp', '.tiff', '.tif')):
-                        videos = [[os.path.join(self.image_dir, frame) for frame in video] for video in videos]
-
-                    processed_videos = [] if len(videos) != 0 else None
-                    for video in videos:
-                        video_input = process_video(video, self.min_video_pixels, self.max_video_pixels, self.video_fps)
-                        processed_videos.append(video_input)
-
-                    model_inputs = self.processor(videos=processed_videos, text=[prompt], add_special_tokens=False, return_tensors="pt")
-                    token_length = model_inputs["input_ids"].size(-1)
-
-                elif data_type == "mixed" and self.processor:
-                    prompt = self.processor.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
-                    images = example.get(self.image_key, [])
-                    videos = example.get(self.video_key, [])
-
-                    # Process image paths
-                    if self.image_dir is not None and len(images) != 0 and isinstance(images[0], str):
-                        images = [os.path.join(self.image_dir, image) for image in images]
-
-                    processed_images = [] if len(images) != 0 else None
-                    for image in images:
-                        processed_images.append(process_image(image, self.min_pixels, self.max_pixels))
-
-                    # Process video paths
-                    if self.image_dir is not None and len(videos) != 0 and videos[0][0].endswith(('.mp4', '.avi', '.mov', '.mkv')):
-                        videos = [os.path.join(self.image_dir, video[0]) for video in videos]
-                    elif self.image_dir is not None and len(videos) != 0 and videos[0][0].endswith(('.png', '.jpg', '.jpeg', '.bmp', '.gif', '.webp', '.tiff', '.tif')):
-                        videos = [[os.path.join(self.image_dir, frame) for frame in video] for video in videos]
-
-                    processed_videos = [] if len(videos) != 0 else None
-                    for video in videos:
-                        video_input = process_video(video, self.min_video_pixels, self.max_video_pixels, self.video_fps)
-                        processed_videos.append(video_input)
-
-                    model_inputs = self.processor(images=processed_images, videos=processed_videos, text=[prompt], add_special_tokens=False, return_tensors="pt")
-                    token_length = model_inputs["input_ids"].size(-1)
-
-                else:
-                    # Text-only data
-                    input_ids = self.tokenizer.apply_chat_template(messages, add_generation_prompt=True)
-                    token_length = len(input_ids)
-
-                # Store statistics
-                token_stats['all'].append(token_length)
-                token_stats['by_dataset'][dataset_name].append(token_length)
-                token_stats['by_data_type'][data_type].append(token_length)
-                token_stats['by_problem_type'][problem_type].append(token_length)
-
-            except Exception as e:
-                print(f"\n  Warning: Failed to analyze example {idx}: {e}")
-                continue
-
-        print(f"  Progress: {len(self.dataset)}/{len(self.dataset)} - Complete!")
-
-        # Helper function to calculate statistics
-        def calc_stats(lengths):
-            if not lengths:
-                return None
-            lengths = np.array(lengths)
-            return {
-                'count': len(lengths),
-                'min': int(np.min(lengths)),
-                'max': int(np.max(lengths)),
-                'mean': float(np.mean(lengths)),
-                'median': float(np.median(lengths)),
-                'std': float(np.std(lengths)),
-                'p50': float(np.percentile(lengths, 50)),
-                'p75': float(np.percentile(lengths, 75)),
-                'p90': float(np.percentile(lengths, 90)),
-                'p95': float(np.percentile(lengths, 95)),
-                'p99': float(np.percentile(lengths, 99)),
-            }
-
-        # Print overall statistics
-        print(f"\n[2/3] Overall Token Statistics:")
-        print("-" * 80)
-        overall_stats = calc_stats(token_stats['all'])
-        if overall_stats:
-            print(f"  Total Examples: {overall_stats['count']}")
-            print(f"  Min Length:     {overall_stats['min']}")
-            print(f"  Max Length:     {overall_stats['max']}")
-            print(f"  Mean Length:    {overall_stats['mean']:.2f}")
-            print(f"  Median Length:  {overall_stats['median']:.2f}")
-            print(f"  Std Dev:        {overall_stats['std']:.2f}")
-            print(f"\n  Percentiles:")
-            print(f"    50th (median): {overall_stats['p50']:.0f}")
-            print(f"    75th:          {overall_stats['p75']:.0f}")
-            print(f"    90th:          {overall_stats['p90']:.0f}")
-            print(f"    95th:          {overall_stats['p95']:.0f}")
-            print(f"    99th:          {overall_stats['p99']:.0f}")
-
-        # Print statistics by dataset
-        print(f"\n[3/3] Token Statistics by Dataset:")
-        print("-" * 80)
-        for dataset_name in sorted(token_stats['by_dataset'].keys()):
-            lengths = token_stats['by_dataset'][dataset_name]
-            stats = calc_stats(lengths)
-            if stats:
-                print(f"\n  Dataset: {dataset_name}")
-                print(f"    Count:  {stats['count']}")
-                print(f"    Min:    {stats['min']}")
-                print(f"    Max:    {stats['max']}")
-                print(f"    Mean:   {stats['mean']:.2f}")
-                print(f"    Median: {stats['median']:.2f}")
-                print(f"    P95:    {stats['p95']:.0f}")
-                print(f"    P99:    {stats['p99']:.0f}")
-
-        # Print statistics by data type
-        print(f"\n  Token Statistics by Data Type:")
-        print("  " + "-" * 76)
-        for data_type in sorted(token_stats['by_data_type'].keys()):
-            lengths = token_stats['by_data_type'][data_type]
-            stats = calc_stats(lengths)
-            if stats:
-                print(f"\n    Type: {data_type}")
-                print(f"      Count:  {stats['count']}")
-                print(f"      Mean:   {stats['mean']:.2f}")
-                print(f"      Median: {stats['median']:.2f}")
-                print(f"      P95:    {stats['p95']:.0f}")
-
-        # Print statistics by problem type
-        print(f"\n  Token Statistics by Problem Type:")
-        print("  " + "-" * 76)
-        for problem_type in sorted(token_stats['by_problem_type'].keys()):
-            lengths = token_stats['by_problem_type'][problem_type]
-            stats = calc_stats(lengths)
-            if stats:
-                print(f"\n    Type: {problem_type}")
-                print(f"      Count:  {stats['count']}")
-                print(f"      Mean:   {stats['mean']:.2f}")
-                print(f"      P95:    {stats['p95']:.0f}")
-
-        # Provide hyperparameter recommendations
-        print(f"\n" + "="*80)
-        print("HYPERPARAMETER RECOMMENDATIONS")
-        print("="*80)
-
-        if overall_stats:
-            # Recommend max_prompt_length
-            recommended_max_length = int(overall_stats['p95'] * 1.1)  # 10% buffer above P95
-            print(f"\n  1. max_prompt_length:")
-            print(f"     Current setting: {self.max_prompt_length}")
-            print(f"     Recommended:     {recommended_max_length} (covers 95% of data with 10% buffer)")
-            print(f"     - P95 length: {overall_stats['p95']:.0f}")
-            print(f"     - P99 length: {overall_stats['p99']:.0f}")
-            if self.max_prompt_length < overall_stats['p95']:
-                print(f"     ⚠️  WARNING: Current max_prompt_length may truncate {5}% of examples!")
-
-            # Estimate memory usage
-            print(f"\n  2. Batch Size Estimation (approximate):")
-            avg_length = overall_stats['mean']
-            p95_length = overall_stats['p95']
-            print(f"     Average token length: {avg_length:.0f}")
-            print(f"     P95 token length:     {p95_length:.0f}")
-            print("     ")
-            print("     For mixed batch sizes, consider:")
-            print(f"     - Small batches (avg length):  batch_size = GPU_memory / ({avg_length:.0f} * model_size)")
-            print(f"     - Safe batches (P95 length):   batch_size = GPU_memory / ({p95_length:.0f} * model_size)")
-
-            # Distribution insights
-            print(f"\n  3. Distribution Insights:")
-            if overall_stats['std'] / overall_stats['mean'] > 0.5:
-                print(f"     ⚠️  High variance detected (std/mean = {overall_stats['std']/overall_stats['mean']:.2f})")
-                print(f"     Consider using dynamic batching or bucketing by length")
-            else:
-                print(f"     ✓ Low variance (std/mean = {overall_stats['std']/overall_stats['mean']:.2f})")
-                print(f"     Fixed batch size should work well")
-
-            # Check for outliers
-            if overall_stats['max'] > overall_stats['p99'] * 1.5:
-                print(f"\n     ⚠️  Outliers detected:")
-                print(f"     Max length ({overall_stats['max']}) is much larger than P99 ({overall_stats['p99']:.0f})")
-                print(f"     Consider filtering or special handling for very long examples")
-
-        print("\n" + "="*80 + "\n")
 
     def _build_messages(self, example: dict[str, Any]) -> list[dict[str, Any]]:
         """
@@ -656,37 +402,31 @@ class RLHFDataset(Dataset):
                     processed_images.append(process_image(image, self.min_pixels, self.max_pixels))
 
                 model_inputs = self.processor(processed_images, [prompt], add_special_tokens=False, return_tensors="pt")
+                if model_inputs["input_ids"].size(-1) > self.max_prompt_length:
+                    print("overlong_prompts - id:", example.get(self.problem_id_key), "dataset name:", example.get("dataset_name"), "problem:", example.get(self.prompt_key))
                 return model_inputs["input_ids"].size(-1) <= self.max_prompt_length
             elif data_type == "video":
                 prompt = self.processor.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
                 videos = example[self.video_key]
 
-                ### Embodied-R1.5 New Feature ###
-                # video paths
-                if self.image_dir is not None and len(videos) != 0 and videos[0][0].endswith(('.mp4', '.avi', '.mov', '.mkv')):
-                    # [["video1.mp4"], ["video2.mp4"], ...]
-                    videos = [os.path.join(self.image_dir, video[0]) for video in videos]
-                elif self.image_dir is not None and len(videos) != 0 and videos[0][0].endswith(('.png', '.jpg', '.jpeg', '.bmp', '.gif', '.webp', '.tiff', '.tif')):
-                    # [["frame1.png", "frame2.png", "frame3.png"], ["frame1.png", "frame2.png", "frame3.png"], ...]
-                    videos = [[os.path.join(self.image_dir, frame) for frame in video] for video in videos]
-                else:
-                    raise ValueError("Videos field should be a list of lists for nested structure.")
-                ### Embodied-R1.5 New Feature ###
+                # Process video paths
+                if self.image_dir is not None and len(videos) != 0:
+                    videos = [os.path.join(self.image_dir, video) for video in videos]
 
                 processed_videos = [] if len(videos) != 0 else None  # text-only data
                 for video in videos:
-                    video_input = process_video(video, self.min_video_pixels, self.max_video_pixels, self.video_fps)
+                    video_input = process_video(video, self.min_video_pixels, self.max_video_pixels, self.max_frames, self.video_fps)
                     processed_videos.append(video_input)
                 model_inputs = self.processor(videos=processed_videos, text=[prompt], add_special_tokens=False, return_tensors="pt")
-                print(model_inputs["input_ids"].size(-1))
+                if model_inputs["input_ids"].size(-1) > self.max_prompt_length:
+                    print("overlong_prompts - id:", example.get(self.problem_id_key), "dataset name:", example.get("dataset_name"), "problem:", example.get(self.prompt_key))
                 return model_inputs["input_ids"].size(-1) <= self.max_prompt_length
             elif data_type == "mixed":
                 prompt = self.processor.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
                 images = example.get(self.image_key)
                 videos = example.get(self.video_key)
 
-                ### Embodied-R1.5 New Feature ###
-                # image paths
+                # Process image paths
                 if self.image_dir is not None and len(images) != 0 and isinstance(images[0], str):
                     images = [os.path.join(self.image_dir, image) for image in images]
 
@@ -694,24 +434,18 @@ class RLHFDataset(Dataset):
                 for image in images:
                     processed_images.append(process_image(image, self.min_pixels, self.max_pixels))
 
-                # video paths
-                if self.image_dir is not None and len(videos) != 0 and videos[0][0].endswith(('.mp4', '.avi', '.mov', '.mkv')):
-                    # [["video1.mp4"], ["video2.mp4"], ...]
-                    videos = [os.path.join(self.image_dir, video[0]) for video in videos]
-                elif self.image_dir is not None and len(videos) != 0 and videos[0][0].endswith(('.png', '.jpg', '.jpeg', '.bmp', '.gif', '.webp', '.tiff', '.tif')):
-                    # [["frame1.png", "frame2.png", "frame3.png"], ["frame1.png", "frame2.png", "frame3.png"], ...]
-                    videos = [[os.path.join(self.image_dir, frame) for frame in video] for video in videos]
-                else:
-                    raise ValueError("Videos field should be a list of lists for nested structure.")
+                # Process video paths
+                if self.image_dir is not None and len(videos) != 0:
+                    videos = [os.path.join(self.image_dir, video) for video in videos]
 
                 processed_videos = [] if len(videos) != 0 else None
                 for video in videos:
-                    video_input = process_video(video, self.min_video_pixels, self.max_video_pixels, self.video_fps)
+                    video_input = process_video(video, self.min_video_pixels, self.max_video_pixels, self.max_frames, self.video_fps)
                     processed_videos.append(video_input)
-                ### Embodied-R1.5 New Feature ###
 
                 model_inputs = self.processor(images=processed_images, videos=processed_videos, text=[prompt], add_special_tokens=False, return_tensors="pt")
-                print(model_inputs["input_ids"].size(-1))
+                if model_inputs["input_ids"].size(-1) > self.max_prompt_length:
+                    print("overlong_prompts - id:", example.get(self.problem_id_key), "dataset name:", example.get("dataset_name"), "problem:", example.get(self.prompt_key))
                 return model_inputs["input_ids"].size(-1) <= self.max_prompt_length
             else:
                 input_ids = self.tokenizer.apply_chat_template(messages, add_generation_prompt=True)
@@ -749,31 +483,23 @@ class RLHFDataset(Dataset):
             prompt = self.processor.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
             videos = example.pop(self.video_key)
 
-            if self.image_dir is not None and len(videos) != 0 and videos[0][0].endswith(('.mp4', '.avi', '.mov', '.mkv')):
-                # [["video1.mp4"], ["video2.mp4"], ...]
-                videos = [os.path.join(self.image_dir, video[0]) for video in videos]
-            elif self.image_dir is not None and len(videos) != 0 and videos[0][0].endswith(('.png', '.jpg', '.jpeg', '.bmp', '.gif', '.webp', '.tiff', '.tif')):
-                # [["frame1.png", "frame2.png", "frame3.png"], ["frame1.png", "frame2.png", "frame3.png"], ...]
-                videos = [[os.path.join(self.image_dir, frame) for frame in video] for video in videos]
-            else:
-                raise ValueError("Videos field should be a list of lists for nested structure.")
+            # Process video paths
+            if self.image_dir is not None and len(videos) != 0:
+                videos = [os.path.join(self.image_dir, video) for video in videos]
 
-            processed_videos = [] if len(videos) != 0 else None  # text-only data
+            processed_videos = []
             video_fps_list = []
+            video_kwargs = {"do_sample_frames": False}
             for video in videos:
                 processed_video, video_fps = process_video(
-                    video, return_fps=True
+                    video, self.min_video_pixels, self.max_video_pixels, self.max_frames, self.video_fps, return_fps=True
                 )
-                video_kwargs = {"do_sample_frames": False}
                 processed_videos.append(processed_video)
                 video_fps_list.append(video_fps)
 
-            if processed_video is not None:
-                processed_video, video_metadatas = processed_video
-                processed_video, video_metadatas = [processed_video], [video_metadatas]
-            else:
-                video_metadatas = None
-            model_inputs= self.processor(text=[prompt], videos=processed_video, add_special_tokens=False, video_metadata=video_metadatas, return_tensors="pt", do_resize=False, **video_kwargs)
+            # process_video doesn't return metadata (return_video_metadata=False)
+            video_metadatas = None
+            model_inputs= self.processor(text=[prompt], videos=processed_videos, add_special_tokens=False, video_metadata=video_metadatas, return_tensors="pt", do_resize=False, **video_kwargs)
 
             if "second_per_grid_ts" in self.processor.model_input_names:
                 model_inputs["second_per_grid_ts"] = [2.0 / video_sample_fps for video_sample_fps in video_fps_list]
@@ -786,39 +512,31 @@ class RLHFDataset(Dataset):
             images = example.pop(self.image_key, [])
             videos = example.pop(self.video_key, [])
 
-            ### Embodied-R1.5 New Feature ###
-            # image paths
+            # Process image paths
             if self.image_dir is not None and len(images) != 0 and isinstance(images[0], str):
                 images = [os.path.join(self.image_dir, image) for image in images]
 
-            # video paths
-            if self.image_dir is not None and len(videos) != 0 and videos[0][0].endswith(('.mp4', '.avi', '.mov', '.mkv')):
-                # [["video1.mp4"], ["video2.mp4"], ...]
-                videos = [os.path.join(self.image_dir, video[0]) for video in videos]
-            elif self.image_dir is not None and len(videos) != 0 and videos[0][0].endswith(('.png', '.jpg', '.jpeg', '.bmp', '.gif', '.webp', '.tiff', '.tif')):
-                # [["frame1.png", "frame2.png", "frame3.png"], ["frame1.png", "frame2.png", "frame3.png"], ...]
-                videos = [[os.path.join(self.image_dir, frame) for frame in video] for video in videos]
-            ### Embodied-R1.5 New Feature ###
+            # Process video paths
+            if self.image_dir is not None and len(videos) != 0:
+                videos = [os.path.join(self.image_dir, video) for video in videos]
 
             processed_images = [] if len(images) != 0 else None
             for image in images:
                 processed_images.append(process_image(image, self.min_pixels, self.max_pixels))
 
-            processed_videos = [] if len(videos) != 0 else None
+            processed_videos = []
             video_fps_list = []
+            video_kwargs = {"do_sample_frames": False}
             for video in videos:
                 processed_video, video_fps = process_video(
-                    video, self.min_video_pixels, self.max_video_pixels, self.video_fps, return_fps=True
+                    video, self.min_video_pixels, self.max_video_pixels, self.max_frames, self.video_fps, return_fps=True
                 )
                 processed_videos.append(processed_video)
                 video_fps_list.append(video_fps)
 
-            if processed_video is not None:
-                processed_video, video_metadatas = processed_video
-                processed_video, video_metadatas = [processed_video], [video_metadatas]
-            else:
-                video_metadatas = None
-            model_inputs= self.processor(text=[prompt], videos=processed_video, images=processed_images, add_special_tokens=False, video_metadata=video_metadatas, return_tensors="pt", do_resize=False, **video_kwargs)
+            # process_video doesn't return metadata (return_video_metadata=False)
+            video_metadatas = None
+            model_inputs= self.processor(text=[prompt], videos=processed_videos, images=processed_images, add_special_tokens=False, video_metadata=video_metadatas, return_tensors="pt", do_resize=False, **video_kwargs)
             if "second_per_grid_ts" in self.processor.model_input_names:
                 model_inputs["second_per_grid_ts"] = [2.0 / video_sample_fps for video_sample_fps in video_fps_list]
 

@@ -17,7 +17,7 @@ PPO config
 
 import os
 from dataclasses import asdict, dataclass, field, fields, is_dataclass
-from typing import Optional, Tuple, Union
+from typing import Any, Optional, Tuple
 
 from ..utils.py_functional import get_abs_path
 from ..workers.config import WorkerConfig
@@ -36,8 +36,8 @@ def recursive_post_init(dataclass_obj):
 class DataConfig:
     ### Embodied-R1.5 New Feature ###
     # Support multiple training/validation files (can be str or list[str])
-    train_files: Union[str, list[str]] = ""
-    val_files: Union[str, list[str]] = ""
+    train_files: Any = ""
+    val_files: Any = ""
     ### Embodied-R1.5 New Feature ###
     prompt_key: str = "problem"
     answer_key: str = "answer"

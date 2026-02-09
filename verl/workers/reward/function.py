@@ -65,6 +65,7 @@ class SequentialFunctionRewardManagerMixin:
     def compute_reward_sequential(self, data: DataProto) -> Tuple[torch.Tensor, dict[str, list[float]]]:
         reward_tensor = torch.zeros_like(data.batch["responses"], dtype=torch.float32)
         reward_metrics = defaultdict(list)
+        dataset_names = []  # Store dataset_name separately
         response_ids = data.batch["responses"]
         response_length = torch.sum(data.batch["response_mask"], dim=-1)
         for i in range(len(data)):
@@ -90,12 +91,15 @@ class SequentialFunctionRewardManagerMixin:
             score = self.reward_fn(reward_input)
             reward_tensor[i, cur_response_length - 1] = score["overall"]
             for key, value in score.items():
-                reward_metrics[key].append(value)
+                if key == "dataset_name":
+                    dataset_names.append(value)  # Store separately, don't add to reward_metrics
+                else:
+                    reward_metrics[key].append(value)
 
         # Add dataset-specific metrics
-        if "dataset_name" in reward_metrics:
+        if dataset_names:
             dataset_metrics = defaultdict(lambda: defaultdict(list))
-            for i, dataset_name in enumerate(reward_metrics["dataset_name"]):
+            for i, dataset_name in enumerate(dataset_names):
                 if dataset_name is not None:
                     for key in ["overall", "format", "accuracy"]:
                         if key in reward_metrics:
@@ -141,16 +145,20 @@ class BatchFunctionRewardManagerMixin:
         scores = self.reward_fn(reward_inputs)
         reward_tensor = torch.zeros_like(data.batch["responses"], dtype=torch.float32)
         reward_metrics = defaultdict(list)
+        dataset_names = []  # Store dataset_name separately
         for i, score in enumerate(scores):
             cur_response_length = int(response_length[i].item())  # avoid tensor indexing error
             reward_tensor[i, cur_response_length - 1] = score["overall"]
             for key, value in score.items():
-                reward_metrics[key].append(value)
+                if key == "dataset_name":
+                    dataset_names.append(value)  # Store separately, don't add to reward_metrics
+                else:
+                    reward_metrics[key].append(value)
 
         # Add dataset-specific metrics
-        if "dataset_name" in reward_metrics:
+        if dataset_names:
             dataset_metrics = defaultdict(lambda: defaultdict(list))
-            for i, dataset_name in enumerate(reward_metrics["dataset_name"]):
+            for i, dataset_name in enumerate(dataset_names):
                 if dataset_name is not None:
                     for key in ["overall", "format", "accuracy"]:
                         if key in reward_metrics:

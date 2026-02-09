@@ -52,7 +52,7 @@ def test_rft_datasets(model_path, image_dir):
     tokenizer = get_tokenizer(model_name, trust_remote_code=True, use_fast=True)
     processor = get_processor(model_name, trust_remote_code=True, use_fast=True)
     # Build dataset dict from rft_datasets directory
-    rft_datasets_dir = "/qy4/yyf/Embodied-R1.5/EasyR1/rft_datasets"
+    rft_datasets_dir = "/qy4/yyf/Embodied-R1.5/EasyR1/rft_train_datasets"
     data_path = build_dataset_dict(rft_datasets_dir)
 
     print(f"\nFound {len(data_path)} datasets:")
@@ -77,7 +77,7 @@ def test_rft_datasets(model_path, image_dir):
         ### Embodied-R1.5 New Feature ###
         image_dir=image_dir,
         video_fps=2,
-        max_prompt_length=3100,
+        max_prompt_length=3200,
         truncation="right",
         format_prompt="",
         min_pixels=32*32*8,
