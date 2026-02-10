@@ -72,15 +72,15 @@ TYPE_TEMPLATE = {
     ),
     "trace": (
         "Please provide only the ordered waypoints as JSON with key 'point_2d' within the <answer>...</answer> tags.\n"
-        "Example:\n```json\n[{\"point_2d\": [624, 469]}, {\"point_2d\": [640, 421]}, {\"point_2d\": [638, 372]}, {\"point_2d\": [613, 337]}]\n```"
+        "Example:\n<answer>```json\n[{\"point_2d\": [624, 469]}, {\"point_2d\": [640, 421]}, {\"point_2d\": [638, 372]}, {\"point_2d\": [613, 337]}]\n```</answer>"
     ),
     "trace_3d": (
         "Please provide only the ordered 2D waypoints with depth (in meters) as JSON with key 'point_2d' and 'depth' within the <answer>...</answer> tags.\n"
-        "Example:\n```json\n[{\"point_2d\": [463, 599], \"depth\": 1.08}, {\"point_2d\": [458, 603], \"depth\": 1.08}, {\"point_2d\": [449, 612], \"depth\": 1.06}]\n```"
+        "Example:\n<answer>```json\n[{\"point_2d\": [463, 599], \"depth\": 1.08}, {\"point_2d\": [458, 603], \"depth\": 1.08}, {\"point_2d\": [449, 612], \"depth\": 1.06}]\n```</answer>"
     ),
     "point": (
         "Please pointing to answer the question within the <answer>...</answer> tags.\n"
-        "Example:\n```json\n[{\"point_2d\": [230, 138]}]\n```"
+        "Example:\n<answer>```json\n[{\"point_2d\": [230, 138]}]\n```</answer>"
     ),
 }
 
@@ -140,10 +140,10 @@ def process_image(
 def process_video(
     video: str,
     min_pixels: int = 4*32*32,
-    max_pixels: int = 64*32*32,
-    max_frames: int = 128,
-    video_fps: float = 2,
-    return_fps: bool = False
+    max_pixels: int = 384*32*32,
+    video_fps: float = 2.0,
+    return_fps: bool = False,
+    total_pixels: int = 3000*32*32
 ):
     """
     Process video with fps sampling and max_frames limit.
@@ -152,22 +152,21 @@ def process_video(
         video: Video file path (e.g., "video1.mp4")
         min_pixels: Minimum number of pixels
         max_pixels: Maximum number of pixels
-        max_frames: Maximum number of frames to sample
         video_fps: Frames per second for sampling
         return_fps: Whether to return the video fps
     """
+    
     vision_info = {
         "video": video,
         "min_pixels": min_pixels,
         "max_pixels": max_pixels,
-        "max_frames": max_frames,
-        "fps": video_fps
+        "fps": video_fps,
+        "total_pixels": total_pixels
     }
     return fetch_video(
         vision_info,
         image_patch_size=16,
-        return_video_sample_fps=return_fps,
-        return_video_metadata=return_fps
+        return_video_sample_fps=return_fps
     )
 
 
@@ -196,7 +195,7 @@ class RLHFDataset(Dataset):
 
         image_dir: Optional[str] = None,
         video_fps: float = 8,
-        max_frames: int = 64,
+        max_frames: int = 32,
         max_prompt_length: int = 1024,
         truncation: str = "error",
         format_prompt: Optional[str] = None,
@@ -256,6 +255,38 @@ class RLHFDataset(Dataset):
         datasets = []
         for dataset_name, single_path in data_items:
             print(f"Processing dataset: {dataset_name}")
+
+            # todo: hard code
+            DATASET_CONFIG = {
+                "ER1.5_Cosmos_video_qa": 700,
+                "ER1.5_CoSyn-point_image_point": 5000,
+                "ER1.5_Droid-Trace_image_trace": 13000,
+                "ER1.5_EgoPlan_mixed_qa": 9919,
+                "ER1.5_EO_image_qa": 5000,
+                "ER1.5_ER1-point_image_point": 20000,
+                "ER1.5_ER1-trace_image_trace": 15000,
+                "ER1.5_ERQA2_image_qa": 5000,
+                "ER1.5_ERQA_Rush_image_qa": 310,
+                "ER1.5_general_image_qa_filtered": 20000,
+                "ER1.5_general_video_qa": 10000,
+                "ER1.5_HandAL_image_point": 20000,
+                "ER1.5_HOI4D-Trace_image_trace": 4000,
+                "ER1.5_InstructPart_image_point": 3546,
+                "ER1.5_InternData-Trace_image_trace": 5000,
+                "ER1.5_Ref_L4_image_point": 5000,
+                "ER1.5_Refspatial_image_point": 15000,
+                "ER1.5_regular_simulation_image_point": 2000,
+                "ER1.5_regular_synthetic_image_point": 3000,
+                "ER1.5_Robo2VLM_image_qa": 5000,
+                "ER1.5_robocasa_partnet_2d_image_trace": 1000,
+                "ER1.5_robocasa_partnet_3d_image_trace": 1000,
+                "ER1.5_Roborefit_image_point": 8000,
+                "ER1.5_RoboVQA_image": 10000,
+                "ER1.5_SAT_image_qa": 5000,
+                "ER1.5_spatialssrl_image_qa": 10000,
+                "ER1.5_Temporal_image_qa": 150,
+            }
+
             data_split = "train"
 
             # Load dataset: support local JSON files or remote HuggingFace datasets
@@ -275,6 +306,18 @@ class RLHFDataset(Dataset):
                 sample_size = min(self.debug_sample_size, original_size)
                 ds = ds.shuffle(seed=42).select(range(sample_size))
                 print(f"  [DEBUG MODE] Sampled {sample_size}/{original_size} examples from {dataset_name}")
+
+            # Sample based on DATASET_CONFIG
+            if dataset_name in DATASET_CONFIG:
+                max_num = DATASET_CONFIG[dataset_name]
+                original_size = len(ds)
+                if original_size > max_num:
+                    ds = ds.shuffle(seed=42).select(range(max_num))
+                    print(f"  [SAMPLING] Sampled {max_num}/{original_size} examples from {dataset_name}")
+                else:
+                    print(f"  [SAMPLING] Using all {original_size} examples from {dataset_name} (max_num={max_num})")
+            else:
+                print(f"  [WARNING] {dataset_name} not in DATASET_CONFIG, using all examples")
 
             datasets.append(ds)
 
@@ -386,75 +429,6 @@ class RLHFDataset(Dataset):
         else:
             return [{"role": "user", "content": prompt_str}]
 
-    def _filter_overlong_prompts(self, example: dict[str, Any]) -> bool:
-        messages = self._build_messages(example)
-        data_type = example.get(self.data_type_key, None)
-
-        try:
-            if data_type == "image":
-                prompt = self.processor.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
-                images = example[self.image_key]
-                if self.image_dir is not None and len(images) != 0 and isinstance(images[0], str):
-                    images = [os.path.join(self.image_dir, image) for image in images]
-
-                processed_images = [] if len(images) != 0 else None
-                for image in images:
-                    processed_images.append(process_image(image, self.min_pixels, self.max_pixels))
-
-                model_inputs = self.processor(processed_images, [prompt], add_special_tokens=False, return_tensors="pt")
-                if model_inputs["input_ids"].size(-1) > self.max_prompt_length:
-                    print("overlong_prompts - id:", example.get(self.problem_id_key), "dataset name:", example.get("dataset_name"), "problem:", example.get(self.prompt_key))
-                return model_inputs["input_ids"].size(-1) <= self.max_prompt_length
-            elif data_type == "video":
-                prompt = self.processor.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
-                videos = example[self.video_key]
-
-                # Process video paths
-                if self.image_dir is not None and len(videos) != 0:
-                    videos = [os.path.join(self.image_dir, video) for video in videos]
-
-                processed_videos = [] if len(videos) != 0 else None  # text-only data
-                for video in videos:
-                    video_input = process_video(video, self.min_video_pixels, self.max_video_pixels, self.max_frames, self.video_fps)
-                    processed_videos.append(video_input)
-                model_inputs = self.processor(videos=processed_videos, text=[prompt], add_special_tokens=False, return_tensors="pt")
-                if model_inputs["input_ids"].size(-1) > self.max_prompt_length:
-                    print("overlong_prompts - id:", example.get(self.problem_id_key), "dataset name:", example.get("dataset_name"), "problem:", example.get(self.prompt_key))
-                return model_inputs["input_ids"].size(-1) <= self.max_prompt_length
-            elif data_type == "mixed":
-                prompt = self.processor.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
-                images = example.get(self.image_key)
-                videos = example.get(self.video_key)
-
-                # Process image paths
-                if self.image_dir is not None and len(images) != 0 and isinstance(images[0], str):
-                    images = [os.path.join(self.image_dir, image) for image in images]
-
-                processed_images = [] if len(images) != 0 else None
-                for image in images:
-                    processed_images.append(process_image(image, self.min_pixels, self.max_pixels))
-
-                # Process video paths
-                if self.image_dir is not None and len(videos) != 0:
-                    videos = [os.path.join(self.image_dir, video) for video in videos]
-
-                processed_videos = [] if len(videos) != 0 else None
-                for video in videos:
-                    video_input = process_video(video, self.min_video_pixels, self.max_video_pixels, self.max_frames, self.video_fps)
-                    processed_videos.append(video_input)
-
-                model_inputs = self.processor(images=processed_images, videos=processed_videos, text=[prompt], add_special_tokens=False, return_tensors="pt")
-                if model_inputs["input_ids"].size(-1) > self.max_prompt_length:
-                    print("overlong_prompts - id:", example.get(self.problem_id_key), "dataset name:", example.get("dataset_name"), "problem:", example.get(self.prompt_key))
-                return model_inputs["input_ids"].size(-1) <= self.max_prompt_length
-            else:
-                input_ids = self.tokenizer.apply_chat_template(messages, add_generation_prompt=True)
-                return len(input_ids) <= self.max_prompt_length
-        except Exception as e:
-            print(f"Error in filtering overlong prompts: {e}")
-            print(example)
-            return False
-
     def __len__(self):
         return len(self.dataset)
 
@@ -487,62 +461,54 @@ class RLHFDataset(Dataset):
             if self.image_dir is not None and len(videos) != 0:
                 videos = [os.path.join(self.image_dir, video) for video in videos]
 
-            processed_videos = []
-            video_fps_list = []
-            video_kwargs = {"do_sample_frames": False}
-            for video in videos:
-                processed_video, video_fps = process_video(
-                    video, self.min_video_pixels, self.max_video_pixels, self.max_frames, self.video_fps, return_fps=True
-                )
-                processed_videos.append(processed_video)
-                video_fps_list.append(video_fps)
+            # hard code
+            assert len(videos) == 1
+            video = videos[0]  # only one video
+            video_inputs = []
+            video_sample_fps_list = []
+            min_pixels = 4*32*32
+            max_pixels = 256*32*32
+            total_pixels = 3000*32*32
+            fps = 2.0
+            image_patch_size = 16
+            vision_info = {
+                "video": video,
+                "min_pixels": min_pixels,
+                "max_pixels": max_pixels,
+                "total_pixels": total_pixels,
+                "fps": fps
+            }
+            return_video_metadata = True
+            video_input, video_sample_fps = fetch_video(vision_info, return_video_sample_fps=True,
+                        image_patch_size=image_patch_size, return_video_metadata=return_video_metadata)
+            print(video_input, video_sample_fps)
+            video_sample_fps_list.append(video_sample_fps)
+            video_inputs.append(video_input)
 
-            # process_video doesn't return metadata (return_video_metadata=False)
-            video_metadatas = None
-            model_inputs= self.processor(text=[prompt], videos=processed_videos, add_special_tokens=False, video_metadata=video_metadatas, return_tensors="pt", do_resize=False, **video_kwargs)
+            video_kwargs = {'do_sample_frames': False}
+
+            # split the videos and according metadatas
+            if videos is not None:
+                videos, video_metadatas = video_input
+                print(videos[0].shape)
+                print(videos)
+                videos, video_metadatas = list(videos), list(video_metadatas)
+                print(videos[0].shape)
+            else:
+                video_metadatas = None
+
+            model_inputs = self.processor(text=[prompt], videos=videos, add_special_tokens=False, video_metadata=video_metadatas, return_tensors="pt", do_resize=False, **video_kwargs)
 
             if "second_per_grid_ts" in self.processor.model_input_names:
-                model_inputs["second_per_grid_ts"] = [2.0 / video_sample_fps for video_sample_fps in video_fps_list]
+                print("yes")
+                model_inputs["second_per_grid_ts"] = [2.0 / video_sample_fps for video_sample_fps in video_sample_fps_list]
 
             input_ids = model_inputs.pop("input_ids")[0]
             attention_mask = model_inputs.pop("attention_mask")[0]
             example["multi_modal_data"] = {"videos": videos}
+            example["mm_processor_kwargs"] = video_kwargs
         elif data_type == "mixed":
-            prompt = self.processor.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
-            images = example.pop(self.image_key, [])
-            videos = example.pop(self.video_key, [])
-
-            # Process image paths
-            if self.image_dir is not None and len(images) != 0 and isinstance(images[0], str):
-                images = [os.path.join(self.image_dir, image) for image in images]
-
-            # Process video paths
-            if self.image_dir is not None and len(videos) != 0:
-                videos = [os.path.join(self.image_dir, video) for video in videos]
-
-            processed_images = [] if len(images) != 0 else None
-            for image in images:
-                processed_images.append(process_image(image, self.min_pixels, self.max_pixels))
-
-            processed_videos = []
-            video_fps_list = []
-            video_kwargs = {"do_sample_frames": False}
-            for video in videos:
-                processed_video, video_fps = process_video(
-                    video, self.min_video_pixels, self.max_video_pixels, self.max_frames, self.video_fps, return_fps=True
-                )
-                processed_videos.append(processed_video)
-                video_fps_list.append(video_fps)
-
-            # process_video doesn't return metadata (return_video_metadata=False)
-            video_metadatas = None
-            model_inputs= self.processor(text=[prompt], videos=processed_videos, images=processed_images, add_special_tokens=False, video_metadata=video_metadatas, return_tensors="pt", do_resize=False, **video_kwargs)
-            if "second_per_grid_ts" in self.processor.model_input_names:
-                model_inputs["second_per_grid_ts"] = [2.0 / video_sample_fps for video_sample_fps in video_fps_list]
-
-            input_ids = model_inputs.pop("input_ids")[0]
-            attention_mask = model_inputs.pop("attention_mask")[0]
-            example["multi_modal_data"] = {"images": images, "videos": videos}
+            raise ValueError("Not ready")
         else:
             prompt = self.tokenizer.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
             model_inputs = self.tokenizer([prompt], add_special_tokens=False, return_tensors="pt")

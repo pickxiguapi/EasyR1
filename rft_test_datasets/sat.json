@@ -1,0 +1,1998 @@
+[
+    {
+        "problem_id": "sat_0",
+        "problem": "<image> <image> were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?\nChoose between the following options: chair was moved right and away from the camera or chair was moved left and away from the camera\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "chair was moved left and away from the camera",
+        "images": [
+            "er1.5_test/sat/sat_0/0.jpg",
+            "er1.5_test/sat/sat_0/1.jpg"
+        ],
+        "problem_reserved_text": "were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?"
+    },
+    {
+        "problem_id": "sat_1",
+        "problem": "<image> <image> were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?\nChoose between the following options: chair was moved right and away from the camera or chair was moved left and away from the camera\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "chair was moved left and away from the camera",
+        "images": [
+            "er1.5_test/sat/sat_1/0.jpg",
+            "er1.5_test/sat/sat_1/1.jpg"
+        ],
+        "problem_reserved_text": "were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?"
+    },
+    {
+        "problem_id": "sat_2",
+        "problem": "<image> <image> how did the camera likely rotate when shooting the video?\nChoose between the following options: rotated left or rotated right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotated left",
+        "images": [
+            "er1.5_test/sat/sat_2/0.jpg",
+            "er1.5_test/sat/sat_2/1.jpg"
+        ],
+        "problem_reserved_text": "how did the camera likely rotate when shooting the video?"
+    },
+    {
+        "problem_id": "sat_3",
+        "problem": "<image> <image> how did the camera likely rotate when shooting the video?\nChoose between the following options: rotated left or rotated right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotated right",
+        "images": [
+            "er1.5_test/sat/sat_3/0.jpg",
+            "er1.5_test/sat/sat_3/1.jpg"
+        ],
+        "problem_reserved_text": "how did the camera likely rotate when shooting the video?"
+    },
+    {
+        "problem_id": "sat_4",
+        "problem": "<image> <image> how did the camera likely rotate when shooting the video?\nChoose between the following options: rotated right or rotated left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotated left",
+        "images": [
+            "er1.5_test/sat/sat_4/0.jpg",
+            "er1.5_test/sat/sat_4/1.jpg"
+        ],
+        "problem_reserved_text": "how did the camera likely rotate when shooting the video?"
+    },
+    {
+        "problem_id": "sat_5",
+        "problem": "<image> <image> how did the camera likely rotate when shooting the video?\nChoose between the following options: rotated left or rotated right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotated right",
+        "images": [
+            "er1.5_test/sat/sat_5/0.jpg",
+            "er1.5_test/sat/sat_5/1.jpg"
+        ],
+        "problem_reserved_text": "how did the camera likely rotate when shooting the video?"
+    },
+    {
+        "problem_id": "sat_6",
+        "problem": "<image> <image> how did the camera likely rotate when shooting the video?\nChoose between the following options: rotated left or rotated right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotated right",
+        "images": [
+            "er1.5_test/sat/sat_6/0.jpg",
+            "er1.5_test/sat/sat_6/1.jpg"
+        ],
+        "problem_reserved_text": "how did the camera likely rotate when shooting the video?"
+    },
+    {
+        "problem_id": "sat_7",
+        "problem": "<image> <image> how did the camera likely rotate when shooting the video?\nChoose between the following options: rotated right or rotated left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotated left",
+        "images": [
+            "er1.5_test/sat/sat_7/0.jpg",
+            "er1.5_test/sat/sat_7/1.jpg"
+        ],
+        "problem_reserved_text": "how did the camera likely rotate when shooting the video?"
+    },
+    {
+        "problem_id": "sat_8",
+        "problem": "<image> <image> were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?\nChoose between the following options: silver mug was moved left and away from the camera or silver mug was moved right and away from the camera\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "silver mug was moved left and away from the camera",
+        "images": [
+            "er1.5_test/sat/sat_8/0.jpg",
+            "er1.5_test/sat/sat_8/1.jpg"
+        ],
+        "problem_reserved_text": "were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?"
+    },
+    {
+        "problem_id": "sat_9",
+        "problem": "<image> <image> how did the camera likely rotate when shooting the video?\nChoose between the following options: rotated left or rotated right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotated right",
+        "images": [
+            "er1.5_test/sat/sat_9/0.jpg",
+            "er1.5_test/sat/sat_9/1.jpg"
+        ],
+        "problem_reserved_text": "how did the camera likely rotate when shooting the video?"
+    },
+    {
+        "problem_id": "sat_10",
+        "problem": "<image> <image> how did the camera likely rotate when shooting the video?\nChoose between the following options: rotated left or rotated right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotated right",
+        "images": [
+            "er1.5_test/sat/sat_10/0.jpg",
+            "er1.5_test/sat/sat_10/1.jpg"
+        ],
+        "problem_reserved_text": "how did the camera likely rotate when shooting the video?"
+    },
+    {
+        "problem_id": "sat_11",
+        "problem": "<image> <image> were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?\nChoose between the following options: chair was moved left and away from the camera or chair was moved right and towards the camera\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "chair was moved right and towards the camera",
+        "images": [
+            "er1.5_test/sat/sat_11/0.jpg",
+            "er1.5_test/sat/sat_11/1.jpg"
+        ],
+        "problem_reserved_text": "were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?"
+    },
+    {
+        "problem_id": "sat_12",
+        "problem": "<image> <image> were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?\nChoose between the following options: chair was moved left and away from the camera or chair was moved right and away from the camera\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "chair was moved right and away from the camera",
+        "images": [
+            "er1.5_test/sat/sat_12/0.jpg",
+            "er1.5_test/sat/sat_12/1.jpg"
+        ],
+        "problem_reserved_text": "were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?"
+    },
+    {
+        "problem_id": "sat_13",
+        "problem": "<image> <image> were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?\nChoose between the following options: bottle was moved right and towards the camera or bottle was moved left and towards the camera\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "bottle was moved left and towards the camera",
+        "images": [
+            "er1.5_test/sat/sat_13/0.jpg",
+            "er1.5_test/sat/sat_13/1.jpg"
+        ],
+        "problem_reserved_text": "were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?"
+    },
+    {
+        "problem_id": "sat_14",
+        "problem": "<image> <image> were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?\nChoose between the following options: paper bag was moved right and towards the camera or paper bag was moved left and towards the camera\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "paper bag was moved left and towards the camera",
+        "images": [
+            "er1.5_test/sat/sat_14/0.jpg",
+            "er1.5_test/sat/sat_14/1.jpg"
+        ],
+        "problem_reserved_text": "were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?"
+    },
+    {
+        "problem_id": "sat_15",
+        "problem": "<image> <image> how did the camera likely rotate when shooting the video?\nChoose between the following options: rotated right or rotated left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotated left",
+        "images": [
+            "er1.5_test/sat/sat_15/0.jpg",
+            "er1.5_test/sat/sat_15/1.jpg"
+        ],
+        "problem_reserved_text": "how did the camera likely rotate when shooting the video?"
+    },
+    {
+        "problem_id": "sat_16",
+        "problem": "<image> <image> how did the camera likely rotate when shooting the video?\nChoose between the following options: rotated left or rotated right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotated left",
+        "images": [
+            "er1.5_test/sat/sat_16/0.jpg",
+            "er1.5_test/sat/sat_16/1.jpg"
+        ],
+        "problem_reserved_text": "how did the camera likely rotate when shooting the video?"
+    },
+    {
+        "problem_id": "sat_17",
+        "problem": "<image> <image> how did the camera likely rotate when shooting the video?\nChoose between the following options: rotated left or rotated right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotated right",
+        "images": [
+            "er1.5_test/sat/sat_17/0.jpg",
+            "er1.5_test/sat/sat_17/1.jpg"
+        ],
+        "problem_reserved_text": "how did the camera likely rotate when shooting the video?"
+    },
+    {
+        "problem_id": "sat_18",
+        "problem": "<image> <image> were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?\nChoose between the following options: coffee mug was moved right and towards the camera or coffee mug was moved left and away from the camera\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "coffee mug was moved right and towards the camera",
+        "images": [
+            "er1.5_test/sat/sat_18/0.jpg",
+            "er1.5_test/sat/sat_18/1.jpg"
+        ],
+        "problem_reserved_text": "were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?"
+    },
+    {
+        "problem_id": "sat_19",
+        "problem": "<image> <image> how did the camera likely rotate when shooting the video?\nChoose between the following options: rotated left or rotated right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotated left",
+        "images": [
+            "er1.5_test/sat/sat_19/0.jpg",
+            "er1.5_test/sat/sat_19/1.jpg"
+        ],
+        "problem_reserved_text": "how did the camera likely rotate when shooting the video?"
+    },
+    {
+        "problem_id": "sat_20",
+        "problem": "<image> <image> how did the camera likely rotate when shooting the video?\nChoose between the following options: rotated right or rotated left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotated left",
+        "images": [
+            "er1.5_test/sat/sat_20/0.jpg",
+            "er1.5_test/sat/sat_20/1.jpg"
+        ],
+        "problem_reserved_text": "how did the camera likely rotate when shooting the video?"
+    },
+    {
+        "problem_id": "sat_21",
+        "problem": "<image> <image> were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?\nChoose between the following options: houseplant was moved left and towards the camera or houseplant was moved right and towards the camera\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "houseplant was moved right and towards the camera",
+        "images": [
+            "er1.5_test/sat/sat_21/0.jpg",
+            "er1.5_test/sat/sat_21/1.jpg"
+        ],
+        "problem_reserved_text": "were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?"
+    },
+    {
+        "problem_id": "sat_22",
+        "problem": "<image> <image> were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?\nChoose between the following options: remote was moved left and towards the camera or remote was moved right and towards the camera\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "remote was moved left and towards the camera",
+        "images": [
+            "er1.5_test/sat/sat_22/0.jpg",
+            "er1.5_test/sat/sat_22/1.jpg"
+        ],
+        "problem_reserved_text": "were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?"
+    },
+    {
+        "problem_id": "sat_23",
+        "problem": "<image> <image> were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?\nChoose between the following options: chair was moved right and away from the camera or chair was moved left and away from the camera\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "chair was moved right and away from the camera",
+        "images": [
+            "er1.5_test/sat/sat_23/0.jpg",
+            "er1.5_test/sat/sat_23/1.jpg"
+        ],
+        "problem_reserved_text": "were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?"
+    },
+    {
+        "problem_id": "sat_24",
+        "problem": "<image> i need to go to the counter. if i turn left, will i be facing away from it?\nChoose between the following options: yes or no\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_24/0.jpg"
+        ],
+        "problem_reserved_text": "i need to go to the counter. if i turn left, will i be facing away from it?"
+    },
+    {
+        "problem_id": "sat_25",
+        "problem": "<image> for someone at the soft-toy facing right by 90 degrees, will the cellphone be to his left or right?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_25/0.jpg"
+        ],
+        "problem_reserved_text": "for someone at the soft-toy facing right by 90 degrees, will the cellphone be to his left or right?"
+    },
+    {
+        "problem_id": "sat_26",
+        "problem": "<image> for the person in the picture, is the baseball bat to his right or left?\nChoose between the following options: right or left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "left",
+        "images": [
+            "er1.5_test/sat/sat_26/0.jpg"
+        ],
+        "problem_reserved_text": "for the person in the picture, is the baseball bat to his right or left?"
+    },
+    {
+        "problem_id": "sat_27",
+        "problem": "<image> i need to go to the houseplant. which direction should i rotate to face it?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "left",
+        "images": [
+            "er1.5_test/sat/sat_27/0.jpg"
+        ],
+        "problem_reserved_text": "i need to go to the houseplant. which direction should i rotate to face it?"
+    },
+    {
+        "problem_id": "sat_28",
+        "problem": "<image> i need to go to the houseplant. if i turn right by 100 degrees, will i facing away from it?\nChoose between the following options: no or yes\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_28/0.jpg"
+        ],
+        "problem_reserved_text": "i need to go to the houseplant. if i turn right by 100 degrees, will i facing away from it?"
+    },
+    {
+        "problem_id": "sat_29",
+        "problem": "<image> if i rotate right and move forward, will i get closer to the tv?\nChoose between the following options: no or yes\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_29/0.jpg"
+        ],
+        "problem_reserved_text": "if i rotate right and move forward, will i get closer to the tv?"
+    },
+    {
+        "problem_id": "sat_30",
+        "problem": "<image> from the perspective of the person, are the kitchen mitten and the guitar on the same side?\nChoose between the following options: no or yes\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "no",
+        "images": [
+            "er1.5_test/sat/sat_30/0.jpg"
+        ],
+        "problem_reserved_text": "from the perspective of the person, are the kitchen mitten and the guitar on the same side?"
+    },
+    {
+        "problem_id": "sat_31",
+        "problem": "<image> if i stand where the woman is and face the same way as her, is the truck to her left or right?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_31/0.jpg"
+        ],
+        "problem_reserved_text": "if i stand where the woman is and face the same way as her, is the truck to her left or right?"
+    },
+    {
+        "problem_id": "sat_32",
+        "problem": "<image> if i stand in the shower facing the faucet, will i be able to see the towels without the mirror?\nChoose between the following options: no or yes\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "no",
+        "images": [
+            "er1.5_test/sat/sat_32/0.jpg"
+        ],
+        "problem_reserved_text": "if i stand in the shower facing the faucet, will i be able to see the towels without the mirror?"
+    },
+    {
+        "problem_id": "sat_33",
+        "problem": "<image> if i enter the car that has \"b.l.a.s. 0305\", would i be able to see the luggage in the car next to it?\nChoose between the following options: no or yes\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "no",
+        "images": [
+            "er1.5_test/sat/sat_33/0.jpg"
+        ],
+        "problem_reserved_text": "if i enter the car that has \"b.l.a.s. 0305\", would i be able to see the luggage in the car next to it?"
+    },
+    {
+        "problem_id": "sat_34",
+        "problem": "<image> from the perspective of the person throwing the ball, which direction is the baseball bat currently located at?\nChoose between the following options: top left or top right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "top left",
+        "images": [
+            "er1.5_test/sat/sat_34/0.jpg"
+        ],
+        "problem_reserved_text": "from the perspective of the person throwing the ball, which direction is the baseball bat currently located at?"
+    },
+    {
+        "problem_id": "sat_35",
+        "problem": "<image> from the person's perspective, are the oranges to the left of the lemons?\nChoose between the following options: no or yes\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_35/0.jpg"
+        ],
+        "problem_reserved_text": "from the person's perspective, are the oranges to the left of the lemons?"
+    },
+    {
+        "problem_id": "sat_36",
+        "problem": "<image> if i looked in the same direction as the boy in the foreground, would i be able to see the people sitting on the benches behind?\nChoose between the following options: no or yes\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "no",
+        "images": [
+            "er1.5_test/sat/sat_36/0.jpg"
+        ],
+        "problem_reserved_text": "if i looked in the same direction as the boy in the foreground, would i be able to see the people sitting on the benches behind?"
+    },
+    {
+        "problem_id": "sat_37",
+        "problem": "<image> which direction does the elephant need to turn to face the zebra?\nChoose between the following options: right or left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "left",
+        "images": [
+            "er1.5_test/sat/sat_37/0.jpg"
+        ],
+        "problem_reserved_text": "which direction does the elephant need to turn to face the zebra?"
+    },
+    {
+        "problem_id": "sat_38",
+        "problem": "<image> if i climbed on top of the mountain on the left, would the people in the scene appear bigger or smaller?\nChoose between the following options: smaller or bigger\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "smaller",
+        "images": [
+            "er1.5_test/sat/sat_38/0.jpg"
+        ],
+        "problem_reserved_text": "if i climbed on top of the mountain on the left, would the people in the scene appear bigger or smaller?"
+    },
+    {
+        "problem_id": "sat_39",
+        "problem": "<image> how should i orient the camera to see the entire street?\nChoose between the following options: rotate right or rotate left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotate left",
+        "images": [
+            "er1.5_test/sat/sat_39/0.jpg"
+        ],
+        "problem_reserved_text": "how should i orient the camera to see the entire street?"
+    },
+    {
+        "problem_id": "sat_40",
+        "problem": "<image> the person sitting on the couch wants to grab a remote. is the remote to his left or right?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "left",
+        "images": [
+            "er1.5_test/sat/sat_40/0.jpg"
+        ],
+        "problem_reserved_text": "the person sitting on the couch wants to grab a remote. is the remote to his left or right?"
+    },
+    {
+        "problem_id": "sat_41",
+        "problem": "<image> if i move to the benches and face left by 90 degrees towards the trees will the tennis racket be to my left or right?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "left",
+        "images": [
+            "er1.5_test/sat/sat_41/0.jpg"
+        ],
+        "problem_reserved_text": "if i move to the benches and face left by 90 degrees towards the trees will the tennis racket be to my left or right?"
+    },
+    {
+        "problem_id": "sat_42",
+        "problem": "<image> does the man in the red shirt see the camera?\nChoose between the following options: no or yes\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_42/0.jpg"
+        ],
+        "problem_reserved_text": "does the man in the red shirt see the camera?"
+    },
+    {
+        "problem_id": "sat_43",
+        "problem": "<image> in which direction does the player 8 need to rotate to face the ball?\nChoose between the following options: rotate right or rotate left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotate left",
+        "images": [
+            "er1.5_test/sat/sat_43/0.jpg"
+        ],
+        "problem_reserved_text": "in which direction does the player 8 need to rotate to face the ball?"
+    },
+    {
+        "problem_id": "sat_44",
+        "problem": "<image> how should the bears at the back rotate to face the bear in front?\nChoose between the following options: rotate right by 90 degrees or rotate left by 90 degrees\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotate left by 90 degrees",
+        "images": [
+            "er1.5_test/sat/sat_44/0.jpg"
+        ],
+        "problem_reserved_text": "how should the bears at the back rotate to face the bear in front?"
+    },
+    {
+        "problem_id": "sat_45",
+        "problem": "<image> for someone at the x marked point and facing 90 degrees to the right, will the green trash bin to their left or right?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_45/0.jpg"
+        ],
+        "problem_reserved_text": "for someone at the x marked point and facing 90 degrees to the right, will the green trash bin to their left or right?"
+    },
+    {
+        "problem_id": "sat_46",
+        "problem": "<image> for someone at the x marked point and facing 90 degrees to the left, will the monitor be to their left or right?\nChoose between the following options: right or left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_46/0.jpg"
+        ],
+        "problem_reserved_text": "for someone at the x marked point and facing 90 degrees to the left, will the monitor be to their left or right?"
+    },
+    {
+        "problem_id": "sat_47",
+        "problem": "<image> for someone at the x marked point and facing 90 degrees to the right, will the mirror be to their left or right?\nChoose between the following options: right or left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "left",
+        "images": [
+            "er1.5_test/sat/sat_47/0.jpg"
+        ],
+        "problem_reserved_text": "for someone at the x marked point and facing 90 degrees to the right, will the mirror be to their left or right?"
+    },
+    {
+        "problem_id": "sat_48",
+        "problem": "<image> for someone at the x marked point and facing 90 degrees to the right, will the lawn mower (marked 1) be to their left or right?\nChoose between the following options: right or left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "left",
+        "images": [
+            "er1.5_test/sat/sat_48/0.jpg"
+        ],
+        "problem_reserved_text": "for someone at the x marked point and facing 90 degrees to the right, will the lawn mower (marked 1) be to their left or right?"
+    },
+    {
+        "problem_id": "sat_49",
+        "problem": "<image> i need to go to the lawn mower (marked 1). if i turn left by 90 degrees, will i be facing away from the lawn mower (marked 1)?\nChoose between the following options: no or yes\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_49/0.jpg"
+        ],
+        "problem_reserved_text": "i need to go to the lawn mower (marked 1). if i turn left by 90 degrees, will i be facing away from the lawn mower (marked 1)?"
+    },
+    {
+        "problem_id": "sat_50",
+        "problem": "<image> i need to go to the mirror (marked 1). if i turn left by 90 degrees, will i be facing away from the mirror (marked 1)?\nChoose between the following options: yes or no\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_50/0.jpg"
+        ],
+        "problem_reserved_text": "i need to go to the mirror (marked 1). if i turn left by 90 degrees, will i be facing away from the mirror (marked 1)?"
+    },
+    {
+        "problem_id": "sat_51",
+        "problem": "<image> if i turn left by 90 degrees and move forward, will the mirror (marked 1) get closer to me?\nChoose between the following options: no or yes\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "no",
+        "images": [
+            "er1.5_test/sat/sat_51/0.jpg"
+        ],
+        "problem_reserved_text": "if i turn left by 90 degrees and move forward, will the mirror (marked 1) get closer to me?"
+    },
+    {
+        "problem_id": "sat_52",
+        "problem": "<image> if i turn right by 45 degrees and move forward, will the mirror (marked 1) get closer to me?\nChoose between the following options: yes or no\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_52/0.jpg"
+        ],
+        "problem_reserved_text": "if i turn right by 45 degrees and move forward, will the mirror (marked 1) get closer to me?"
+    },
+    {
+        "problem_id": "sat_53",
+        "problem": "<image> i need to go to the toilet (marked 1). which direction should i turn to face the object?\nChoose between the following options: right or left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_53/0.jpg"
+        ],
+        "problem_reserved_text": "i need to go to the toilet (marked 1). which direction should i turn to face the object?"
+    },
+    {
+        "problem_id": "sat_54",
+        "problem": "<image> for someone at the x marked point and facing 90 degrees to the left, will the person surfing be to their left or right?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_54/0.jpg"
+        ],
+        "problem_reserved_text": "for someone at the x marked point and facing 90 degrees to the left, will the person surfing be to their left or right?"
+    },
+    {
+        "problem_id": "sat_55",
+        "problem": "<image> i need to get to the door of the bus (marked 1). which direction do i need to turn to face the object?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "left",
+        "images": [
+            "er1.5_test/sat/sat_55/0.jpg"
+        ],
+        "problem_reserved_text": "i need to get to the door of the bus (marked 1). which direction do i need to turn to face the object?"
+    },
+    {
+        "problem_id": "sat_56",
+        "problem": "<image> if i turn left and move forward, will the bus door (marked 1) get closer to me?\nChoose between the following options: yes or no\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_56/0.jpg"
+        ],
+        "problem_reserved_text": "if i turn left and move forward, will the bus door (marked 1) get closer to me?"
+    },
+    {
+        "problem_id": "sat_57",
+        "problem": "<image> if i turn right by 100 degrees and move forward, will the bus door (marked 1) get closer to me?\nChoose between the following options: yes or no\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "no",
+        "images": [
+            "er1.5_test/sat/sat_57/0.jpg"
+        ],
+        "problem_reserved_text": "if i turn right by 100 degrees and move forward, will the bus door (marked 1) get closer to me?"
+    },
+    {
+        "problem_id": "sat_58",
+        "problem": "<image> if i turn right and move forward, will the flatscreen television (marked 1) move closer to me?\nChoose between the following options: yes or no\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_58/0.jpg"
+        ],
+        "problem_reserved_text": "if i turn right and move forward, will the flatscreen television (marked 1) move closer to me?"
+    },
+    {
+        "problem_id": "sat_59",
+        "problem": "<image> for the child in the picture, is the flatscreen television (marked 1) to his left or right?\nChoose between the following options: right or left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "left",
+        "images": [
+            "er1.5_test/sat/sat_59/0.jpg"
+        ],
+        "problem_reserved_text": "for the child in the picture, is the flatscreen television (marked 1) to his left or right?"
+    },
+    {
+        "problem_id": "sat_60",
+        "problem": "<image> if i turn right and move forward, will the white truck (marked 1) get closer to me?\nChoose between the following options: no or yes\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_60/0.jpg"
+        ],
+        "problem_reserved_text": "if i turn right and move forward, will the white truck (marked 1) get closer to me?"
+    },
+    {
+        "problem_id": "sat_61",
+        "problem": "<image> i need to go to the white truck (marked 1). if i turn left, will i be facing away from it?\nChoose between the following options: no or yes\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_61/0.jpg"
+        ],
+        "problem_reserved_text": "i need to go to the white truck (marked 1). if i turn left, will i be facing away from it?"
+    },
+    {
+        "problem_id": "sat_62",
+        "problem": "<image> for someone near the white table facing towards the left, will the windows be to their left or right?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_62/0.jpg"
+        ],
+        "problem_reserved_text": "for someone near the white table facing towards the left, will the windows be to their left or right?"
+    },
+    {
+        "problem_id": "sat_63",
+        "problem": "<image> if facing the nearest red chair to the cameraview, and turn left by 90 degree, which side is the nearest computer? left or right\nChoose between the following options: right or left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_63/0.jpg"
+        ],
+        "problem_reserved_text": "if facing the nearest red chair to the cameraview, and turn left by 90 degree, which side is the nearest computer? left or right"
+    },
+    {
+        "problem_id": "sat_64",
+        "problem": "<image> if someone is sitting on the piano chair, is the audience sitting to his left or right?\nChoose between the following options: right or left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_64/0.jpg"
+        ],
+        "problem_reserved_text": "if someone is sitting on the piano chair, is the audience sitting to his left or right?"
+    },
+    {
+        "problem_id": "sat_65",
+        "problem": "<image> the person sitting on the chair needs to face the glass studo. which direction should the person sitting on the chair turn to face the glass studio?\nChoose between the following options: rotate right by 20 degrees or rotate left by 45 degrees\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotate right by 20 degrees",
+        "images": [
+            "er1.5_test/sat/sat_65/0.jpg"
+        ],
+        "problem_reserved_text": "the person sitting on the chair needs to face the glass studo. which direction should the person sitting on the chair turn to face the glass studio?"
+    },
+    {
+        "problem_id": "sat_66",
+        "problem": "<image> is the tv behind or in front of the red stool?\nChoose between the following options: in front or behind\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "behind",
+        "images": [
+            "er1.5_test/sat/sat_66/0.jpg"
+        ],
+        "problem_reserved_text": "is the tv behind or in front of the red stool?"
+    },
+    {
+        "problem_id": "sat_67",
+        "problem": "<image> if i stand in front of the trash bin, is there two person to my right?\nChoose between the following options: no or yes\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "no",
+        "images": [
+            "er1.5_test/sat/sat_67/0.jpg"
+        ],
+        "problem_reserved_text": "if i stand in front of the trash bin, is there two person to my right?"
+    },
+    {
+        "problem_id": "sat_68",
+        "problem": "<image> where is the studio relative to the blue chair?\nChoose between the following options: right or left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "left",
+        "images": [
+            "er1.5_test/sat/sat_68/0.jpg"
+        ],
+        "problem_reserved_text": "where is the studio relative to the blue chair?"
+    },
+    {
+        "problem_id": "sat_69",
+        "problem": "<image> if i am standing in the centre of the room, facing the camera. is the door to my left or right?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_69/0.jpg"
+        ],
+        "problem_reserved_text": "if i am standing in the centre of the room, facing the camera. is the door to my left or right?"
+    },
+    {
+        "problem_id": "sat_70",
+        "problem": "<image> i need to go to the table (marked 3). which direction should i turn to face the object?\nChoose between the following options: rotate left or rotate right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotate right",
+        "images": [
+            "er1.5_test/sat/sat_70/0.jpg"
+        ],
+        "problem_reserved_text": "i need to go to the table (marked 3). which direction should i turn to face the object?"
+    },
+    {
+        "problem_id": "sat_71",
+        "problem": "<image> i need to go to the table (marked 2). if i turn right by 90 degrees, will i be facing away from it?\nChoose between the following options: yes or no\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_71/0.jpg"
+        ],
+        "problem_reserved_text": "i need to go to the table (marked 2). if i turn right by 90 degrees, will i be facing away from it?"
+    },
+    {
+        "problem_id": "sat_72",
+        "problem": "<image> if i rotate left and move forward, will i move closer to the table (marked 2)?\nChoose between the following options: yes or no\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_72/0.jpg"
+        ],
+        "problem_reserved_text": "if i rotate left and move forward, will i move closer to the table (marked 2)?"
+    },
+    {
+        "problem_id": "sat_73",
+        "problem": "<image> i need to go to the serving counter (marked 1). which direction should i rotate to face the object?\nChoose between the following options: look straight or rotate right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "look straight",
+        "images": [
+            "er1.5_test/sat/sat_73/0.jpg"
+        ],
+        "problem_reserved_text": "i need to go to the serving counter (marked 1). which direction should i rotate to face the object?"
+    },
+    {
+        "problem_id": "sat_74",
+        "problem": "<image> i need to go to the cash counter (marked 1). which direction should i rotate to face the object?\nChoose between the following options: rotate left or rotate right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotate right",
+        "images": [
+            "er1.5_test/sat/sat_74/0.jpg"
+        ],
+        "problem_reserved_text": "i need to go to the cash counter (marked 1). which direction should i rotate to face the object?"
+    },
+    {
+        "problem_id": "sat_75",
+        "problem": "<image> if i rotate left by 90 degrees and move forward, will i get closer to the item on the shelf (marked 2)?\nChoose between the following options: yes or no\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "no",
+        "images": [
+            "er1.5_test/sat/sat_75/0.jpg"
+        ],
+        "problem_reserved_text": "if i rotate left by 90 degrees and move forward, will i get closer to the item on the shelf (marked 2)?"
+    },
+    {
+        "problem_id": "sat_76",
+        "problem": "<image> if i rotate left and move forward, will i move closer to the printer (marked 1)?\nChoose between the following options: yes or no\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_76/0.jpg"
+        ],
+        "problem_reserved_text": "if i rotate left and move forward, will i move closer to the printer (marked 1)?"
+    },
+    {
+        "problem_id": "sat_77",
+        "problem": "<image> i need to go to the printer (marked 1). which direction should i turn to face the object?\nChoose between the following options: right or left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "left",
+        "images": [
+            "er1.5_test/sat/sat_77/0.jpg"
+        ],
+        "problem_reserved_text": "i need to go to the printer (marked 1). which direction should i turn to face the object?"
+    },
+    {
+        "problem_id": "sat_78",
+        "problem": "<image> i need to clean the toy area (marked 2). which direction should i turn to face the object?\nChoose between the following options: right or left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_78/0.jpg"
+        ],
+        "problem_reserved_text": "i need to clean the toy area (marked 2). which direction should i turn to face the object?"
+    },
+    {
+        "problem_id": "sat_79",
+        "problem": "<image> i need to sit at the chair marked 1. which direction should i turn to face the object?\nChoose between the following options: right or left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_79/0.jpg"
+        ],
+        "problem_reserved_text": "i need to sit at the chair marked 1. which direction should i turn to face the object?"
+    },
+    {
+        "problem_id": "sat_80",
+        "problem": "<image> if i rotate left by 100 degrees, will i be facing away from the window (marked 1)?\nChoose between the following options: yes or no\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_80/0.jpg"
+        ],
+        "problem_reserved_text": "if i rotate left by 100 degrees, will i be facing away from the window (marked 1)?"
+    },
+    {
+        "problem_id": "sat_81",
+        "problem": "<image> if i rotate right and move forward, will the window (marked 1) move closer to me?\nChoose between the following options: no or yes\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_81/0.jpg"
+        ],
+        "problem_reserved_text": "if i rotate right and move forward, will the window (marked 1) move closer to me?"
+    },
+    {
+        "problem_id": "sat_82",
+        "problem": "<image> <image> how did the camera likely rotate when shooting the video?\nChoose between the following options: rotated right or rotated left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotated right",
+        "images": [
+            "er1.5_test/sat/sat_82/0.jpg",
+            "er1.5_test/sat/sat_82/1.jpg"
+        ],
+        "problem_reserved_text": "how did the camera likely rotate when shooting the video?"
+    },
+    {
+        "problem_id": "sat_83",
+        "problem": "<image> <image> were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?\nChoose between the following options: side table was moved left and away from the camera or side table was moved right and towards the camera\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "side table was moved right and towards the camera",
+        "images": [
+            "er1.5_test/sat/sat_83/0.jpg",
+            "er1.5_test/sat/sat_83/1.jpg"
+        ],
+        "problem_reserved_text": "were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?"
+    },
+    {
+        "problem_id": "sat_84",
+        "problem": "<image> <image> were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?\nChoose between the following options: no object moved or cardboard box was moved left and away from the camera\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "cardboard box was moved left and away from the camera",
+        "images": [
+            "er1.5_test/sat/sat_84/0.jpg",
+            "er1.5_test/sat/sat_84/1.jpg"
+        ],
+        "problem_reserved_text": "were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?"
+    },
+    {
+        "problem_id": "sat_85",
+        "problem": "<image> <image> were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?\nChoose between the following options: bowl was moved right or bowl was moved left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "bowl was moved right",
+        "images": [
+            "er1.5_test/sat/sat_85/0.jpg",
+            "er1.5_test/sat/sat_85/1.jpg"
+        ],
+        "problem_reserved_text": "were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?"
+    },
+    {
+        "problem_id": "sat_86",
+        "problem": "<image> <image> were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?\nChoose between the following options: soap bottle was moved left and towards the camera or soap bottle was moved right and towards the camera\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "soap bottle was moved left and towards the camera",
+        "images": [
+            "er1.5_test/sat/sat_86/0.jpg",
+            "er1.5_test/sat/sat_86/1.jpg"
+        ],
+        "problem_reserved_text": "were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?"
+    },
+    {
+        "problem_id": "sat_87",
+        "problem": "<image> <image> were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?\nChoose between the following options: bowl was moved right and towards the camera or bowl was moved left and towards the camera\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "bowl was moved right and towards the camera",
+        "images": [
+            "er1.5_test/sat/sat_87/0.jpg",
+            "er1.5_test/sat/sat_87/1.jpg"
+        ],
+        "problem_reserved_text": "were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?"
+    },
+    {
+        "problem_id": "sat_88",
+        "problem": "<image> <image> how did the camera likely rotate when shooting the video?\nChoose between the following options: rotated right or rotated left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotated right",
+        "images": [
+            "er1.5_test/sat/sat_88/0.jpg",
+            "er1.5_test/sat/sat_88/1.jpg"
+        ],
+        "problem_reserved_text": "how did the camera likely rotate when shooting the video?"
+    },
+    {
+        "problem_id": "sat_89",
+        "problem": "<image> <image> were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?\nChoose between the following options: kettle was moved right and towards the camera or kettle was moved left and towards the camera\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "kettle was moved left and towards the camera",
+        "images": [
+            "er1.5_test/sat/sat_89/0.jpg",
+            "er1.5_test/sat/sat_89/1.jpg"
+        ],
+        "problem_reserved_text": "were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?"
+    },
+    {
+        "problem_id": "sat_90",
+        "problem": "<image> from this perspective, are the two people walking or the parking sign closer to me?\nChoose between the following options: two people walking or parking sign\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "parking sign",
+        "images": [
+            "er1.5_test/sat/sat_90/0.jpg"
+        ],
+        "problem_reserved_text": "from this perspective, are the two people walking or the parking sign closer to me?"
+    },
+    {
+        "problem_id": "sat_91",
+        "problem": "<image> i need to pick up a cue stick. which direction should i turn to walk straight towards it?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "left",
+        "images": [
+            "er1.5_test/sat/sat_91/0.jpg"
+        ],
+        "problem_reserved_text": "i need to pick up a cue stick. which direction should i turn to walk straight towards it?"
+    },
+    {
+        "problem_id": "sat_92",
+        "problem": "<image> from the perspective of the woman facing the camera, is the horse to her left or right?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_92/0.jpg"
+        ],
+        "problem_reserved_text": "from the perspective of the woman facing the camera, is the horse to her left or right?"
+    },
+    {
+        "problem_id": "sat_93",
+        "problem": "<image> the boat needs to go under the bridge, which direction should it turn?\nChoose between the following options: right or left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "left",
+        "images": [
+            "er1.5_test/sat/sat_93/0.jpg"
+        ],
+        "problem_reserved_text": "the boat needs to go under the bridge, which direction should it turn?"
+    },
+    {
+        "problem_id": "sat_94",
+        "problem": "<image> the person needs to grab their ski poles. which way does the person need to turn to face it?\nChoose between the following options: right or left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "left",
+        "images": [
+            "er1.5_test/sat/sat_94/0.jpg"
+        ],
+        "problem_reserved_text": "the person needs to grab their ski poles. which way does the person need to turn to face it?"
+    },
+    {
+        "problem_id": "sat_95",
+        "problem": "<image> if i sit by the dog and face the same direction as the dog, will the lamp be to my left or right?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_95/0.jpg"
+        ],
+        "problem_reserved_text": "if i sit by the dog and face the same direction as the dog, will the lamp be to my left or right?"
+    },
+    {
+        "problem_id": "sat_96",
+        "problem": "<image> you need to walk up the stairs, should you go straight or slightly right or left?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_96/0.jpg"
+        ],
+        "problem_reserved_text": "you need to walk up the stairs, should you go straight or slightly right or left?"
+    },
+    {
+        "problem_id": "sat_97",
+        "problem": "<image> i need to turn the water on in the bathtub. which way should i turn to face it?\nChoose between the following options: right or left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_97/0.jpg"
+        ],
+        "problem_reserved_text": "i need to turn the water on in the bathtub. which way should i turn to face it?"
+    },
+    {
+        "problem_id": "sat_98",
+        "problem": "<image> if the person wants to increase the tension on the rope of the kite, which direction should they run to?\nChoose between the following options: right or left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "left",
+        "images": [
+            "er1.5_test/sat/sat_98/0.jpg"
+        ],
+        "problem_reserved_text": "if the person wants to increase the tension on the rope of the kite, which direction should they run to?"
+    },
+    {
+        "problem_id": "sat_99",
+        "problem": "<image> the person in the white boat needs to go to the blue dinghy. which direction should he steer?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "left",
+        "images": [
+            "er1.5_test/sat/sat_99/0.jpg"
+        ],
+        "problem_reserved_text": "the person in the white boat needs to go to the blue dinghy. which direction should he steer?"
+    },
+    {
+        "problem_id": "sat_100",
+        "problem": "<image> <image> were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?\nChoose between the following options: chair was moved left and towards from the camera or chair was moved right and away from the camera\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "chair was moved left and towards from the camera",
+        "images": [
+            "er1.5_test/sat/sat_100/0.jpg",
+            "er1.5_test/sat/sat_100/1.jpg"
+        ],
+        "problem_reserved_text": "were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?"
+    },
+    {
+        "problem_id": "sat_101",
+        "problem": "<image> <image> were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?\nChoose between the following options: bottle was moved right and away from the camera or bottle was moved right and towards the camera\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "bottle was moved right and away from the camera",
+        "images": [
+            "er1.5_test/sat/sat_101/0.jpg",
+            "er1.5_test/sat/sat_101/1.jpg"
+        ],
+        "problem_reserved_text": "were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?"
+    },
+    {
+        "problem_id": "sat_102",
+        "problem": "<image> <image> were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?\nChoose between the following options: paper bag was moved right and away the camera or paper bag was moved left and away the camera\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "paper bag was moved right and away the camera",
+        "images": [
+            "er1.5_test/sat/sat_102/0.jpg",
+            "er1.5_test/sat/sat_102/1.jpg"
+        ],
+        "problem_reserved_text": "were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?"
+    },
+    {
+        "problem_id": "sat_103",
+        "problem": "<image> <image> were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?\nChoose between the following options: houseplant was moved right and towards the camera or houseplant was moved left and away from the camera\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "houseplant was moved left and away from the camera",
+        "images": [
+            "er1.5_test/sat/sat_103/0.jpg",
+            "er1.5_test/sat/sat_103/1.jpg"
+        ],
+        "problem_reserved_text": "were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?"
+    },
+    {
+        "problem_id": "sat_104",
+        "problem": "<image> <image> were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?\nChoose between the following options: remote was moved left and away from the camera or remote was moved right and away from the camera\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "remote was moved right and away from the camera",
+        "images": [
+            "er1.5_test/sat/sat_104/0.jpg",
+            "er1.5_test/sat/sat_104/1.jpg"
+        ],
+        "problem_reserved_text": "were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?"
+    },
+    {
+        "problem_id": "sat_105",
+        "problem": "<image> <image> were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?\nChoose between the following options: chair was moved left and towards the camera or chair was moved right and towards from the camera\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "chair was moved left and towards the camera",
+        "images": [
+            "er1.5_test/sat/sat_105/0.jpg",
+            "er1.5_test/sat/sat_105/1.jpg"
+        ],
+        "problem_reserved_text": "were any of the objects in the initial frame that you can still see in the second frame moved from their original positions?"
+    },
+    {
+        "problem_id": "sat_106",
+        "problem": "<image> if i turn right by 90 degrees and move forward, will i get closer to the football?\nChoose between the following options: no or yes\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "no",
+        "images": [
+            "er1.5_test/sat/sat_106/0.jpg"
+        ],
+        "problem_reserved_text": "if i turn right by 90 degrees and move forward, will i get closer to the football?"
+    },
+    {
+        "problem_id": "sat_107",
+        "problem": "<image> if i turn left by 10 degrees and move forward, will i get closer to the football?\nChoose between the following options: no or yes\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_107/0.jpg"
+        ],
+        "problem_reserved_text": "if i turn left by 10 degrees and move forward, will i get closer to the football?"
+    },
+    {
+        "problem_id": "sat_108",
+        "problem": "<image> which way is the person turning from his perspective?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "left",
+        "images": [
+            "er1.5_test/sat/sat_108/0.jpg"
+        ],
+        "problem_reserved_text": "which way is the person turning from his perspective?"
+    },
+    {
+        "problem_id": "sat_109",
+        "problem": "<image> i need to get to the door of the train, which direction should i rotate to face the door?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "left",
+        "images": [
+            "er1.5_test/sat/sat_109/0.jpg"
+        ],
+        "problem_reserved_text": "i need to get to the door of the train, which direction should i rotate to face the door?"
+    },
+    {
+        "problem_id": "sat_110",
+        "problem": "<image> if i need to get to the back of the train, should i turn left or right?\nChoose between the following options: right or left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "left",
+        "images": [
+            "er1.5_test/sat/sat_110/0.jpg"
+        ],
+        "problem_reserved_text": "if i need to get to the back of the train, should i turn left or right?"
+    },
+    {
+        "problem_id": "sat_111",
+        "problem": "<image> if i turn left by 10 degrees and move forward, will i get closer to the tv?\nChoose between the following options: yes or no\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_111/0.jpg"
+        ],
+        "problem_reserved_text": "if i turn left by 10 degrees and move forward, will i get closer to the tv?"
+    },
+    {
+        "problem_id": "sat_112",
+        "problem": "<image> i need to get to the tv, which direction should i turn to face the object?\nChoose between the following options: right or left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "left",
+        "images": [
+            "er1.5_test/sat/sat_112/0.jpg"
+        ],
+        "problem_reserved_text": "i need to get to the tv, which direction should i turn to face the object?"
+    },
+    {
+        "problem_id": "sat_113",
+        "problem": "<image> if i rotate right and move forward, will i get closer to the white truck?\nChoose between the following options: yes or no\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_113/0.jpg"
+        ],
+        "problem_reserved_text": "if i rotate right and move forward, will i get closer to the white truck?"
+    },
+    {
+        "problem_id": "sat_114",
+        "problem": "<image> i need to go to the white truck, which direction should i turn to face the object?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_114/0.jpg"
+        ],
+        "problem_reserved_text": "i need to go to the white truck, which direction should i turn to face the object?"
+    },
+    {
+        "problem_id": "sat_115",
+        "problem": "<image> i need to go to the wall painting, which direction should i turn to face the object?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_115/0.jpg"
+        ],
+        "problem_reserved_text": "i need to go to the wall painting, which direction should i turn to face the object?"
+    },
+    {
+        "problem_id": "sat_116",
+        "problem": "<image> which direction would the person need to turn to play the synthetsizer keyboard?\nChoose between the following options: right or left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_116/0.jpg"
+        ],
+        "problem_reserved_text": "which direction would the person need to turn to play the synthetsizer keyboard?"
+    },
+    {
+        "problem_id": "sat_117",
+        "problem": "<image> if i turn right by 40 degrees and move forward, will i get closer to the coca-cola dispenser?\nChoose between the following options: no or yes\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_117/0.jpg"
+        ],
+        "problem_reserved_text": "if i turn right by 40 degrees and move forward, will i get closer to the coca-cola dispenser?"
+    },
+    {
+        "problem_id": "sat_118",
+        "problem": "<image> i need to go to the cashier. if i rotate left by 90 degrees, will i be facing away from the object?\nChoose between the following options: no or yes\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_118/0.jpg"
+        ],
+        "problem_reserved_text": "i need to go to the cashier. if i rotate left by 90 degrees, will i be facing away from the object?"
+    },
+    {
+        "problem_id": "sat_119",
+        "problem": "<image> i need to stand in queue for the cashier line. which direction should i rotate to go to the end of the queue?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "left",
+        "images": [
+            "er1.5_test/sat/sat_119/0.jpg"
+        ],
+        "problem_reserved_text": "i need to stand in queue for the cashier line. which direction should i rotate to go to the end of the queue?"
+    },
+    {
+        "problem_id": "sat_120",
+        "problem": "<image> if i turn left by 90 degrees and move forward, will i move away from the water?\nChoose between the following options: no or yes\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_120/0.jpg"
+        ],
+        "problem_reserved_text": "if i turn left by 90 degrees and move forward, will i move away from the water?"
+    },
+    {
+        "problem_id": "sat_121",
+        "problem": "<image> if i turn right by 90 degrees, will i be facing the sink?\nChoose between the following options: yes or no\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "no",
+        "images": [
+            "er1.5_test/sat/sat_121/0.jpg"
+        ],
+        "problem_reserved_text": "if i turn right by 90 degrees, will i be facing the sink?"
+    },
+    {
+        "problem_id": "sat_122",
+        "problem": "<image> if i turn right by 45 degrees, will i be facing the red parked car?\nChoose between the following options: yes or no\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_122/0.jpg"
+        ],
+        "problem_reserved_text": "if i turn right by 45 degrees, will i be facing the red parked car?"
+    },
+    {
+        "problem_id": "sat_123",
+        "problem": "<image> if i turn right by 90 degrees, will i be facing the store entrance?\nChoose between the following options: no or yes\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "no",
+        "images": [
+            "er1.5_test/sat/sat_123/0.jpg"
+        ],
+        "problem_reserved_text": "if i turn right by 90 degrees, will i be facing the store entrance?"
+    },
+    {
+        "problem_id": "sat_124",
+        "problem": "<image> if i stand where the dog is and face the same way, will the cup be to my right or left?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_124/0.jpg"
+        ],
+        "problem_reserved_text": "if i stand where the dog is and face the same way, will the cup be to my right or left?"
+    },
+    {
+        "problem_id": "sat_125",
+        "problem": "<image> if i turn right by 20 degrees, will be facing the closest table to me?\nChoose between the following options: no or yes\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_125/0.jpg"
+        ],
+        "problem_reserved_text": "if i turn right by 20 degrees, will be facing the closest table to me?"
+    },
+    {
+        "problem_id": "sat_126",
+        "problem": "<image> if the person keeps tilting towards the people in the background, which direction will he turn?\nChoose between the following options: right or left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_126/0.jpg"
+        ],
+        "problem_reserved_text": "if the person keeps tilting towards the people in the background, which direction will he turn?"
+    },
+    {
+        "problem_id": "sat_127",
+        "problem": "<image> i need to go to the flatscreen tv. which direction should i rotate to face the object?\nChoose between the following options: right or left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_127/0.jpg"
+        ],
+        "problem_reserved_text": "i need to go to the flatscreen tv. which direction should i rotate to face the object?"
+    },
+    {
+        "problem_id": "sat_128",
+        "problem": "<image> if i turn left by 90 degrees, will i be facing away from the flatscreen tv?\nChoose between the following options: no or yes\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_128/0.jpg"
+        ],
+        "problem_reserved_text": "if i turn left by 90 degrees, will i be facing away from the flatscreen tv?"
+    },
+    {
+        "problem_id": "sat_129",
+        "problem": "<image> i need to go to tallahassee, which direction should i turn?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_129/0.jpg"
+        ],
+        "problem_reserved_text": "i need to go to tallahassee, which direction should i turn?"
+    },
+    {
+        "problem_id": "sat_130",
+        "problem": "<image> i need to go to the yellow parked car. which direction should i turn to face the object?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_130/0.jpg"
+        ],
+        "problem_reserved_text": "i need to go to the yellow parked car. which direction should i turn to face the object?"
+    },
+    {
+        "problem_id": "sat_131",
+        "problem": "<image> if i rotate left by 90 degrees, will i be facing the yellow parked car?\nChoose between the following options: yes or no\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "no",
+        "images": [
+            "er1.5_test/sat/sat_131/0.jpg"
+        ],
+        "problem_reserved_text": "if i rotate left by 90 degrees, will i be facing the yellow parked car?"
+    },
+    {
+        "problem_id": "sat_132",
+        "problem": "<image> if i turn right by 60 degrees, will i be facing the road?\nChoose between the following options: no or yes\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_132/0.jpg"
+        ],
+        "problem_reserved_text": "if i turn right by 60 degrees, will i be facing the road?"
+    },
+    {
+        "problem_id": "sat_133",
+        "problem": "<image> is she about to swing the racket towards her left or right?\nChoose between the following options: right or left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_133/0.jpg"
+        ],
+        "problem_reserved_text": "is she about to swing the racket towards her left or right?"
+    },
+    {
+        "problem_id": "sat_134",
+        "problem": "<image> is it safe to turn left and move forward in this picture?\nChoose between the following options: yes or no\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "no",
+        "images": [
+            "er1.5_test/sat/sat_134/0.jpg"
+        ],
+        "problem_reserved_text": "is it safe to turn left and move forward in this picture?"
+    },
+    {
+        "problem_id": "sat_135",
+        "problem": "<image> i need to move away from the train. which direction should i turn?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_135/0.jpg"
+        ],
+        "problem_reserved_text": "i need to move away from the train. which direction should i turn?"
+    },
+    {
+        "problem_id": "sat_136",
+        "problem": "<image> i need to go to the couch. which direction should i turn to face the object?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_136/0.jpg"
+        ],
+        "problem_reserved_text": "i need to go to the couch. which direction should i turn to face the object?"
+    },
+    {
+        "problem_id": "sat_137",
+        "problem": "<image> if i rotate right and move forward, will move closer to the couch?\nChoose between the following options: yes or no\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_137/0.jpg"
+        ],
+        "problem_reserved_text": "if i rotate right and move forward, will move closer to the couch?"
+    },
+    {
+        "problem_id": "sat_138",
+        "problem": "<image> i need to open the window near the couch, which direction should i turn?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_138/0.jpg"
+        ],
+        "problem_reserved_text": "i need to open the window near the couch, which direction should i turn?"
+    },
+    {
+        "problem_id": "sat_139",
+        "problem": "<image> if i turn right by 30 degrees and move forward, will i get closer to the bus door?\nChoose between the following options: yes or no\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_139/0.jpg"
+        ],
+        "problem_reserved_text": "if i turn right by 30 degrees and move forward, will i get closer to the bus door?"
+    },
+    {
+        "problem_id": "sat_140",
+        "problem": "<image> <image> how did the camera likely rotate when shooting the video?\nChoose between the following options: rotated right or rotated left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotated right",
+        "images": [
+            "er1.5_test/sat/sat_140/0.jpg",
+            "er1.5_test/sat/sat_140/1.jpg"
+        ],
+        "problem_reserved_text": "how did the camera likely rotate when shooting the video?"
+    },
+    {
+        "problem_id": "sat_141",
+        "problem": "<image> <image> how did the camera likely rotate when shooting the video?\nChoose between the following options: rotated right or rotated left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotated left",
+        "images": [
+            "er1.5_test/sat/sat_141/0.jpg",
+            "er1.5_test/sat/sat_141/1.jpg"
+        ],
+        "problem_reserved_text": "how did the camera likely rotate when shooting the video?"
+    },
+    {
+        "problem_id": "sat_142",
+        "problem": "<image> <image> how did the camera likely rotate when shooting the video?\nChoose between the following options: rotated left or rotated right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotated right",
+        "images": [
+            "er1.5_test/sat/sat_142/0.jpg",
+            "er1.5_test/sat/sat_142/1.jpg"
+        ],
+        "problem_reserved_text": "how did the camera likely rotate when shooting the video?"
+    },
+    {
+        "problem_id": "sat_143",
+        "problem": "<image> <image> how did the camera likely rotate when shooting the video?\nChoose between the following options: rotated left or rotated right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotated left",
+        "images": [
+            "er1.5_test/sat/sat_143/0.jpg",
+            "er1.5_test/sat/sat_143/1.jpg"
+        ],
+        "problem_reserved_text": "how did the camera likely rotate when shooting the video?"
+    },
+    {
+        "problem_id": "sat_144",
+        "problem": "<image> <image> how did the camera likely rotate when shooting the video?\nChoose between the following options: rotated left or rotated right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotated left",
+        "images": [
+            "er1.5_test/sat/sat_144/0.jpg",
+            "er1.5_test/sat/sat_144/1.jpg"
+        ],
+        "problem_reserved_text": "how did the camera likely rotate when shooting the video?"
+    },
+    {
+        "problem_id": "sat_145",
+        "problem": "<image> <image> how did the camera likely rotate when shooting the video?\nChoose between the following options: rotated right or rotated left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotated right",
+        "images": [
+            "er1.5_test/sat/sat_145/0.jpg",
+            "er1.5_test/sat/sat_145/1.jpg"
+        ],
+        "problem_reserved_text": "how did the camera likely rotate when shooting the video?"
+    },
+    {
+        "problem_id": "sat_146",
+        "problem": "<image> <image> how did the camera likely rotate when shooting the video?\nChoose between the following options: rotated right or rotated left\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotated right",
+        "images": [
+            "er1.5_test/sat/sat_146/0.jpg",
+            "er1.5_test/sat/sat_146/1.jpg"
+        ],
+        "problem_reserved_text": "how did the camera likely rotate when shooting the video?"
+    },
+    {
+        "problem_id": "sat_147",
+        "problem": "<image> <image> how did the camera likely rotate when shooting the video?\nChoose between the following options: rotated left or rotated right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "rotated left",
+        "images": [
+            "er1.5_test/sat/sat_147/0.jpg",
+            "er1.5_test/sat/sat_147/1.jpg"
+        ],
+        "problem_reserved_text": "how did the camera likely rotate when shooting the video?"
+    },
+    {
+        "problem_id": "sat_148",
+        "problem": "<image> i need to face the shelf of books closest to me, which direction should i turn to face the object?\nChoose between the following options: left or right\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "right",
+        "images": [
+            "er1.5_test/sat/sat_148/0.jpg"
+        ],
+        "problem_reserved_text": "i need to face the shelf of books closest to me, which direction should i turn to face the object?"
+    },
+    {
+        "problem_id": "sat_149",
+        "problem": "<image> i need to grab some poles. if i turn right, will i be facing away from the poles?\nChoose between the following options: no or yes\nPlease directly answer the question by providing the exact text of your chosen answer.",
+        "data_type": "image",
+        "problem_type": "multiple choice",
+        "options": [],
+        "data_source": "sat",
+        "answer": "yes",
+        "images": [
+            "er1.5_test/sat/sat_149/0.jpg"
+        ],
+        "problem_reserved_text": "i need to grab some poles. if i turn right, will i be facing away from the poles?"
+    }
+]

@@ -61,7 +61,7 @@ MODEL_PATH = "Skywork/Skywork-Reward-V2-Qwen3-4B"
 MAX_RM_BATCH_SIZE = 100
 
 # Model reward for open-ended tasks
-USE_MODEL_FOR_OPEN_ENDED = True
+USE_MODEL_FOR_OPEN_ENDED = False
 
 # Valid values for validation
 VALID_DATA_TYPES = {"image", "video", "mixed", "text"}
@@ -378,24 +378,28 @@ def compute_rouge_score(reference: str, hypothesis: str) -> float:
 
 def compute_bleu_score(reference: str, hypothesis: str) -> float:
     """
-    Compute BLEU score as the average of BLEU-1 and BLEU-4.
+    Compute BLEU score as the average of BLEU-1, BLEU-2, and BLEU-3.
+    Optimized for short sentences (< 10 words).
 
     Args:
         reference: Reference text (ground truth)
         hypothesis: Hypothesis text (model prediction)
 
     Returns:
-        Average of BLEU-1 and BLEU-4 scores, normalized to [0, 1]
+        Average of BLEU-1, BLEU-2, and BLEU-3 scores, normalized to [0, 1]
     """
     try:
-        # Compute BLEU-1 (only unigram matches)
-        bleu1 = sacrebleu.sentence_bleu(hypothesis or "", [reference or ""], tokenize="intl", max_ngram_order=1).score
+        # Compute BLEU-1 (unigram matches)
+        bleu1 = sacrebleu.sentence_bleu(hypothesis or "", [reference or ""], tokenize="intl", max_ngram_order=1, smooth_method='exp').score
 
-        # Compute BLEU-4 (default, considers 1-4 gram matches)
-        bleu4 = sacrebleu.sentence_bleu(hypothesis or "", [reference or ""], tokenize="intl").score
+        # Compute BLEU-2 (bigram matches)
+        bleu2 = sacrebleu.sentence_bleu(hypothesis or "", [reference or ""], tokenize="intl", max_ngram_order=2, smooth_method='exp').score
 
-        # Return average, normalized to [0, 1] (BLEU scores are in range 0-100)
-        return (bleu1 + bleu4) / 2.0 / 100.0
+        # Compute BLEU-3 (trigram matches)
+        bleu3 = sacrebleu.sentence_bleu(hypothesis or "", [reference or ""], tokenize="intl", max_ngram_order=3, smooth_method='exp').score
+
+        # Return simple average, normalized to [0, 1] (BLEU scores are in range 0-100)
+        return (bleu1 + bleu2 + bleu3) / 3.0 / 100.0
     except Exception:
         return 0.0
 
@@ -469,7 +473,7 @@ def accuracy_reward_trace(
         length_penalty = 0.0
         if len(pred_points) != len(gt_points):
             length_penalty = length_mismatch_penalty
-            print("length_mismatch_penalty")
+            # print("length_mismatch_penalty")
 
         # Extract point_2d coordinates
         pred_trajectory = [p.get("point_2d", [0, 0]) for p in pred_points]
@@ -783,11 +787,11 @@ def accuracy_reward_point(
         penalty = 0.0
         if gt_count is not None and len(pred_points) != gt_count:
             penalty = count_penalty
-            print("count_penalty!!!")
+            # print("count_penalty!!!")
 
         # Calculate average minimum distance
         avg_dist = find_nearest_match(pred_points, gt_points)
-        print(avg_dist)
+        # print(avg_dist)
 
         # Distance-based reward with configurable thresholds
         if avg_dist < perfect_threshold:
@@ -914,7 +918,9 @@ def accuracy_reward(response: str,
         if ptype == "open-ended":
             # answer: free text
             # only for no RM
+            # ROUGE
             # return max(0.0, min(1.0, compute_rouge_score(gt, ans)))
+            # BLEU
             return max(0.0, min(1.0, compute_bleu_score(gt, ans)))
 
         if ptype == "math":
@@ -1074,9 +1080,9 @@ def compute_score(reward_inputs: List[Dict[str, Any]],
 
     if random.random() < 0.01:
         for idx, item in enumerate(reward_inputs):
-            print('type', item.get("problem_type", ""))
-            print('gt', extract_answer(item.get("ground_truth", "")))
-            print('ans', extract_answer(item.get("response", "")))
+            print('type:', item.get("problem_type", ""))
+            print('gt:', item.get("ground_truth", ""))
+            print('ans:', item.get("response", ""))
             print({
                 "overall": results[idx]["overall"],
                 "format": results[idx]["format"],
