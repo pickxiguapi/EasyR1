@@ -488,19 +488,19 @@ class RLHFDataset(Dataset):
             video_kwargs = {'do_sample_frames': False}
 
             # split the videos and according metadatas
-            if videos is not None:
-                videos, video_metadatas = video_input
-                print(videos.shape, video_metadatas)
+            if video_inputs is not None:
+                processed_video, video_metadatas = video_input
+                print(processed_video.shape, video_metadatas)
                 # torch.Size([4, 3, 384, 672]) {'fps': 29.969573582710638, 'frames_indices': tensor([ 0,  5, 11, 16]), 'total_num_frames': 17, 'video_backend': 'torchvision'}
                 # print(videos[0].shape)
                 # print(videos)
-                videos, video_metadatas = [videos], [video_metadatas]
+                processed_video, video_metadatas = [processed_video], [video_metadatas]
                 # print(videos[0].shape)
             else:
                 print("!!!!!!!!!!!!!!!!!!!!!!!!!!")
                 video_metadatas = None
 
-            model_inputs = self.processor(text=[prompt], videos=videos, add_special_tokens=False, video_metadata=video_metadatas, return_tensors="pt", do_resize=False, **video_kwargs)
+            model_inputs = self.processor(text=[prompt], videos=processed_video, add_special_tokens=False, video_metadata=video_metadatas, return_tensors="pt", do_resize=False, **video_kwargs)
 
             input_ids = model_inputs.pop("input_ids")[0]
             attention_mask = model_inputs.pop("attention_mask")[0]
