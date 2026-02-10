@@ -491,11 +491,13 @@ class RLHFDataset(Dataset):
             if videos is not None:
                 videos, video_metadatas = video_input
                 print(videos.shape, video_metadatas)
+                # torch.Size([4, 3, 384, 672]) {'fps': 29.969573582710638, 'frames_indices': tensor([ 0,  5, 11, 16]), 'total_num_frames': 17, 'video_backend': 'torchvision'}
                 # print(videos[0].shape)
                 # print(videos)
-                videos, video_metadatas = list(videos), list(video_metadatas)
+                videos, video_metadatas = [videos], [video_metadatas]
                 # print(videos[0].shape)
             else:
+                print("!!!!!!!!!!!!!!!!!!!!!!!!!!")
                 video_metadatas = None
 
             model_inputs = self.processor(text=[prompt], videos=videos, add_special_tokens=False, video_metadata=video_metadatas, return_tensors="pt", do_resize=False, **video_kwargs)
