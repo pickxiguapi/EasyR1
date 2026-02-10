@@ -481,7 +481,7 @@ class RLHFDataset(Dataset):
             return_video_metadata = True
             video_input, video_sample_fps = fetch_video(vision_info, return_video_sample_fps=True,
                         image_patch_size=image_patch_size, return_video_metadata=return_video_metadata)
-            print(video_input, video_sample_fps)
+            # print(video_input, video_sample_fps)
             video_sample_fps_list.append(video_sample_fps)
             video_inputs.append(video_input)
 
@@ -490,18 +490,15 @@ class RLHFDataset(Dataset):
             # split the videos and according metadatas
             if videos is not None:
                 videos, video_metadatas = video_input
-                print(videos[0].shape)
-                print(videos)
+                print(videos.shape, video_metadatas)
+                # print(videos[0].shape)
+                # print(videos)
                 videos, video_metadatas = list(videos), list(video_metadatas)
-                print(videos[0].shape)
+                # print(videos[0].shape)
             else:
                 video_metadatas = None
 
             model_inputs = self.processor(text=[prompt], videos=videos, add_special_tokens=False, video_metadata=video_metadatas, return_tensors="pt", do_resize=False, **video_kwargs)
-
-            if "second_per_grid_ts" in self.processor.model_input_names:
-                print("yes")
-                model_inputs["second_per_grid_ts"] = [2.0 / video_sample_fps for video_sample_fps in video_sample_fps_list]
 
             input_ids = model_inputs.pop("input_ids")[0]
             attention_mask = model_inputs.pop("attention_mask")[0]
