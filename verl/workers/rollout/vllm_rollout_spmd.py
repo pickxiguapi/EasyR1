@@ -60,7 +60,7 @@ def _process_multi_modal_data(
 
     if "videos" in multi_modal_data:
         for video in multi_modal_data["videos"]:
-            videos.append(process_video(video, video_fps=video_fps))
+            videos.append(process_video(video, video_fps=video_fps, return_video_metadata=True))
 
     if len(images) != 0:
         return {"image": images}

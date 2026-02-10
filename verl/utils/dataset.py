@@ -143,7 +143,8 @@ def process_video(
     max_pixels: int = 384*32*32,
     video_fps: float = 2.0,
     return_fps: bool = False,
-    total_pixels: int = 3000*32*32
+    total_pixels: int = 3000*32*32,
+    return_video_metadata: bool = False
 ):
     """
     Process video with fps sampling and max_frames limit.
@@ -155,7 +156,7 @@ def process_video(
         video_fps: Frames per second for sampling
         return_fps: Whether to return the video fps
     """
-    
+
     vision_info = {
         "video": video,
         "min_pixels": min_pixels,
@@ -166,7 +167,7 @@ def process_video(
     return fetch_video(
         vision_info,
         image_patch_size=16,
-        return_video_sample_fps=return_fps
+        return_video_sample_fps=return_fps,                                       return_video_metadata=return_video_metadata
     )
 
 

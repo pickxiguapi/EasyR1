@@ -483,7 +483,8 @@ class FSDPWorker(Worker):
 
                     if "videos" in multi_modal_data:
                         for video in multi_modal_data["videos"]:
-                            videos.append(process_video(video, min_pixels, max_pixels, video_fps))
+                            # Embodied-R1.5
+                            videos.append(process_video(video, video_fps=video_fps))
 
                     if len(images) != 0:
                         # it's necessary to add `dict` to properly convert batch features to dict
