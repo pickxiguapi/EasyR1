@@ -167,7 +167,8 @@ def process_video(
     return fetch_video(
         vision_info,
         image_patch_size=16,
-        return_video_sample_fps=return_fps,                                       return_video_metadata=return_video_metadata
+        return_video_sample_fps=return_fps,
+        return_video_metadata=return_video_metadata
     )
 
 
@@ -491,7 +492,7 @@ class RLHFDataset(Dataset):
             # split the videos and according metadatas
             if video_inputs is not None:
                 processed_video, video_metadatas = video_input
-                print(processed_video.shape, video_metadatas)
+                # print(processed_video.shape, video_metadatas)
                 # torch.Size([4, 3, 384, 672]) {'fps': 29.969573582710638, 'frames_indices': tensor([ 0,  5, 11, 16]), 'total_num_frames': 17, 'video_backend': 'torchvision'}
                 # print(videos[0].shape)
                 # print(videos)
