@@ -45,8 +45,8 @@ TEST_FILES = [
 
 def check_dataset(dataset_file):
     """Check if all images in a dataset exist."""
-    dataset_path = os.path.join(BASE_PATH, dataset_file)
-
+    # dataset_path = os.path.join(BASE_PATH, dataset_file)
+    dataset_path = dataset_file
     if not os.path.exists(dataset_path):
         return False, f"Dataset file not found: {dataset_path}"
 
