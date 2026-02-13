@@ -415,8 +415,13 @@ def interpolate_trajectory(trajectory: List[List[float]], new_length: int) -> Li
     Returns:
         Interpolated trajectory with new_length points
     """
-    if len(trajectory) <= 1 or new_length <= 1:
+    if new_length <= 1:
         return trajectory
+
+    # Handle single point case: replicate the point to all positions
+    # This prevents reward hacking where model outputs only 1 point
+    if len(trajectory) == 1:
+        return [trajectory[0][:] for _ in range(new_length)]
 
     old_indices = np.arange(len(trajectory))
     new_indices = np.linspace(0, len(trajectory) - 1, new_length)
@@ -438,7 +443,7 @@ def accuracy_reward_trace(
     ground_truth: str,
     perfect_threshold: float = 50.0,
     zero_threshold: float = 110.0,
-    length_mismatch_penalty: float = 0.2
+    length_mismatch_penalty: float = 0.35
 ) -> float:
     """
     Trajectory tracking accuracy for 2D point sequences
@@ -480,6 +485,10 @@ def accuracy_reward_trace(
         gt_trajectory = [p.get("point_2d", [0, 0]) for p in gt_points]
 
         if len(pred_trajectory) == 0 or len(gt_trajectory) == 0:
+            return 0.0
+
+        # Trajectory must have at least 2 points - single point is invalid
+        if len(pred_trajectory) == 1:
             return 0.0
 
         # Interpolate to max length if lengths don't match
@@ -525,7 +534,7 @@ def accuracy_reward_trace_3d(
     zero_threshold_2d: float = 110.0,
     perfect_threshold_depth: float = 0.05,
     zero_threshold_depth: float = 0.3,
-    length_mismatch_penalty: float = 0.2,
+    length_mismatch_penalty: float = 0.35,
     weight_2d: float = 0.5,
     weight_depth: float = 0.5
 ) -> float:
@@ -579,6 +588,10 @@ def accuracy_reward_trace_3d(
         gt_depths = [p.get("depth", 0.0) for p in gt_points]
 
         if len(pred_trajectory_2d) == 0 or len(gt_trajectory_2d) == 0:
+            return 0.0
+
+        # Trajectory must have at least 2 points - single point is invalid
+        if len(pred_trajectory_2d) == 1:
             return 0.0
 
         # Interpolate to max length if lengths don't match
@@ -944,7 +957,7 @@ def accuracy_reward(response: str,
                                         ground_truth,
                                         perfect_threshold=50.0,
                                         zero_threshold=120.0,
-                                        length_mismatch_penalty=0.2)
+                                        length_mismatch_penalty=0.35)
 
         if ptype == "trace_3d":
             return accuracy_reward_trace_3d(ans,
@@ -953,7 +966,7 @@ def accuracy_reward(response: str,
                                             zero_threshold_2d = 130.0,
                                             perfect_threshold_depth = 0.1,
                                             zero_threshold_depth = 0.4,
-                                            length_mismatch_penalty = 0.2,
+                                            length_mismatch_penalty = 0.35,
                                             weight_2d = 0.5,
                                             weight_depth = 0.5)
 
