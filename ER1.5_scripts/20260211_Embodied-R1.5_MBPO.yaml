@@ -85,7 +85,7 @@ worker:
       format_weight: 0.1
 
 trainer:
-  total_epochs: 2
+  total_epochs: 3
   max_steps: null
   project_name: embodied_r1_5
   experiment_name: embodied_r1.5_rft
@@ -102,4 +102,4 @@ trainer:
   save_model_only: false
   save_checkpoint_path: null
   load_checkpoint_path: null
-  find_last_checkpoint: true
+  find_last_checkpoint: false
